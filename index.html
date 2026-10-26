@@ -25,17 +25,22 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 @media print{html{scroll-padding-top:0}body{background:white;color:black}.sidebar,.topbar,.outline,.mobile-overlay,.chapter-tools,.chapter-footer button,.reading-route{display:none!important}.main-shell{margin:0}.content-layout{display:block;padding:0;max-width:none}.reader{max-width:none}.panel{display:none!important}.panel.printing{display:block!important}.prose{font-size:11pt;line-height:1.7}.prose pre{white-space:pre-wrap}.table-scroll{overflow:visible}.prose table{min-width:0;font-size:9pt}.qa,.answer-bank{box-shadow:none;break-inside:avoid}.chapter-header h1{font-size:23pt}.chapter-header{padding-bottom:15px}.prose a{color:inherit}.qa-body{padding-left:20px}summary .disclosure{display:none}.search-panel{display:none!important}}
 </style></head>
-<body><a class="skip-link" href="#main-content">跳到正文</a><div class="shell"><aside class="sidebar" id="sidebar" aria-label="学习栏目"><a class="brand" href="#quick" data-panel="quick"><span class="brand-monogram" aria-hidden="true">E.</span><span class="brand-text"><strong>ERP 面试复习手册</strong><small>INTERVIEW FIELD NOTES</small></span></a><p class="sidebar-label">7 个栏目，按需练习</p><nav class="module-nav" aria-label="主导航"><a class="module-link active" href="#quick" data-panel="quick" aria-current="page"><span class="module-no">01</span><span><strong>上场准备</strong><small>岗位匹配与自我介绍</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#interview" data-panel="interview" ><span class="module-no">02</span><span><strong>模拟面试</strong><small>随机抽题 · 未掌握复习</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#project" data-panel="project" ><span class="module-no">03</span><span><strong>ERP 项目口述</strong><small>业务模块与六个接口</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#deep" data-panel="deep" ><span class="module-no">04</span><span><strong>两个难点追问</strong><small>事务、防重与分页</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#questions" data-panel="questions" ><span class="module-no">05</span><span><strong>岗位高频问答</strong><small>20 道题与连续追问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#practice" data-panel="practice" ><span class="module-no">06</span><span><strong>场景与模拟</strong><small>SQL 练习、模拟与反问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#notes" data-panel="notes" ><span class="module-no">07</span><span><strong>补充与核实</strong><small>经历回忆与候选故事</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a></nav><div class="sidebar-note"><strong>把一条业务链路讲完整。</strong><p>Java 后端 · ERP 业务<br>口述稿 + 接口 + 连续追问<br>每次练清楚一个问题。</p></div><div class="sidebar-bottom">个人学习资料 / 更新于 2026.10.26<br>纯静态页面，无统计脚本</div></aside><button class="mobile-overlay" id="mobile-overlay" aria-label="关闭栏目导航" tabindex="-1"></button><div class="main-shell"><header class="topbar"><button class="tool-button menu-button" id="menu-toggle" aria-controls="sidebar" aria-expanded="false">目录</button><div class="breadcrumb">学习手册 <span id="current-breadcrumb">上场准备</span></div><div class="toolbar"><label class="search-box"><span class="search-symbol" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索全部资料" aria-label="搜索全部资料" autocomplete="off"><kbd>Ctrl K</kbd></label><button class="tool-button" id="font-down" aria-label="缩小正文字号" title="缩小字号">A−</button><button class="tool-button" id="font-up" aria-label="放大正文字号" title="放大字号">A＋</button><button class="tool-button" id="theme-toggle" aria-label="切换夜间阅读">夜间</button><button class="tool-button print-button" id="print-button">打印</button></div></header><div class="content-layout"><main class="reader" id="main-content"><noscript><p class="noscript-note">未启用 JavaScript，下方显示全部资料；搜索、目录切换和字号设置需要启用 JavaScript。</p><style>.panel[hidden]{display:block!important}.outline{display:none}</style></noscript><section id="quick" class="panel" data-title="上场准备" ><header class="chapter-header"><p class="chapter-meta">先练开场 · 30 秒与 90 秒版本</p><h1 tabindex="-1">上场准备</h1><p class="chapter-description">先把方向和经历讲清楚。以汉得 ERP 后端为主线，用个人项目补充技术实践。</p></header><div class="reading-route"><span class="route-label">从这里开始</span><div><button data-goto="project">讲项目</button><span aria-hidden="true">→</span><button data-goto="deep">练追问</button><span aria-hidden="true">→</span><button data-goto="interview">随机抽题</button></div><p>碎片时间查一个问题，完整时间脱稿练一轮。</p></div><article class="prose"><h2 id="quick-1">自我介绍</h2>
-<h3 id="quick-2">六十至九十秒版本</h3>
-<p>面试官好，我叫袁涛，是阜阳师范大学信息工程学院软件工程专业的 2026 届本科毕业生。我的主要方向是 Java 后端，也具备 Vue 前后端联调能力。</p>
-<p>我在上海汉得信息的实习中，主要参与面向企业的 ERP 管理系统后端接口开发，使用 Spring Boot、MyBatis 和 MySQL，做过数据查询、状态更新、参数校验，以及前后端联调和问题排查。遇到问题时，我会结合请求参数、SQL 查询和 Linux 日志去定位，修改后再回归相关流程。</p>
-<p>个人项目方面，我做过一个基于 Spring Boot、MySQL、Redis 和 Vue 的学习生活管理平台，包含笔记、记账、学习进度以及 AI 助手。它让我对接口开发、登录权限和 AI 与业务功能结合有了更完整的实践。</p>
-<p>这次岗位的 Java 接口、ERP 业务和联调工作与我的经历比较接近。我希望继续沿着 Java 后端方向发展，先把具体业务模块做扎实，再逐步承担更完整的需求交付。</p>
+<body><a class="skip-link" href="#main-content">跳到正文</a><div class="shell"><aside class="sidebar" id="sidebar" aria-label="学习栏目"><a class="brand" href="#quick" data-panel="quick"><span class="brand-monogram" aria-hidden="true">E.</span><span class="brand-text"><strong>ERP 面试复习手册</strong><small>INTERVIEW FIELD NOTES</small></span></a><p class="sidebar-label">7 个栏目，按需练习</p><nav class="module-nav" aria-label="主导航"><a class="module-link active" href="#quick" data-panel="quick" aria-current="page"><span class="module-no">01</span><span><strong>上场准备</strong><small>U8 · ERP · 入职动机</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#interview" data-panel="interview" ><span class="module-no">02</span><span><strong>模拟面试</strong><small>随机抽题 · 未掌握复习</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#project" data-panel="project" ><span class="module-no">03</span><span><strong>汉得经历线</strong><small>U8 → ERP → Agent 平台</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#deep" data-panel="deep" ><span class="module-no">04</span><span><strong>ERP 场景追问</strong><small>事务、防重与分页</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#questions" data-panel="questions" ><span class="module-no">05</span><span><strong>岗位高频问答</strong><small>20 道题与连续追问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#practice" data-panel="practice" ><span class="module-no">06</span><span><strong>场景与模拟</strong><small>SQL 练习、模拟与反问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#notes" data-panel="notes" ><span class="module-no">07</span><span><strong>补充与核实</strong><small>经历回忆与候选故事</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a></nav><div class="sidebar-note"><strong>把一条业务链路讲完整。</strong><p>Java 后端 · ERP 业务<br>口述稿 + 接口 + 连续追问<br>每次练清楚一个问题。</p></div><div class="sidebar-bottom">个人学习资料 / 更新于 2026.10.26<br>纯静态页面，无统计脚本</div></aside><button class="mobile-overlay" id="mobile-overlay" aria-label="关闭栏目导航" tabindex="-1"></button><div class="main-shell"><header class="topbar"><button class="tool-button menu-button" id="menu-toggle" aria-controls="sidebar" aria-expanded="false">目录</button><div class="breadcrumb">学习手册 <span id="current-breadcrumb">上场准备</span></div><div class="toolbar"><label class="search-box"><span class="search-symbol" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索全部资料" aria-label="搜索全部资料" autocomplete="off"><kbd>Ctrl K</kbd></label><button class="tool-button" id="font-down" aria-label="缩小正文字号" title="缩小字号">A−</button><button class="tool-button" id="font-up" aria-label="放大正文字号" title="放大字号">A＋</button><button class="tool-button" id="theme-toggle" aria-label="切换夜间阅读">夜间</button><button class="tool-button print-button" id="print-button">打印</button></div></header><div class="content-layout"><main class="reader" id="main-content"><noscript><p class="noscript-note">未启用 JavaScript，下方显示全部资料；搜索、目录切换和字号设置需要启用 JavaScript。</p><style>.panel[hidden]{display:block!important}.outline{display:none}</style></noscript><section id="quick" class="panel" data-title="上场准备" ><header class="chapter-header"><p class="chapter-meta">先练开场 · 30 秒与 90 秒版本</p><h1 tabindex="-1">上场准备</h1><p class="chapter-description">先讲 U8 怎么认识 ERP，再讲为什么投汉得，最后落到实际做的 Agent 平台联调。</p></header><div class="reading-route"><span class="route-label">从这里开始</span><div><button data-goto="project">讲经历</button><span aria-hidden="true">→</span><button data-goto="deep">练追问</button><span aria-hidden="true">→</span><button data-goto="interview">随机抽题</button></div><p>碎片时间查一个问题，完整时间脱稿练一轮。</p></div><article class="prose"><h2 id="quick-1">自我介绍</h2>
+<h3 id="quick-2">九十秒版本</h3>
+<blockquote>
+<p>面试官好，我叫袁涛，是阜阳师范大学信息工程学院软件工程专业的 2026 届本科毕业生，方向是 Java 后端，也能做 Vue 前后端联调。</p>
+<p>我在学校学过用友 U8，通过它了解了 ERP 的模块和单据流转，也上网查过 ERP 行业。找实习时看到汉得业务里有泛 ERP 咨询实施和自研平台，就冲着这个方向投了汉得。</p>
+<p>进去之后，ERP 相关我只参与了一小部分接口联调，更多是在面向企业的 Agent 平台产品线上做 Spring Boot 接口和 Vue 页面联调，比如字段对齐、参数校验、权限和异常处理。</p>
+<p>个人项目方面，我做过基于 Spring Boot、MySQL、Redis 和 Vue 的学习生活管理平台，包含多角色 AI 和模型接口接入，这部分我能结合代码展开。</p>
+<p>这个岗位既做 ERP 也做 AI 辅助开发。我的 ERP 业务深度还不够，但 U8 给了业务底子，汉得让我熟悉了企业软件的接口和联调，我希望从具体模块开始补起来。</p>
+</blockquote>
 <h3 id="quick-3">三十秒版本</h3>
-<p>面试官好，我叫袁涛，是软件工程专业的 2026 届本科毕业生，主要做 Java 后端。我在汉得参与过企业 ERP 系统的 Spring Boot 接口开发，使用 MyBatis 和 MySQL，工作涉及查询、状态更新、参数校验、联调和日志排查。个人项目还实践过 Redis、Spring Security 和 AI 应用，希望在这个岗位继续积累企业业务系统开发经验。</p>
-<h3 id="quick-4">怎么讲得自然</h3>
-<p>记住四个锚点就够了：我是谁、汉得做什么、个人项目补什么、为什么匹配。不要在开场逐个报全部技术栈，也不必先背项目里有多少接口和测试。</p>
-<p>“实习”按简历称谓讲。郑州工作、出差意愿、到岗时间和薪资，根据自己的实际条件回答。</p>
+<blockquote>
+<p>面试官好，我叫袁涛，软件工程 2026 届，做 Java 后端和 Vue 联调。我在学校用过用友 U8，了解 ERP 的模块和单据流，后来冲着 ERP 业务进了汉得。入职后 ERP 只参与了一小部分接口联调，主要在企业 Agent 平台做 Spring Boot 和 Vue 的接口联调。个人项目 PLNM 实践过 Redis、权限和多角色 AI。ERP 业务深度我还在补，但接口和联调的基础是现成的。</p>
+</blockquote>
+<h3 id="quick-4">讲的时候注意</h3>
+<p>先讲 U8，再讲为什么投汉得，最后讲实际做了什么。这个顺序能让“想做 ERP”和“没做成 ERP”都显得合理，而不是先暴露短板。</p>
+<p>不要在开场报 U8 的菜单，也不要报 Agent 平台的产品名；面试官追问再展开。</p>
 <h2 id="quick-5">这份岗位最值得准备的内容</h2>
 <p>截图公司为郑州奕翔物联科技有限公司，岗位面向 ERP 方向 Java 开发。职责包括制造业 ERP、MES、业财、OA 开发，Spring Boot、MySQL、Redis 接口，AI 辅助编码，客户需求对接、现场联调、上线培训和服务器运维。</p>
 <p>岗位明确写了郑州金水区线下面试、一个技术面、阶段性出差；这些是截图中的招聘信息，实际安排以招聘方确认的信息为准。</p>
@@ -49,13 +54,13 @@
 </thead>
 <tbody><tr>
 <td>Java 企业业务开发</td>
-<td>已确认的汉得 ERP 后端接口经历</td>
-<td>查询、参数校验、状态更新、联调、排障</td>
+<td>U8 课程底子；汉得少量 ERP 接口联调</td>
+<td>说清边界，再用一条真实接口证明手上的活</td>
 </tr>
 <tr>
 <td>Spring Boot 与数据库</td>
-<td>汉得的 Spring Boot、MyBatis、MySQL；PLNM</td>
-<td>一次请求如何落库，事务与 SQL 如何保证正确</td>
+<td>汉得企业 Agent 平台的 Spring Boot + Vue 接口联调；PLNM</td>
+<td>接口契约、参数校验、权限与异常处理</td>
 </tr>
 <tr>
 <td>Redis</td>
@@ -64,12 +69,12 @@
 </tr>
 <tr>
 <td>ERP 与制造业</td>
-<td>已确认 ERP 项目，客户所属行业未确认</td>
-<td>ERP 业务经验可讲；一年制造业实施经验尚不能确认</td>
+<td>U8 模块与单据流认知；ERP 实操有限</td>
+<td>讲概念可以，讲模块交付要收住</td>
 </tr>
 <tr>
 <td>AI 编码</td>
-<td>简历中的 AI 应用与 Codex 工作流积累</td>
+<td>汉得 Agent 平台应用层联调；个人 AI 项目</td>
 <td>一次具体需求怎样用 AI，怎样检查它写的代码</td>
 </tr>
 <tr>
@@ -78,7 +83,7 @@
 <td>说清实际参与范围；独立上线、培训尚未确认</td>
 </tr>
 </tbody></table></div>
-<p>从 JD 判断，对方可能同时看重业务理解和交付能力。介绍顺序建议是：<strong>汉得 ERP → Java 和 SQL → 联调排障 → AI 工具 → PLNM 补充</strong>。先让面试官知道你能接企业接口需求，再展开其他技术。</p>
+<p>从 JD 判断，对方可能同时看重业务理解和交付能力。介绍顺序建议是：<strong>U8 与 ERP 认知 → 为什么投汉得 → 实际做的 Agent 平台联调 → 个人项目补充</strong>。先讲清动机，再讲边界，最后用一条真实接口落地。</p>
 </article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section>
 <section id="interview" class="panel" data-title="模拟面试" hidden><header class="chapter-header"><p class="chapter-meta">40 道题 · 先回答，再看参考</p><h1 tabindex="-1">模拟面试</h1><p class="chapter-description">把手机当作面试官：随机抽一道题，先口述回答，再查看参考，标记还需要复习的地方。</p></header><article class="prose"><div class="interview-controls">
   <label for="interview-pool">练习范围</label>
@@ -104,106 +109,206 @@
 </div>
 <p class="interview-footnote">每轮随机抽题，同一轮不重复；抽完后开始新一轮。未掌握标记保存在当前浏览器，刷新后保留，不跨设备同步。项目场景仍需与真实经历核对。</p>
 </article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section>
-<section id="project" class="panel" data-title="ERP 项目口述" hidden><header class="chapter-header"><p class="chapter-meta">采购申请示例 · 模块与实现待核实</p><h1 tabindex="-1">ERP 项目口述</h1><p class="chapter-description">沿着查询、保存和提交讲一条完整业务链路，明确自己的负责范围。</p></header><article class="prose"><h2 id="project-1">项目整体介绍</h2>
-<h3 id="project-2">一分钟口述稿</h3>
+<section id="project" class="panel" data-title="汉得经历线" hidden><header class="chapter-header"><p class="chapter-meta">一条能自圆其说的叙事</p><h1 tabindex="-1">汉得经历线</h1><p class="chapter-description">学校 U8 打底，冲着 ERP 投汉得，入职分到企业 Agent 平台做接口联调；边界清楚，动机成立。</p></header><article class="prose"><p>口径更新于 2026 年 10 月 26 日。本人补充：学校学过用友 U8，了解 ERP；找实习时发现汉得业务里有 ERP，于是投递进入；入职后只接触了一小部分 ERP，更多是在面向企业的 Agent 平台软件上做 Spring Boot 和 Vue 的接口联调。具体页面、接口和项目名称仍需按实际回忆替换。</p>
+<p>公司全称是上海汉得信息技术股份有限公司，面试时说“汉得”或“汉得信息”即可。</p>
+<h2 id="project-1">一条能自圆其说的经历线</h2>
+<p>四句话讲完：</p>
+<ol>
+<li><strong>学校。</strong> 课程和实训里用用友 U8，知道了 ERP 有哪些模块、单据怎么流转、财务和业务怎么连起来。</li>
+<li><strong>选公司。</strong> 上网查 ERP 行业，看到汉得既做泛 ERP 咨询实施，也有自研平台，符合“懂一点业务、又能写代码”的方向，所以投了汉得。</li>
+<li><strong>入职后。</strong> 项目分配在面向企业的 Agent 平台产品线，做 Spring Boot 接口和 Vue 页面联调；ERP 只参与了一小部分接口对接。</li>
+<li><strong>现在。</strong> 冲着 ERP 去，实际做的是企业软件接口；两段经历都落在企业应用上，所以来应聘 ERP 开发。</li>
+</ol>
+<p>这条线的好处是：动机是真的，分配是常见的，能力是接得上的。不用解释成“公司不重视 ERP”，也不用把 Agent 平台包装成 ERP 项目。</p>
+<h3 id="project-2">九十秒口述</h3>
 <blockquote>
-<p>我在汉得主要参与企业 ERP 管理系统的后端功能迭代，使用 Spring Boot、MyBatis 和 MySQL。</p>
-<p>按这版业务场景，我负责的是采购申请单管理相关接口，包括申请单列表、详情、新增和修改，以及提交时的状态校验。另外配合做了物料选择的数据查询，供前端填写申请明细。</p>
-<p>这类单据分为主表和明细表。主表保存申请部门、申请人、申请日期、状态等信息，明细保存物料、申请数量、单位和需求日期。我主要处理接口参数、Service 业务逻辑和 Mapper SQL，再与 Vue 页面联调。</p>
-<p>这部分工作里，我重点关注两个问题：一个是主表和明细保存时的一致性，以及单据提交后的修改限制；另一个是主从表关联查询时，分页条数和总数不准确的问题。</p>
+<p>我在学校学过用友 U8，算是通过它真正知道 ERP 是什么：不是一张页面，而是采购、销售、库存、财务这些模块连在一起，单据从录入、审核到生成凭证有一条完整的流。</p>
+<p>后来我上网查 ERP 行业，发现汉得除了 ERP 咨询实施，还有自己的平台产品，觉得这个方向既能接触业务又能做开发，就投了汉得。</p>
+<p>进去之后，ERP 相关我只参与了一小部分接口联调。更多时间是在面向企业的 Agent 平台产品线上，做 Spring Boot 后端接口和 Vue 页面的联调，比如字段对齐、参数校验、权限和异常提示这些。</p>
+<p>所以我的情况是：ERP 业务有 U8 打底，企业软件的接口和联调是在汉得练的，但完整的 ERP 模块我确实没独立做过。</p>
 </blockquote>
-<p>“按这版业务场景”是练习时的提醒，正式面试不能以这句话替代真实性确认。核实真实模块后，直接讲模块名即可。</p>
-<h3 id="project-3">面试官让你再讲详细一点</h3>
-<blockquote>
-<p>业务流程是使用者先填写申请部门、申请日期等头信息，再选择物料、输入数量和需求日期，保存为草稿。草稿允许修改，提交前检查必填信息和明细完整性，提交后进入后续处理，不能再通过普通编辑接口直接改内容。</p>
-<p>我的工作范围集中在这些页面对应的后端接口，以及字段、状态、查询条件和错误提示的联调。后续采购下单、入库、财务处理和审批引擎不属于这版稿子的负责范围。</p>
-</blockquote>
-<h2 id="project-4">负责的业务模块</h2>
-<h3 id="project-5">主要模块 采购申请单管理</h3>
-<p>按一条完整但有限的链路组织经历：</p>
-<ul>
-<li>列表：按单号、部门、日期、状态等条件查申请单，支持分页。</li>
-<li>详情：返回申请单头信息和明细，供查看或编辑。</li>
-<li>新增与修改：校验数据，保存主表和明细；只有允许编辑的状态才能修改。</li>
-<li>提交：检查单据状态和必要数据，执行合法状态转换。</li>
-</ul>
-<p>采购申请表示内部提出采购需求，不能直接说成已经创建采购订单或完成入库。模块实际叫什么、状态怎样流转，需要以真实系统为准。</p>
-<h3 id="project-6">配套功能 物料基础资料查询</h3>
-<p>仅负责申请页面需要的查询：根据物料编码或名称搜索可选物料，返回编码、名称、规格和单位等字段。不要把一个选择器查询扩大成负责整套物料主数据系统。</p>
-<h3 id="project-7">数据关系的口述</h3>
-<blockquote>
-<p>主表对应一张申请单，一张单据有多条明细。明细通过主表 ID 关联，物料 ID 关联已有的物料资料。查询列表时，业务上分页的对象是单据；查看详情时，才需要展开整张单据的明细。</p>
-</blockquote>
-<p>是否保存物料名称、规格等历史快照要看真实数据模型，不能自动说历史单据始终展示主数据的当前值。</p>
-<h2 id="project-8">六个具体接口怎么讲</h2>
-<p>以下 URL 是便于练习的 REST 风格命名，不是汉得真实地址。记业务动作和处理逻辑比背路径有用。</p>
+<h2 id="project-3">U8 到底给了我什么</h2>
+<p>不要说“我精通 U8”。课程里用过，就讲课程里真实做过的操作和理解。</p>
+<h3 id="project-4">三个能讲清楚的概念</h3>
 <div class="table-scroll" tabindex="0" role="region" aria-label="可横向滑动的对照表"><table>
 <thead>
 <tr>
-<th>接口示例</th>
-<th>输入与输出</th>
-<th>主要后端工作</th>
+<th>概念</th>
+<th>用 U8 怎么理解</th>
+<th>面试时怎么说</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>GET /erp/purchase-requisitions</code></td>
-<td>输入单号、部门、日期范围、状态、页码；返回单据列表与总数</td>
-<td>拼接筛选条件，按单据分页，保证总数与列表采用相同条件</td>
+<td>模块地图</td>
+<td>采购、销售、库存、存货核算、总账、报表各自管什么</td>
+<td>ERP 是按业务域分模块的，模块之间靠单据和数据连起来</td>
 </tr>
 <tr>
-<td><code>GET /erp/purchase-requisitions/{id}</code></td>
-<td>输入单据 ID；返回头信息与明细数组</td>
-<td>根据已有权限规则查询数据，组装主从表结果和页面需要的字段</td>
+<td>单据流</td>
+<td>采购订单→到货→入库；销售订单→发货→出库</td>
+<td>一张单据有状态，下游单据引用上游，不能随便跳步</td>
 </tr>
 <tr>
-<td><code>POST /erp/purchase-requisitions</code></td>
-<td>输入申请头信息和明细；返回新单据 ID</td>
-<td>校验必填信息、物料和数量，在同一事务中保存主表与明细</td>
-</tr>
-<tr>
-<td><code>PUT /erp/purchase-requisitions/{id}</code></td>
-<td>输入单据 ID 和修改内容；返回处理结果</td>
-<td>校验当前状态，保证主表与明细一起修改，避免绕过状态限制</td>
-</tr>
-<tr>
-<td><code>POST /erp/purchase-requisitions/{id}/submit</code></td>
-<td>输入单据 ID；返回提交结果</td>
-<td>校验操作权限、合法状态和必要数据，按条件更新状态并检查影响行数</td>
-</tr>
-<tr>
-<td><code>GET /erp/materials/options</code></td>
-<td>输入搜索词与分页参数；返回物料候选项</td>
-<td>查询符合选择规则的物料，统一返回 ID、编码、名称、规格、单位等字段</td>
+<td>财务业务一体化</td>
+<td>业务单据审核后进入存货核算、生成凭证</td>
+<td>业务数据最终要落到财务，所以数量和金额的口径必须一致</td>
 </tr>
 </tbody></table></div>
-<h3 id="project-9">最值得展开的接口 保存申请单</h3>
+<h3 id="project-5">可以提的 U8 操作</h3>
+<p>按你实际做过的删减，别全说：</p>
+<ul>
+<li>账套、操作员和权限；</li>
+<li>基础档案：客户、供应商、存货、仓库、部门；</li>
+<li>采购订单、到货单、采购入库单；</li>
+<li>销售订单、发货单、销售出库单；</li>
+<li>单据审核、弃审；</li>
+<li>库存查询、收发存报表；</li>
+<li>凭证生成或凭证查询。</li>
+</ul>
+<h3 id="project-6">边界</h3>
+<ul>
+<li>这是课程/实训操作，不是实施顾问经验。</li>
+<li>没做过 U8 二次开发、没做过 U8 与外部系统的接口。</li>
+<li>被问细节时，讲记得的操作；不记得就说“这块当时没做深”，不要现场编菜单路径。</li>
+</ul>
+<h3 id="project-7">可能追问：U8 里最有收获的是什么</h3>
 <blockquote>
-<p>以新增申请单为例，前端传过来的是一份头信息和一个明细列表。我先做必填和格式校验，再由业务层检查物料是否允许选择、数量是否符合业务规则。然后保存主表，取得主表 ID，再保存关联的明细。主表和明细要一起成功，不能接口返回失败后，数据库里却留下半张单据。</p>
-<p>联调时，我会核对主表和明细的关联是否正确，详情接口能否完整回显，再用无明细、非法数量、无效物料和中途失败这些情况检查处理结果。</p>
+<p>不是记住哪个菜单，而是理解了“单据”这件事。一张采购入库单不只是入库数量，它后面连着库存、存货核算和应付。做开发时看到一张表，我会先想它在业务流里是哪一环、上游是谁、下游会受什么影响。</p>
 </blockquote>
-<p>申请人和部门信息的可信来源应遵循现有身份与组织权限规则，不能让前端随意指定后就直接写入。</p>
-<h3 id="project-10">修改明细为什么要多想一步</h3>
-<p>如果草稿明细没有被其他业务引用，且业务允许整单覆盖，可在同一事务中按现有方案替换明细。已有下游引用、行级历史或审计要求时，需要保留明细身份，逐行处理增删改。不要把“先删除全部明细再插入”说成所有 ERP 都适用的办法。</p>
-<h2 id="project-11">把经历讲完整的两分钟练习稿</h2>
-<p>下面整段仅在模块和实现得到核实后使用；核实前用来检查自己是否能解释每一句。</p>
+<h2 id="project-8">为什么冲着 ERP 去 却做了 Agent</h2>
+<p>这是最容易被问、也最容易答崩的一题。原则：不抱怨分配，不贬低 Agent，不把两件事说成一件。</p>
+<h3 id="project-9">九十秒版本</h3>
 <blockquote>
-<p>我在汉得主要参与面向企业的 ERP 系统后端开发，技术栈是 Spring Boot、MyBatis 和 MySQL。负责范围主要是采购申请单管理，以及申请页面需要的物料基础资料查询。</p>
-<p>采购申请单这块，我参与了列表、详情、新增修改和提交相关接口。列表可以按单号、部门、日期和状态查询；新增修改需要处理单据头和多条物料明细；提交时需要检查当前状态和必要数据。我也配合 Vue 页面做联调，核对字段、状态值、日期和错误提示。</p>
-<p>这段工作里，我主要能展开两个问题。第一个是主从表保存的一致性。单据头和明细应当一起成功，所以我关注 Service 层事务、异常处理，以及修改和提交的状态约束，避免留下不完整单据，或者提交后仍被编辑。</p>
-<p>第二个是列表分页。因为一张单据有多条明细，直接关联后分页可能使单据重复，页面条数和总数也不一致。我的处理思路是先确认分页对象是单据，再选择主表筛选和分页方式，让列表与总数采用一致的条件，需要的明细按本页数据批量补充。</p>
-<p>我负责的重点是具体业务接口、联调和问题排查。遇到问题时，会沿着请求参数、业务逻辑、SQL 和数据库数据定位，修改后验证原来的异常流程。这段经历让我更关注接口是否真正符合业务规则，以及数据最终是否正确。</p>
+<p>实习生进来是按项目需要分配的。我入职时 ERP 项目组没有合适的缺口，Agent 平台产品线正好缺做接口联调的人，我就过去了。</p>
+<p>一开始确实觉得和自己想的不太一样。但做下来发现，Agent 平台也是企业软件：要接企业的组织权限、知识资料和业务系统，页面对接、接口契约、异常处理这些方法和 ERP 是一样的。</p>
+<p>而且 U8 学的业务概念一直用得上。比如什么是主数据、单据为什么要状态、权限为什么要分数据范围，这些在 Agent 平台里同样存在。</p>
+<p>所以我不觉得这段是白走。它让我把企业软件的接口和联调做熟了，ERP 的业务深度是我现在要补的部分。</p>
 </blockquote>
+<h3 id="project-10">一句话版本</h3>
+<blockquote>
+<p>我是冲着 ERP 去的，项目把我分到了企业 Agent 平台；做的是企业软件的接口联调，ERP 只碰了一小部分，但业务底子和工程方法都留下来了。</p>
+</blockquote>
+<h3 id="project-11">不要这样说</h3>
+<ul>
+<li>“公司不重视 ERP，所以把我调走了。”</li>
+<li>“Agent 平台比 ERP 高级，所以我后来转方向了。”</li>
+<li>“ERP 和 Agent 差不多，都是写接口。”——面试官会追着问差异。</li>
+<li>“我在汉得主要做 ERP。”——一追问模块就露馅。</li>
+</ul>
+<h2 id="project-12">汉得实际做什么：Spring Boot + Vue 接口联调</h2>
+<h3 id="project-13">定位</h3>
+<p>面向企业的 Agent 平台软件，产品形态是给企业客户配置和使用智能体、知识库、会话等能力。本人承担应用层的接口开发和前后端联调，不承担平台架构、模型训练和检索算法。</p>
+<h3 id="project-14">工作拆成六件事</h3>
+<ol>
+<li><strong>对契约。</strong> 页面需要哪些字段、后端返回什么结构、枚举和日期怎么表示、空值怎么处理。</li>
+<li><strong>补校验。</strong> 必填、长度、格式，以及业务上是否允许这个值。</li>
+<li><strong>管权限。</strong> 当前用户能看哪些应用、哪些知识库、哪些数据；越权时返回什么。</li>
+<li><strong>处理异常。</strong> 业务错误码、提示文案，前端怎么展示，用户能不能看懂。</li>
+<li><strong>联调排查。</strong> 浏览器 Network 看请求和响应，再查后端日志和数据，确定问题在哪一层。</li>
+<li><strong>回归。</strong> 改完把正常流程和原来的异常场景各走一遍。</li>
+</ol>
+<h3 id="project-15">一个可以讲完整的接口</h3>
+<p>按实际页面替换，下面以“应用配置保存”为例：</p>
+<blockquote>
+<p>平台里有一个应用配置页面，前端用 Vue 填应用名称、模型、知识库范围这些信息，调用 Spring Boot 的保存接口。后端先做参数校验和权限判断，再保存配置并返回配置 ID；列表页按当前用户的数据范围查询。</p>
+<p>联调时主要对齐三件事：字段名和类型是否一致、枚举值前后端是不是同一套、没有权限或校验失败时页面提示是否准确。</p>
+</blockquote>
+<p>替换选项：知识库文档列表、会话记录查询、应用启停、模型配置。选一个你真的调过的。</p>
+<h3 id="project-16">一个可以讲的问题（候选）</h3>
+<blockquote>
+<p>联调时遇到过页面显示和接口返回对不上。我先在 Network 里看实际响应，确认后端返回的是编码还是名称、字段是不是空，再核对前端的映射。如果是后端的问题，再往下查参数、Service 分支和 SQL。</p>
+<p>这样能先把问题缩小到前端展示、接口字段还是数据处理，不用两边一起猜。</p>
+</blockquote>
+<p>这是候选故事。真实发生过再改成过去时；没有就用作“我会怎么排查”。</p>
+<h2 id="project-17">Agent 平台最可能被追问的六件事</h2>
+<h3 id="project-18">你说的 Agent 平台是什么</h3>
+<blockquote>
+<p>给企业客户用的智能体应用平台，可以在上面配置应用、接知识库、做会话问答，也可以编排一些业务流程。我主要负责其中页面和后端接口的联调，不是平台底层。</p>
+</blockquote>
+<p>具体产品名按实际说；想不起来就说“企业 Agent 平台”，不要硬报“灵猿”。</p>
+<h3 id="project-19">你负责哪部分 写代码还是只联调</h3>
+<blockquote>
+<p>两边都做。后端是 Spring Boot 的接口，前端是 Vue 页面，主要工作在接口实现和联调。不是只点页面，也不是负责整体架构。</p>
+</blockquote>
+<p>如果实际只做联调，就照实说“以联调为主，接口有小改”，不要把自己抬成核心开发。</p>
+<h3 id="project-20">讲一个你调过的接口</h3>
+<p>用第四节的模板。必须能说出：谁调用、传什么、返回什么、权限怎么判断、失败时怎么样。</p>
+<h3 id="project-21">前端你到什么程度</h3>
+<blockquote>
+<p>能看懂 Vue 页面、改字段绑定和调用逻辑、定位前后端字段不一致的问题；复杂组件和前端架构不是我强项。</p>
+</blockquote>
+<h3 id="project-22">你懂 RAG 吗</h3>
+<blockquote>
+<p>理解链路：先把资料切分入库，提问时检索相关片段，再把片段作为上下文交给模型回答，最后返回答案和来源。汉得这边我主要做应用层接口，检索参数和效果调优没有独立负责过。个人项目里做过模型接口接入和角色路由，但不是完整 RAG。</p>
+</blockquote>
+<p>不要把“知道 RAG 流程”说成“做过 RAG 平台”。</p>
+<h3 id="project-23">为什么从 Agent 又回来做 ERP</h3>
+<blockquote>
+<p>我的主线一直是 Java 企业应用。Agent 平台让我把接口和联调做熟了，但它离业务本身比较远；ERP 能让我看到业务怎么真正跑起来。U8 的底子还在，我愿意从具体模块补。</p>
+</blockquote>
+<h2 id="project-24">高频追问十题</h2>
+<p><strong>1 你在汉得到底做了什么</strong></p>
+<blockquote>
+<p>主要在面向企业的 Agent 平台产品线上做 Spring Boot 接口和 Vue 页面联调；ERP 相关只参与了一小部分接口对接。具体工作是字段对齐、参数校验、权限、异常提示和联调排查。</p>
+</blockquote>
+<p><strong>2 为什么学 ERP 却去做了 Agent</strong></p>
+<p>用第三节的九十秒版本。核心是项目分配，不是转行。</p>
+<p><strong>3 U8 你学到什么程度</strong></p>
+<blockquote>
+<p>课程和实训里用过，能讲清模块、单据流和财务业务一体化，也做过采购入库、销售出库这类基础操作。没有做过 U8 二次开发，也不是实施顾问。</p>
+</blockquote>
+<p><strong>4 你做过完整 ERP 模块吗</strong></p>
+<blockquote>
+<p>没有。我只参与过少量 ERP 接口联调，完整模块没有独立负责过。这块我不冒充，但接口和业务规则我可以现学现做。</p>
+</blockquote>
+<p><strong>5 汉得这段最大的收获是什么</strong></p>
+<blockquote>
+<p>知道了企业软件是怎么交付的：需求要落到接口契约，权限和数据范围要在后端兜住，联调要把字段和异常对齐，改完要回归。这个方法和 ERP 是通用的。</p>
+</blockquote>
+<p><strong>6 你简历写全栈 前端能独立做吗</strong></p>
+<blockquote>
+<p>能改页面、能联调、能定位前后端问题；独立从零搭前端项目不是我的强项。我的主线还是后端接口。</p>
+</blockquote>
+<p><strong>7 你做过 RAG 或者知识库吗</strong></p>
+<blockquote>
+<p>在 Agent 平台的应用层接触过知识库相关页面和接口联调，但没有独立做过检索调优和向量库选型。链路我讲得清，深度我如实说。</p>
+</blockquote>
+<p><strong>8 为什么离开汉得</strong></p>
+<p>按真实原因答，实习结束、项目周期结束、想找长期做企业应用的岗位都可以。不要贬低前公司。</p>
+<p><strong>9 为什么来我们公司</strong></p>
+<blockquote>
+<p>这个岗位既做 ERP，也用 AI 辅助开发，和我的两段积累都能接上：U8 给我业务概念，汉得给我企业接口和联调的经验。ERP 深度是我要补的，我愿意从具体模块做起。</p>
+</blockquote>
+<p><strong>10 你觉得自己最大的短板</strong></p>
+<blockquote>
+<p>ERP 业务深度不够，完整模块没做过。我的补法是先把一个模块的单据、状态和权限搞清楚，再动手写接口，而不是只照着页面字段做。</p>
+</blockquote>
+<h2 id="project-25">表达边界</h2>
+<ul>
+<li>ERP：只说“少量接口联调”，不说“负责采购/库存/生产模块”。</li>
+<li>Agent：只说“应用层接口和联调”，不说“平台架构/模型训练/检索算法”。</li>
+<li>U8：只说课程和实训操作，不说实施顾问、二次开发。</li>
+<li>数字：客户名、数据量、性能提升、团队规模，没有确认就不说。</li>
+<li>个人项目：PLNM 明确说是个人项目，不并进汉得经历。</li>
+</ul>
+<h2 id="project-26">面试前要找回的三个细节</h2>
+<ol>
+<li>Agent 平台上你实际调过的一个页面：它调了哪些接口。</li>
+<li>那个页面里你改过的一个字段、校验或提示。</li>
+<li>一次真实的联调问题：现象、你怎么定位、最后怎么确认好了。</li>
+</ol>
+<p>这三项找回来，这段经历就站得住；找不回来，就用“如果让我做，我会怎么处理”的回答，别硬编项目名。</p>
 </article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section>
-<section id="deep" class="panel" data-title="两个难点追问" hidden><header class="chapter-header"><p class="chapter-meta">20 道追问 · 先回答，再展开参考</p><h1 tabindex="-1">两个难点追问</h1><p class="chapter-description">重点练事务回滚、重复提交、前端去重与 DISTINCT。这里是场景方案，确认符合实际后再用于经历表达。</p></header><div class="chapter-tools"><button type="button" data-expand="true">展开全部答案</button><button type="button" data-expand="false">收起全部答案</button><span>先试着回答，再点题目看参考。</span></div><article class="prose"><h2 id="deep-1">难点一 主从表保存和状态变更的一致性</h2>
-<h3 id="deep-2">七十至九十秒口述稿</h3>
+<section id="deep" class="panel" data-title="ERP 场景追问" hidden><header class="chapter-header"><p class="chapter-meta">20 道追问 · 先回答，再展开参考</p><h1 tabindex="-1">ERP 场景追问</h1><p class="chapter-description">重点练事务回滚、重复提交、前端去重与 DISTINCT。这里作为设计练习，不作为汉得实绩。</p></header><div class="chapter-tools"><button type="button" data-expand="true">展开全部答案</button><button type="button" data-expand="false">收起全部答案</button><span>先试着回答，再点题目看参考。</span></div><article class="prose"><h2 id="deep-1">ERP 场景一 主从表保存和状态变更的一致性</h2>
+<h3 id="deep-2">场景口述</h3>
 <blockquote>
-<p>第一个可以展开的难点是，申请单不是只写一张表。头信息和多条明细要一起保存，还要受单据状态限制。</p>
+<p>第一个 ERP 设计场景是，申请单不是只写一张表。头信息和多条明细要一起保存，还要受单据状态限制。</p>
 <p>这个问题可以用一个具体异常来说明：主表已经保存，但某条明细写入失败。如果处理不完整，就可能留下只有头信息、没有完整明细的单据。</p>
-<p>我在处理这类接口时，会把主表和明细的数据库修改放进同一个 Service 事务里，在写入前完成必要的业务校验。执行中出现需要回滚的异常，就让异常按约定向外抛出，不把它捕获后直接返回成功。</p>
+<p>如果让我处理这类接口，我会把主表和明细的数据库修改放进同一个 Service 事务里，在写入前完成必要的业务校验。执行中出现需要回滚的异常，就让异常按约定向外抛出，不把它捕获后直接返回成功。</p>
 <p>对修改和提交，还要校验状态。比如只有草稿允许编辑，提交时把原状态放进更新条件，并检查影响行数。这样就不会仅凭页面按钮是否可点击来决定后端能不能操作。</p>
 <p>验证时，我会分别检查正常保存、明细失败、提交后再编辑和重复提交。重点是确认数据库里没有半张单据，禁止的操作没有改变数据。</p>
 </blockquote>
-<p>本段描述的是待核实的问题与方案，没有已确认的故障发生记录或回归结果。确认后才可改成“当时发现”“修复后验证”。</p>
+<p>本段是设计练习，不作为汉得工作成果。</p>
 <h3 id="deep-3">事务和重复提交的十二道追问</h3>
 <p>以下回答按普通同步方法、MySQL InnoDB 和 Spring 常见代理式事务讨论；具体经历与项目配置仍以真实系统为准。通常先说引用段落，被追问后再补解释。</p>
 <details class="qa" id="deep-q7" data-toc="1 为什么把事务放在 Service 层"><summary><span class="question-number">01</span><span class="question-label">为什么把事务放在 Service 层</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
@@ -277,16 +382,16 @@
 <p>防重则用同一个业务标识发重复请求，包括同时发两个请求，最后确认只有一笔业务结果，状态和相关记录都没有重复。再确认失败后重试能够按设计处理，而不是被一个永久的“处理中”标记卡住。</p>
 </blockquote>
 <p>这是建议的验证方式，不表示已经在汉得项目执行过这些检查。</p>
-</div></details><h2 id="deep-4">难点二 主从表关联导致分页与总数不准</h2>
-<h3 id="deep-5">七十至九十秒口述稿</h3>
+</div></details><h2 id="deep-4">ERP 场景二 主从表关联导致分页与总数不准</h2>
+<h3 id="deep-5">场景口述</h3>
 <blockquote>
-<p>第二个难点是列表查询的分页单位。页面要展示的是申请单，但一张申请单下面可能有多条物料明细。</p>
+<p>第二个 ERP 查询场景是列表查询的分页单位。页面要展示的是申请单，但一张申请单下面可能有多条物料明细。</p>
 <p>如果为了支持按物料筛选，直接把主表和明细表关联后分页，同一张单据可能占多行。这样 SQL 返回十行，页面去重后可能只剩几张单据，总数也容易按明细行数统计，和用户看到的不一致。</p>
 <p>我会先用一张有多条明细的申请单复现，对照原始 SQL 结果和页面结果，确认分页发生在关联展开之后。</p>
 <p>解决时，先明确列表以单据为单位。如果只是判断单据里有没有某种物料，可以用存在性条件筛选主表，再对主表分页；列表查询和总数查询使用相同的业务筛选。如果还需要补充明细摘要，就针对本页单据统一查询并组装，避免每张单据再单独查一次。</p>
 <p>最后检查一单多行、跨页、无结果和物料筛选这些情况，确认条数与总数符合“单据”的含义。</p>
 </blockquote>
-<p>本段同样是候选故事。没有确认真实发生过，就用“这种场景我会这样处理”回答，而不是声称已修复公司故障。</p>
+<p>本段仅用“如果遇到，我会这样处理”的场景表达。</p>
 <h3 id="deep-6">分页和去重的八道追问</h3>
 <details class="qa" id="deep-q19" data-toc="1 为什么一关联明细 分页就不准了"><summary><span class="question-number">01</span><span class="question-label">为什么一关联明细 分页就不准了</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
 <blockquote>
@@ -360,17 +465,16 @@
 <section id="questions" class="panel" data-title="岗位高频问答" hidden><header class="chapter-header"><p class="chapter-meta">Java / MySQL / ERP / AI</p><h1 tabindex="-1">岗位高频问答</h1><p class="chapter-description">每题先脱稿讲 40 至 90 秒，再展开答案。先答当前问题，被追问后再往下讲。</p></header><div class="chapter-tools"><button type="button" data-expand="true">展开全部答案</button><button type="button" data-expand="false">收起全部答案</button><span>先试着回答，再点题目看参考。</span></div><article class="prose"><h2 id="questions-1">高频面试问答</h2>
 <p>每题先脱稿讲 40 至 90 秒，再对照答案。下面有经历题，也有设计题，注意它们的时态。</p>
 <details class="qa" id="questions-2" data-toc="1 你在汉得具体干什么 为什么简历写全栈"><summary><span class="question-number">01</span><span class="question-label">你在汉得具体干什么 为什么简历写全栈</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
-<p>我主要做企业 ERP 系统的 Java 后端接口，使用 Spring Boot、MyBatis 和 MySQL，涉及查询、状态更新、参数校验和问题排查。简历写全栈是因为我也参与过 Vue 页面和前后端联调，但这次应聘我会重点讲后端工作。</p>
-<p>**追问：**选一个接口，讲清输入、业务规则、数据库操作和验证。</p>
-</div></details><details class="qa" id="questions-3" data-toc="2 这个 ERP 是你一个人做的吗"><summary><span class="question-number">02</span><span class="question-label">这个 ERP 是你一个人做的吗</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
-<p>我参与的是其中的功能迭代和接口开发，不是独立完成整个 ERP。我可以具体展开自己负责的接口、联调和修复范围。整体架构和其他模块，不会都算成自己的工作。</p>
-<p>**追问：**需求谁提出、谁验收、是否有人评审？这些按实际团队流程回答，现有材料没有团队人数和组织分工。</p>
+<p>我主要在面向企业的 Agent 平台产品线上做接口联调：后端 Spring Boot，前端 Vue。工作包括对齐接口字段、补参数校验、处理权限和异常提示、联调排查和回归。ERP 相关只参与了一小部分接口对接。简历写全栈，是因为前后端都实际碰过，但深度在后端接口和联调，不是前端架构。</p>
+<p>**追问：**选一个页面，讲清它调了哪些接口、你改了什么。</p>
+</div></details><details class="qa" id="questions-3" data-toc="2 你的 ERP 参与到什么程度"><summary><span class="question-number">02</span><span class="question-label">你的 ERP 参与到什么程度</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
+<p>不多。学校用 U8 学过 ERP 的模块和单据流，汉得这边只参与了一小部分 ERP 接口联调，没有独立负责过采购、库存或生产模块。完整业务规则我还在补，但自己碰过的那部分接口能讲清楚。</p>
+<p>**追问：**U8 里做过什么？按课程实际操作答，不要背菜单路径。</p>
 </div></details><details class="qa" id="questions-4" data-toc="3 为什么从汉得离开 为什么考虑我们"><summary><span class="question-number">03</span><span class="question-label">为什么从汉得离开 为什么考虑我们</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
-<p>离开原因用真实情况填一句，例如实习结束、工作安排变化或个人发展选择，不能替自己预设原因。</p>
-<p>岗位匹配可以这样说：我希望继续做 Java 企业应用开发。这个岗位包含 ERP 接口、数据库、联调和上线支持，与我已有的工作比较接近；制造业的具体流程，我希望结合团队实际模块进一步学习。</p>
+<p>实习结束，我想找能长期做 Java 企业应用开发的岗位。这个岗位既做 ERP，也用 AI 辅助开发，和我的两段积累都能接上：U8 给我业务概念，汉得给我企业接口和联调的经验。ERP 深度是我要补的，我愿意从具体模块做起。</p>
 </div></details><details class="qa" id="questions-5" data-toc="4 你有一年制造业经验吗 做过 MES 吗"><summary><span class="question-number">04</span><span class="question-label">你有一年制造业经验吗 做过 MES 吗</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
-<p>目前能确认的是汉得 ERP 开发经历。是否属于制造业客户、是否包含实施，应按真实项目回答。没有直接做过 MES，可以说：我有企业 ERP 接口经验，MES 的直接开发经历还没有；我了解它更贴近车间执行、工序、报工和质量追踪，会先熟悉你们的数据流和业务规则。</p>
-<p>ERP 与 MES 的集成边界因产品而异，不能仅凭名称推断自己做过设备接入。<a target="_blank" rel="noopener noreferrer" href="https://www.sap.com/uk/products/scm/digital-manufacturing.html">SAP 对 MES 的说明</a>将其描述为连接 ERP 与车间控制的生产执行系统。</p>
+<p>没有一年制造业实施经验，MES 也没有直接开发过。我有的是企业软件接口联调的经历，加上 U8 的 ERP 业务底子。MES 更贴近车间执行、工序、报工和质量追踪，这块需要到项目里学。</p>
+<p>ERP 接触、制造业实施和 MES 开发是不同经历，不能互相替代。<a target="_blank" rel="noopener noreferrer" href="https://www.sap.com/uk/products/scm/digital-manufacturing.html">SAP 对 MES 的说明</a></p>
 </div></details><details class="qa" id="questions-6" data-toc="5 一次请求从页面到数据库经过什么"><summary><span class="question-number">05</span><span class="question-label">一次请求从页面到数据库经过什么</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
 <p>请求进入后端，先经过相关认证与权限处理。Controller 接收请求并做基本参数校验；Service 处理业务规则和事务边界；Mapper 执行 SQL；结果再映射成接口响应。对修改操作，我还会看影响行数和最终数据是否符合预期。具体过滤器、权限组件按公司项目实际情况讲。</p>
 <p>**追问：**参数合法但当前状态不允许操作，应该在哪里判断？通常属于业务规则，放在业务层，并用数据库条件保证修改时规则仍成立。</p>
@@ -413,8 +517,9 @@
 </blockquote>
 <p>准备一个真正用过 AI 的小例子，能解释修改前后和验证结果。公司代码和数据按团队允许的工具与使用范围处理。</p>
 <p>**追问：**AI 给了看起来能运行的代码，你怎么判断？先检查输入和业务契约，再验证正常、边界和失败路径，尤其关注数据是否写错、权限是否遗漏。</p>
-</div></details><details class="qa" id="questions-19" data-toc="18 你的多角色 AI 项目是不是 RAG"><summary><span class="question-number">18</span><span class="question-label">你的多角色 AI 项目是不是 RAG</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
-<p>PLNM 简历写的是意图与上下文路由、角色提示词和模型接口接入，这些信息本身不能证明做过完整 RAG。可以说：我做过 AI 应用集成，RAG 的思路是先检索相关资料，再把证据提供给模型生成回答；完整实现还涉及文档切分、检索、权限过滤和回答评估。企业知识库可考虑操作手册、制度和故障文档，但不能让用户检索到无权查看的内容。<a target="_blank" rel="noopener noreferrer" href="https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview">Microsoft RAG 说明</a></p>
+</div></details><details class="qa" id="questions-19" data-toc="18 你的 Agent 平台经历和个人多角色项目有什么区别"><summary><span class="question-number">18</span><span class="question-label">你的 Agent 平台经历和个人多角色项目有什么区别</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
+<p>汉得那段是企业 Agent 平台上的接口联调，重点在前后端契约、权限和异常，不是在调模型效果。PLNM 是我个人项目，做的是角色路由、提示词和模型接口接入。两个都不是完整的 RAG 平台，我不会把平台能力说成自己实现的。</p>
+<p>**追问：**那 RAG 你了解吗？先答链路，再说明检索调优和向量库选型没有独立做过。</p>
 </div></details><details class="qa" id="questions-20" data-toc="19 Java 基础你最应该补哪几个点"><summary><span class="question-number">19</span><span class="question-label">Java 基础你最应该补哪几个点</span><span class="disclosure" aria-hidden="true"></span></summary><div class="qa-body">
 <p>优先把这些问题讲明白：<code>equals</code>与<code>hashCode</code>的关系；HashMap 为什么不适合并发写；<code>BigDecimal</code>处理金额时的精度和舍入规则；异常如何影响业务事务；线程池的有界队列和拒绝策略。金额不能随便使用浮点数再靠格式化补救，计算规则要与业务一致。</p>
 <p>**追问练习：**两个表示同金额但小数位不同的 BigDecimal，用 <code>equals</code>与<code>compareTo</code>判断有什么差别？先自己查清并试一个小例子，再口述，避免只背名词。</p>
@@ -452,12 +557,12 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 <tbody><tr>
 <td>0 至 2 分钟</td>
 <td>请介绍一下自己</td>
-<td>后端方向、汉得 ERP、与岗位连接</td>
+<td>U8 打底、冲着 ERP 投汉得、实际做 Agent 平台联调</td>
 </tr>
 <tr>
 <td>2 至 6 分钟</td>
-<td>ERP 里你具体负责什么 选一个接口</td>
-<td>本人范围清楚，输入到落库讲完整</td>
+<td>为什么想做 ERP 后来怎么去了 Agent</td>
+<td>动机真实、分配合理、不抱怨</td>
 </tr>
 <tr>
 <td>6 至 11 分钟</td>
@@ -467,7 +572,7 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 <tr>
 <td>11 至 17 分钟</td>
 <td>重复提交、事务、库存竞争怎么处理</td>
-<td>能区分事务、状态约束和业务幂等</td>
+<td>作为 ERP 场景题讨论，不算作汉得实绩</td>
 </tr>
 <tr>
 <td>17 至 22 分钟</td>
@@ -481,8 +586,8 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 </tr>
 <tr>
 <td>27 至 31 分钟</td>
-<td>AI 怎么帮你开发 能做什么部署工作</td>
-<td>给具体例子，经历与方案分得清</td>
+<td>AI 怎么帮你开发 U8 和 RAG 了解多少</td>
+<td>给具体例子，深度边界说得清</td>
 </tr>
 <tr>
 <td>31 至 35 分钟</td>
@@ -493,11 +598,10 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 <p>每个回答只检查三件事：是否回答了当前问题；是否有具体链路或例子；是否把未确认内容说成事实。练完修正最明显的三处就够了。</p>
 <h3 id="practice-5">可以复用的模拟面试提示词</h3>
 <pre><code class="language-text">请按本文件模拟郑州 ERP Java 开发岗的线下技术面试。
-我的汉得经历已确认是企业 ERP 系统的 Spring Boot 后端接口开发，简历包含 MyBatis、MySQL、查询、状态更新、参数校验、Vue 联调和 Linux 日志排查。
+我的叙事：学校用过用友 U8，了解 ERP 模块与单据流；冲着 ERP 业务投了汉得；入职后分到企业 Agent 平台，主要做 Spring Boot + Vue 接口联调，ERP 只参与少量接口对接。
 一次只问一道题，等待我回答，再根据回答追问一至两次，不提前给参考答案。
-先问自我介绍和一个公司接口，再问问题排查、事务、SQL、Redis、ERP 场景、AI 编码和交付。
-文件中的候选故事未确认，不预设为我的真实经历。对不明确的部分先问清楚，不自行补客户、人数、指标或技术栈。
-如果我只说术语，追问一个具体输入、状态变化、失败条件或验证结果。
+先问 U8、为什么投汉得、实际做了什么，再问 Agent 平台接口、个人项目、Java/SQL/事务和 ERP 场景。
+不要预设我负责过完整 ERP 模块、Agent 平台架构或 RAG 检索调优；这些边界如果我自己说大了，请直接追问细节。
 最后给三个最需要改进的点，以及每个点的一段更清楚的表达。
 </code></pre>
 <h2 id="practice-6">反问与临场速记</h2>
@@ -513,79 +617,55 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 <p>用 20 分钟讲熟自我介绍和汉得职责；30 分钟把一条真实接口和两个项目故事讲完整；40 分钟练问答 5 至 15；20 分钟练 AI 使用、客户需求和反问；最后 10 分钟确认线下面试时间、地址、联系人和所带简历版本。</p>
 <h3 id="practice-9">最后只记这十句话</h3>
 <ol>
-<li>我主要做 Java 后端，全栈能力帮助我联调和排查。</li>
-<li>汉得项目是企业 ERP，具体模块名称和客户行业还要核实。</li>
-<li>我参与功能和接口开发，不把整个系统都算成自己的工作。</li>
-<li>查询看筛选、分页和边界，修改看权限、状态和数据结果。</li>
-<li>登录成功不代表可以操作任意业务数据。</li>
-<li>事务保证相应数据库修改一起提交或回滚，业务幂等另行处理。</li>
-<li>前端禁用按钮不能替代后端约束。</li>
-<li>超时可能是结果未知，先确认，再按幂等契约重试。</li>
-<li>AI 生成之后，我要能解释和验证代码。</li>
-<li>项目故事讲具体异常、自己的动作和可确认的结果。</li>
+<li>我主要做 Java 后端，Vue 能联调。</li>
+<li>学校用 U8 学过 ERP 的模块和单据流。</li>
+<li>我是冲着 ERP 业务投的汉得。</li>
+<li>入职后项目分到企业 Agent 平台，ERP 只碰了少量接口。</li>
+<li>企业软件的联调方法相通：契约、权限、异常、回归。</li>
+<li>U8 让我懂业务结构，汉得让我会做企业接口。</li>
+<li>完整 ERP 模块没做过，这个边界我如实说。</li>
+<li>事务保证一起成功或回滚，业务幂等另说。</li>
+<li>超时可能是结果未知，先确认再重试。</li>
+<li>与其把 Agent 说成 ERP，不如用一条真实接口证明手上的活。</li>
 </ol>
 </article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section>
 <section id="notes" class="panel" data-title="补充与核实" hidden><header class="chapter-header"><p class="chapter-meta">已有依据 / 待核实示例 / 场景方案</p><h1 tabindex="-1">补充与核实</h1><p class="chapter-description">找回真实模块与接口，选择能解释清楚的故事。保留参考与事实之间的边界。</p></header><article class="prose"><h2 id="notes-1">汉得到底做了什么</h2>
-<h3 id="notes-2">可以直接使用的职责描述</h3>
+<h3 id="notes-2">一句话版本</h3>
 <blockquote>
-<p>我在汉得主要参与企业 ERP 管理系统的后端开发，技术栈是 Spring Boot、MyBatis 和 MySQL。具体工作包括业务数据查询、状态更新接口、请求参数校验，以及配合前端完成联调。发现问题后，我会结合浏览器请求、数据库数据和 Linux 日志定位，修复后回归相关流程，同时整理接口说明和修改记录。我也接触过 Vue 页面，所以能从请求发出到后端处理、数据库变化这一整条链路看问题。</p>
+<p>我是冲着 ERP 去的汉得，入职后项目分到了企业 Agent 平台，主要做 Spring Boot 和 Vue 的接口联调；ERP 只参与了一小部分接口对接。</p>
 </blockquote>
-<p>这段以简历和本次补充为依据。它已经能回答“做了什么”，下一步要补的是一个自己能解释清楚的接口。</p>
-<h3 id="notes-3">把日常工作拆成五件具体事</h3>
+<h3 id="notes-3">九十秒版本</h3>
+<p>用“汉得经历线”栏目里的九十秒口述。核心四句：U8 打底、冲着 ERP 投汉得、分到 Agent 平台、ERP 只碰了少量接口。</p>
+<h3 id="notes-4">面试官追问 那你到底算不算有 ERP 经验</h3>
+<blockquote>
+<p>算接触过，不算做透。U8 让我懂 ERP 的业务结构，汉得让我参与过少量 ERP 接口联调；完整模块我没有独立负责过。这个边界我会说清楚，不会把 Agent 平台说成 ERP 项目。</p>
+</blockquote>
+<h3 id="notes-5">实际工作拆成六件事</h3>
 <ol>
-<li><strong>看懂需求。</strong> 明确页面要展示什么、接口接收什么、数据从哪里来、哪些条件下允许修改。</li>
-<li><strong>写查询接口。</strong> 处理筛选条件、分页、返回字段和 MyBatis SQL，保证页面结果与数据库一致。</li>
-<li><strong>写修改接口。</strong> 处理参数和业务规则校验，更新数据并返回明确结果。多表同时修改时需要考虑事务。</li>
-<li><strong>完成联调。</strong> 对齐字段名、类型、日期格式、状态值和错误提示，检查接口响应与页面展示。</li>
-<li><strong>排查与回归。</strong> 留下复现条件，查请求、SQL 和日志，修复后验证正常流程和原来的异常流程。</li>
+<li>对接口契约：字段、类型、枚举、日期、空值。</li>
+<li>补参数校验：必填、长度、格式、业务合法性。</li>
+<li>管权限和数据范围：当前用户能看哪些应用、知识库和数据。</li>
+<li>处理异常：错误码、提示文案、前端展示。</li>
+<li>联调排查：Network 看请求响应，再查后端日志和数据。</li>
+<li>回归：正常流程和原来的异常场景各走一遍。</li>
 </ol>
-<p>其中“分页”“多表事务”等是常见工作细化点，需与你实际做过的接口核对，不能仅因 ERP 常见就认定都做过。</p>
-<h3 id="notes-4">面试官问具体负责哪个模块</h3>
-<p>优先找回一个真实名称：可以回看自己合法保留的工作记录、接口文档或非敏感提交记录，不需要拿原公司的内部数据做面试展示。</p>
-<p>暂时想不起来时，练习中先用“业务单据查询和状态更新”作为中性名称。这个名称只用于组织思路；它不是已经确认的采购、库存或审批模块。</p>
-<p>可以坦诚说：</p>
+<h3 id="notes-6">一个可以讲完整的接口</h3>
+<p>按实际页面替换。示例：</p>
 <blockquote>
-<p>我主要负责其中的业务查询和状态更新接口，不是整个 ERP 的架构设计。具体页面名称我现在记得不够准确，但接口从参数、Service 逻辑、Mapper SQL 到联调验证这条链路，我可以展开讲。</p>
+<p>平台里有一个应用配置页面，前端 Vue 填应用名称、模型和知识库范围，调用 Spring Boot 的保存接口。后端做参数校验和权限判断，保存后返回配置 ID；列表页按当前用户的数据范围查询。</p>
+<p>联调时主要对齐字段名和类型、枚举值是否同一套、无权限或校验失败时提示是否准确。</p>
 </blockquote>
-<p>不必用“保密”掩盖记忆空缺。也不要因为汉得做企业服务，就自动说自己做过 SAP、Oracle、某个自研平台或 MES。</p>
-<h3 id="notes-5">选一个接口讲完整</h3>
-<p>按这六项准备，选真实做过的一条：</p>
-<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滑动的对照表"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>要能回答的问题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>使用者</td>
-<td>谁在什么页面、什么情况下调用？</td>
-</tr>
-<tr>
-<td>输入</td>
-<td>哪些筛选或修改字段，哪些必填？</td>
-</tr>
-<tr>
-<td>规则</td>
-<td>什么身份能操作，什么状态允许修改？</td>
-</tr>
-<tr>
-<td>实现</td>
-<td>Controller、Service、Mapper 分别处理什么？</td>
-</tr>
-<tr>
-<td>数据</td>
-<td>查或改了哪些数据，多表关系如何处理？</td>
-</tr>
-<tr>
-<td>验证</td>
-<td>正常请求、非法参数、重复操作怎么验证？</td>
-</tr>
-</tbody></table></div>
-<p>如果有三项以上说不清，先换一个更熟悉的接口，不要再往里面堆缓存、消息队列和分布式锁。</p>
-<h2 id="notes-6">公司项目中难忘的点</h2>
-<p>下面三段都是<strong>候选故事</strong>。它们紧贴简历中的查询、状态更新和联调，但具体故障、方案和结果仍需你确认。可以用来唤起记忆；不符合真实经历的，改成“如果遇到，我会这样处理”的场景回答。</p>
-<h3 id="notes-7">候选故事一 查询有结果却漏了最后一天的数据</h3>
+<p>替换选项：知识库文档列表、会话记录查询、应用启停、模型配置。选一个真的调过的。</p>
+<h3 id="notes-7">不要说过头</h3>
+<ul>
+<li>不说“我负责 Agent 平台架构”。</li>
+<li>不说“我做过 RAG 检索调优”。</li>
+<li>不说“我主导 ERP 模块”。</li>
+<li>不说客户名、数据量、性能提升。</li>
+</ul>
+<h2 id="notes-8">ERP 场景练习</h2>
+<p>下面三段均作为 <strong>ERP 场景练习</strong> 保留，不作为汉得项目业绩。若没有实际经历，统一用“如果遇到，我会这样处理”回答。</p>
+<h3 id="notes-9">候选故事一 查询有结果却漏了最后一天的数据</h3>
 <p>**适用前提：**你确实接触过日期筛选或前后端日期格式问题。</p>
 <p><strong>练习口述：</strong></p>
 <blockquote>
@@ -597,7 +677,7 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 <p>当前用“我会”表达方案；确实回忆起发生过，再把有依据的部分改成过去时。</p>
 <p>**可能追问：**为什么不用当天 23:59:59？因为数据库时间可能含小数秒，半开区间更容易明确边界；还要确认业务日期、存储时区和转换规则。</p>
 <p>**需要确认：**实际日期字段是什么，漏数是否真的发生，自己改的是前端参数还是后端 SQL，最后验证过哪些记录。</p>
-<h3 id="notes-8">候选故事二 状态更新不能只靠页面按钮控制</h3>
+<h3 id="notes-10">候选故事二 状态更新不能只靠页面按钮控制</h3>
 <p>**适用前提：**你确实接触过提交、撤回、审核或其他状态修改接口。</p>
 <p><strong>练习口述：</strong></p>
 <blockquote>
@@ -608,7 +688,7 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 </blockquote>
 <p>**可能追问：**更新零行是什么原因？可能是记录不存在、状态已变化，也可能是数据权限不匹配。返回什么错误要遵循系统的权限和信息披露规则，不能一律报成功。</p>
 <p>**需要确认：**真实状态有哪些，是否写过条件更新，是否存在多表修改。未做过事务或幂等，不补成个人成果。</p>
-<h3 id="notes-9">候选故事三 联调时从页面现象追到接口和 SQL</h3>
+<h3 id="notes-11">候选故事三 联调时从页面现象追到接口和 SQL</h3>
 <p>**适用前提：**你确实排查过字段、状态或接口返回与页面不一致的问题。</p>
 <p><strong>练习口述：</strong></p>
 <blockquote>
@@ -619,17 +699,16 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
 </blockquote>
 <p>**可能追问：**HTTP 200 就代表业务成功吗？不一定，要看约定的业务结果；还要核对实际影响行数和最终数据，不能把“请求到了”当成“操作成功”。</p>
 <p>**需要确认：**当时具体是哪一个字段，根因在前端还是后端，自己负责了哪一步。结果没有记录时，不写“减少 80% 问题”等数字。</p>
-<h3 id="notes-10">怎么选择两个最合适的故事</h3>
+<h3 id="notes-12">怎么选择两个最合适的故事</h3>
 <p>优先选择能回忆起“页面或接口、具体异常、自己做的修改、验证方式”的两段。只记得一般联调工作，就先讲第三段的排查方法；不要为显得复杂硬讲生产事故。</p>
 <p>结果可以是“日期边界符合预期”“重复请求没有再次改变状态”“字段约定明确后联调通过”。只有真实确认后才使用过去时。</p>
-<h2 id="notes-11">面试前只核实这几项</h2>
+<h2 id="notes-13">面试前核实实际分工</h2>
 <ol>
-<li>实际模块是否是采购申请；如果不是，把业务名换回真实模块，并重新核对操作和状态，不能只替换名词。</li>
-<li>是否亲自做过新增修改、主从表事务和提交接口；只做过查询，就保留查询职责，把修改方案作为知识题准备。</li>
-<li>两个难点是否真实发生过，自己的具体修改和验证是什么。能解释方案不等于有过这次故障经历。</li>
+<li>ERP 只讲少量接口对接和联调，不把本例中的采购模块当作个人职责。</li>
+<li>企业 Agent 平台需要找回一个真实页面：它调了哪些接口，自己改过哪个字段、校验或提示。</li>
+<li>PLNM 等个人项目单独说明，未确认的模型、向量库、指标与部署规模不补写。</li>
 </ol>
-<p>正式回答优先讲清一条真实接口和一个真实问题；另一个没有确认的难点可以作为场景题练习，不必强行凑成两次过去业绩。</p>
-</article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section><section class="search-panel" id="search-panel" aria-label="搜索结果" hidden><h1>在整本手册里查找</h1><p class="search-caption" id="search-caption" role="status" aria-live="polite"></p><div id="search-results"></div></section></main><aside class="outline" aria-label="本章目录"><p class="outline-title">本章内容</p><nav class="toc" id="toc" aria-label="章节目录"></nav><div class="outline-progress"><span id="reading-progress">当前章节 · 0%</span><br>也可以从顶部搜索。</div></aside></div></div></div><script id="search-index" type="application/json">[{"panel":"quick","category":"上场准备","id":"quick-1","title":"自我介绍","text":"自我介绍"},{"panel":"quick","category":"上场准备","id":"quick-2","title":"六十至九十秒版本","text":"六十至九十秒版本 面试官好，我叫袁涛，是阜阳师范大学信息工程学院软件工程专业的 2026 届本科毕业生。我的主要方向是 Java 后端，也具备 Vue 前后端联调能力。 我在上海汉得信息的实习中，主要参与面向企业的 ERP 管理系统后端接口开发，使用 Spring Boot、MyBatis 和 MySQL，做过数据查询、状态更新、参数校验，以及前后端联调和问题排查。遇到问题时，我会结合请求参数、SQL 查询和 Linux 日志去定位，修改后再回归相关流程。 个人项目方面，我做过一个基于 Spring Boot、MySQL、Redis 和 Vue 的学习生活管理平台，包含笔记、记账、学习进度以及 AI 助手。它让我对接口开发、登录权限和 AI 与业务功能结合有了更完整的实践。 这次岗位的 Java 接口、ERP 业务和联调工作与我的经历比较接近。我希望继续沿着 Java 后端方向发展，先把具体业务模块做扎实，再逐步承担更完整的需求交付。"},{"panel":"quick","category":"上场准备","id":"quick-3","title":"三十秒版本","text":"三十秒版本 面试官好，我叫袁涛，是软件工程专业的 2026 届本科毕业生，主要做 Java 后端。我在汉得参与过企业 ERP 系统的 Spring Boot 接口开发，使用 MyBatis 和 MySQL，工作涉及查询、状态更新、参数校验、联调和日志排查。个人项目还实践过 Redis、Spring Security 和 AI 应用，希望在这个岗位继续积累企业业务系统开发经验。"},{"panel":"quick","category":"上场准备","id":"quick-4","title":"怎么讲得自然","text":"怎么讲得自然 记住四个锚点就够了：我是谁、汉得做什么、个人项目补什么、为什么匹配。不要在开场逐个报全部技术栈，也不必先背项目里有多少接口和测试。 “实习”按简历称谓讲。郑州工作、出差意愿、到岗时间和薪资，根据自己的实际条件回答。"},{"panel":"quick","category":"上场准备","id":"quick-5","title":"这份岗位最值得准备的内容","text":"这份岗位最值得准备的内容 截图公司为郑州奕翔物联科技有限公司，岗位面向 ERP 方向 Java 开发。职责包括制造业 ERP、MES、业财、OA 开发，Spring Boot、MySQL、Redis 接口，AI 辅助编码，客户需求对接、现场联调、上线培训和服务器运维。 岗位明确写了郑州金水区线下面试、一个技术面、阶段性出差；这些是截图中的招聘信息，实际安排以招聘方确认的信息为准。 岗位关注点 你可以用的材料 练习重点 Java 企业业务开发 已确认的汉得 ERP 后端接口经历 查询、参数校验、状态更新、联调、排障 Spring Boot 与数据库 汉得的 Spring Boot、MyBatis、MySQL；PLNM 一次请求如何落库，事务与 SQL 如何保证正确 Redis 简历中的 PLNM 缓存与会话 讲个人项目的实际用途，不默认汉得也用了 Redis ERP 与制造业 已确认 ERP 项目，客户所属行业未确认 ERP 业务经验可讲；一年制造业实施经验尚不能确认 AI 编码 简历中的 AI 应用与 Codex 工作流积累 一次具体需求怎样用 AI，怎样检查它写的代码 客户现场与运维 简历确认联调、Linux 日志排查 说清实际参与范围；独立上线、培训尚未确认 从 JD 判断，对方可能同时看重业务理解和交付能力。介绍顺序建议是： 汉得 ERP → Java 和 SQL → 联调排障 → AI 工具 → PLNM 补充 。先让面试官知道你能接企业接口需求，再展开其他技术。"},{"panel":"project","category":"ERP 项目口述","id":"project-1","title":"项目整体介绍","text":"项目整体介绍"},{"panel":"project","category":"ERP 项目口述","id":"project-2","title":"一分钟口述稿","text":"一分钟口述稿 我在汉得主要参与企业 ERP 管理系统的后端功能迭代，使用 Spring Boot、MyBatis 和 MySQL。 按这版业务场景，我负责的是采购申请单管理相关接口，包括申请单列表、详情、新增和修改，以及提交时的状态校验。另外配合做了物料选择的数据查询，供前端填写申请明细。 这类单据分为主表和明细表。主表保存申请部门、申请人、申请日期、状态等信息，明细保存物料、申请数量、单位和需求日期。我主要处理接口参数、Service 业务逻辑和 Mapper SQL，再与 Vue 页面联调。 这部分工作里，我重点关注两个问题：一个是主表和明细保存时的一致性，以及单据提交后的修改限制；另一个是主从表关联查询时，分页条数和总数不准确的问题。 “按这版业务场景”是练习时的提醒，正式面试不能以这句话替代真实性确认。核实真实模块后，直接讲模块名即可。"},{"panel":"project","category":"ERP 项目口述","id":"project-3","title":"面试官让你再讲详细一点","text":"面试官让你再讲详细一点 业务流程是使用者先填写申请部门、申请日期等头信息，再选择物料、输入数量和需求日期，保存为草稿。草稿允许修改，提交前检查必填信息和明细完整性，提交后进入后续处理，不能再通过普通编辑接口直接改内容。 我的工作范围集中在这些页面对应的后端接口，以及字段、状态、查询条件和错误提示的联调。后续采购下单、入库、财务处理和审批引擎不属于这版稿子的负责范围。"},{"panel":"project","category":"ERP 项目口述","id":"project-4","title":"负责的业务模块","text":"负责的业务模块"},{"panel":"project","category":"ERP 项目口述","id":"project-5","title":"主要模块 采购申请单管理","text":"主要模块 采购申请单管理 按一条完整但有限的链路组织经历： 列表：按单号、部门、日期、状态等条件查申请单，支持分页。 详情：返回申请单头信息和明细，供查看或编辑。 新增与修改：校验数据，保存主表和明细；只有允许编辑的状态才能修改。 提交：检查单据状态和必要数据，执行合法状态转换。 采购申请表示内部提出采购需求，不能直接说成已经创建采购订单或完成入库。模块实际叫什么、状态怎样流转，需要以真实系统为准。"},{"panel":"project","category":"ERP 项目口述","id":"project-6","title":"配套功能 物料基础资料查询","text":"配套功能 物料基础资料查询 仅负责申请页面需要的查询：根据物料编码或名称搜索可选物料，返回编码、名称、规格和单位等字段。不要把一个选择器查询扩大成负责整套物料主数据系统。"},{"panel":"project","category":"ERP 项目口述","id":"project-7","title":"数据关系的口述","text":"数据关系的口述 主表对应一张申请单，一张单据有多条明细。明细通过主表 ID 关联，物料 ID 关联已有的物料资料。查询列表时，业务上分页的对象是单据；查看详情时，才需要展开整张单据的明细。 是否保存物料名称、规格等历史快照要看真实数据模型，不能自动说历史单据始终展示主数据的当前值。"},{"panel":"project","category":"ERP 项目口述","id":"project-8","title":"六个具体接口怎么讲","text":"六个具体接口怎么讲 以下 URL 是便于练习的 REST 风格命名，不是汉得真实地址。记业务动作和处理逻辑比背路径有用。 接口示例 输入与输出 主要后端工作 GET /erp/purchase-requisitions 输入单号、部门、日期范围、状态、页码；返回单据列表与总数 拼接筛选条件，按单据分页，保证总数与列表采用相同条件 GET /erp/purchase-requisitions/{id} 输入单据 ID；返回头信息与明细数组 根据已有权限规则查询数据，组装主从表结果和页面需要的字段 POST /erp/purchase-requisitions 输入申请头信息和明细；返回新单据 ID 校验必填信息、物料和数量，在同一事务中保存主表与明细 PUT /erp/purchase-requisitions/{id} 输入单据 ID 和修改内容；返回处理结果 校验当前状态，保证主表与明细一起修改，避免绕过状态限制 POST /erp/purchase-requisitions/{id}/submit 输入单据 ID；返回提交结果 校验操作权限、合法状态和必要数据，按条件更新状态并检查影响行数 GET /erp/materials/options 输入搜索词与分页参数；返回物料候选项 查询符合选择规则的物料，统一返回 ID、编码、名称、规格、单位等字段"},{"panel":"project","category":"ERP 项目口述","id":"project-9","title":"最值得展开的接口 保存申请单","text":"最值得展开的接口 保存申请单 以新增申请单为例，前端传过来的是一份头信息和一个明细列表。我先做必填和格式校验，再由业务层检查物料是否允许选择、数量是否符合业务规则。然后保存主表，取得主表 ID，再保存关联的明细。主表和明细要一起成功，不能接口返回失败后，数据库里却留下半张单据。 联调时，我会核对主表和明细的关联是否正确，详情接口能否完整回显，再用无明细、非法数量、无效物料和中途失败这些情况检查处理结果。 申请人和部门信息的可信来源应遵循现有身份与组织权限规则，不能让前端随意指定后就直接写入。"},{"panel":"project","category":"ERP 项目口述","id":"project-10","title":"修改明细为什么要多想一步","text":"修改明细为什么要多想一步 如果草稿明细没有被其他业务引用，且业务允许整单覆盖，可在同一事务中按现有方案替换明细。已有下游引用、行级历史或审计要求时，需要保留明细身份，逐行处理增删改。不要把“先删除全部明细再插入”说成所有 ERP 都适用的办法。"},{"panel":"project","category":"ERP 项目口述","id":"project-11","title":"把经历讲完整的两分钟练习稿","text":"把经历讲完整的两分钟练习稿 下面整段仅在模块和实现得到核实后使用；核实前用来检查自己是否能解释每一句。 我在汉得主要参与面向企业的 ERP 系统后端开发，技术栈是 Spring Boot、MyBatis 和 MySQL。负责范围主要是采购申请单管理，以及申请页面需要的物料基础资料查询。 采购申请单这块，我参与了列表、详情、新增修改和提交相关接口。列表可以按单号、部门、日期和状态查询；新增修改需要处理单据头和多条物料明细；提交时需要检查当前状态和必要数据。我也配合 Vue 页面做联调，核对字段、状态值、日期和错误提示。 这段工作里，我主要能展开两个问题。第一个是主从表保存的一致性。单据头和明细应当一起成功，所以我关注 Service 层事务、异常处理，以及修改和提交的状态约束，避免留下不完整单据，或者提交后仍被编辑。 第二个是列表分页。因为一张单据有多条明细，直接关联后分页可能使单据重复，页面条数和总数也不一致。我的处理思路是先确认分页对象是单据，再选择主表筛选和分页方式，让列表与总数采用一致的条件，需要的明细按本页数据批量补充。 我负责的重点是具体业务接口、联调和问题排查。遇到问题时，会沿着请求参数、业务逻辑、SQL 和数据库数据定位，修改后验证原来的异常流程。这段经历让我更关注接口是否真正符合业务规则，以及数据最终是否正确。"},{"panel":"deep","category":"两个难点追问","id":"deep-1","title":"难点一 主从表保存和状态变更的一致性","text":"难点一 主从表保存和状态变更的一致性"},{"panel":"deep","category":"两个难点追问","id":"deep-2","title":"七十至九十秒口述稿","text":"七十至九十秒口述稿 第一个可以展开的难点是，申请单不是只写一张表。头信息和多条明细要一起保存，还要受单据状态限制。 这个问题可以用一个具体异常来说明：主表已经保存，但某条明细写入失败。如果处理不完整，就可能留下只有头信息、没有完整明细的单据。 我在处理这类接口时，会把主表和明细的数据库修改放进同一个 Service 事务里，在写入前完成必要的业务校验。执行中出现需要回滚的异常，就让异常按约定向外抛出，不把它捕获后直接返回成功。 对修改和提交，还要校验状态。比如只有草稿允许编辑，提交时把原状态放进更新条件，并检查影响行数。这样就不会仅凭页面按钮是否可点击来决定后端能不能操作。 验证时，我会分别检查正常保存、明细失败、提交后再编辑和重复提交。重点是确认数据库里没有半张单据，禁止的操作没有改变数据。 本段描述的是待核实的问题与方案，没有已确认的故障发生记录或回归结果。确认后才可改成“当时发现”“修复后验证”。"},{"panel":"deep","category":"两个难点追问","id":"deep-3","title":"事务和重复提交的十二道追问","text":"事务和重复提交的十二道追问 以下回答按普通同步方法、MySQL InnoDB 和 Spring 常见代理式事务讨论；具体经历与项目配置仍以真实系统为准。通常先说引用段落，被追问后再补解释。"},{"panel":"deep","category":"两个难点追问","id":"deep-q7","title":"1 为什么把事务放在 Service 层","text":"01 为什么把事务放在 Service 层 因为“保存一张申请单”是一个完整业务动作，里面可能要写主表和多条明细。我希望它们一起成功、一起失败，所以在处理这件事的 Service 方法上定义事务。只给单条数据库操作加事务，不能保证整张单据完整。"},{"panel":"deep","category":"两个难点追问","id":"deep-q8","title":"2 什么异常会回滚 所有异常都会吗","text":"02 什么异常会回滚 所有异常都会吗 不是所有异常都会。没有自定义规则时，Spring 默认对 RuntimeException 和 Error 回滚，受检异常默认不回滚。如果这个业务遇到某类受检异常也必须撤销，就要配置相应的 rollbackFor，不能只看见注解就认为肯定回滚。 参考： Spring 6.1 Transactional 注解说明 。不同版本或项目全局配置可能改变默认规则，回答时说明“默认配置”。"},{"panel":"deep","category":"两个难点追问","id":"deep-q9","title":"3 我把异常 catch 住 然后返回失败 会不会回滚","text":"03 我把异常 catch 住 然后返回失败 会不会回滚 不能只看返回值写的是成功还是失败。比如我在事务方法里自己 catch 了异常，没有再抛出去，也没有其他回滚标记，事务通常还是会正常提交。接口虽然返回失败，前面已经写进去的主表却可能留下来。 我的处理方式通常是让需要回滚的异常按规则离开事务方法，再在外层统一转换成错误响应。 如果面试官继续追问，补一句： 但也不能说“只要 catch 就一定不回滚”。如果异常已经经过内层事务代理，把共同事务标成只能回滚，外层再 catch 也不能恢复提交，最后还可能遇到 UnexpectedRollbackException。 第一种情况是自己捕获后事务没有收到回滚信号；第二种情况是事务已经被标记回滚。 Spring 回滚说明 、 事务传播说明"},{"panel":"deep","category":"两个难点追问","id":"deep-q10","title":"4 那全局异常处理器捕获异常 会不会影响回滚","text":"04 那全局异常处理器捕获异常 会不会影响回滚 一般不会。常见调用顺序是 Controller 调用事务 Service，异常先从 Service 出来，由事务代理处理回滚，然后再交给全局异常处理器组织响应。关键是捕获发生在哪一层，不能把“事务方法里自己吞掉”和“事务外统一处理”混为一谈。"},{"panel":"deep","category":"两个难点追问","id":"deep-q11","title":"5 加了 Transactional 还是没回滚 你先查什么","text":"05 加了 Transactional 还是没回滚 你先查什么 我先看这次调用有没有真的经过 Spring 的事务代理，比如是不是同一个类里直接调用了带注解的方法。再看异常有没有被自己捕获、是否符合回滚规则，以及主表和明细有没有参加同一个事务。最后核对有没有新线程、独立事务或提前提交的操作。 补充：同类自调用不会单凭被调用方法的注解新增事务；如果外层本来已经有事务，内部 SQL 仍可能参与外层事务，不能说自调用就使所有 SQL 都没有事务。 Spring 代理式事务说明"},{"panel":"deep","category":"两个难点追问","id":"deep-q12","title":"6 写上 rollbackFor 等于解决全部回滚问题吗","text":"06 写上 rollbackFor 等于解决全部回滚问题吗 不等于。它只是告诉 Spring，哪些异常离开事务方法时应该触发回滚。调用没经过代理、异常被自己捕获、SQL 不在同一个事务里，这些问题都不是加一个 rollbackFor 就能解决的。 也不必把所有业务方法都机械配置为回滚所有异常，应遵循业务和团队约定。"},{"panel":"deep","category":"两个难点追问","id":"deep-q13","title":"7 有事务了 为什么还要防重复提交","text":"07 有事务了 为什么还要防重复提交 事务管的是“一次操作里的几步要不要一起成功”，重复提交管的是“同一件业务会不会被做两次”。两个请求各自都可以有事务，也都成功，所以有事务不代表自动防重。 可以举例：两次新增请求分别创建两张完整单据，每张主表和明细都没有问题，但业务上仍然重复了。"},{"panel":"deep","category":"两个难点追问","id":"deep-q14","title":"8 同一张草稿单据被点了两次提交 你怎么处理","text":"08 同一张草稿单据被点了两次提交 你怎么处理 前端禁用按钮可以减少误操作，后端还要有约束。我会把“当前状态必须是草稿”放进更新条件，而不是先在 Java 里查到草稿，再无条件修改。一次更新成功后，另一次就不能再按草稿提交。 然后检查影响行数。只有拿到这次状态转换的请求，才能继续做同一事务内的后续写入。第二次是返回状态冲突，还是返回前一次的结果，要看接口约定，关键是不能再做一遍业务动作。 这里保护的是这一次状态转换；如果单据允许撤回后重新提交，还需要识别是哪一轮操作。数据库之外的审批通知或 HTTP 调用，也不能单靠这条更新和本地事务保证一致。 继续追问“编辑和提交同时发生”时： 这两个接口需要遵循同一套并发规则，不能只保护提交。比如在事务内锁定单据头、检查状态后再修改明细，让提交与编辑按同一记录协调；或者使用版本校验，冲突时撤销整次修改。这样才能避免提交完成后，一个旧编辑请求又改了明细。 以上是备选方案，未核实实际实现前不说“项目已经这样做了”。"},{"panel":"deep","category":"两个难点追问","id":"deep-q15","title":"9 如果是重复新增 两次都还没有单据 ID 呢","text":"09 如果是重复新增 两次都还没有单据 ID 呢 这时就不能靠单据当前状态拦了。我会先确认什么算同一笔业务。如果有稳定的业务唯一键，就用它做唯一约束；没有的话，可以给这次新增操作分配一个幂等标识，重试时沿用它，再用数据库唯一约束挡住并发重复创建。 这个标识要和用户、业务范围对应起来。同一个标识带了不同内容，不能直接当成同一次成功。重复请求返回已有结果，还是提示冲突，也要先定义清楚。 “先查一下有没有再插入”仍有并发空隙；不能用每次都新生成的单号识别同一次业务重试。"},{"panel":"deep","category":"两个难点追问","id":"deep-q16","title":"10 为什么不直接用 Redis 锁","text":"10 为什么不直接用 Redis 锁 先看问题大小。如果只是同一张单据从草稿变提交，数据库条件更新可能就够了，没必要为了防重再加一套锁。Redis 可以帮助拦短时间的重复请求，但还要处理过期和中途失败，重要的业务结果仍要靠持久化规则保证。 Redis 锁不是不能用，而是不能把“拿到锁”当成“整笔业务已经正确完成”。"},{"panel":"deep","category":"两个难点追问","id":"deep-q17","title":"11 请求超时能不能直接再提交一次 事务会自动撤销吗","text":"11 请求超时能不能直接再提交一次 事务会自动撤销吗 超时只说明调用方没及时收到结果，不能证明服务端没保存。可能服务端已经提交成功，只是响应没有回来。我会先按单据号或幂等标识查结果，再按接口约定重试，而不是换个新标识再创建一张。 数据库事务也不能撤销已经成功的外部 HTTP 操作，所以调用外部系统时，还需要考虑结果确认和对账。"},{"panel":"deep","category":"两个难点追问","id":"deep-q18","title":"12 你怎么验证真的回滚了 真的防重了","text":"12 你怎么验证真的回滚了 真的防重了 回滚不能只看接口报了错。我会让主表写入后、明细写入过程中出现一个可控失败，再直接查数据库，确认本次主表和已经写入的明细都没有留下。修改场景还要确认旧数据保留完整。 防重则用同一个业务标识发重复请求，包括同时发两个请求，最后确认只有一笔业务结果，状态和相关记录都没有重复。再确认失败后重试能够按设计处理，而不是被一个永久的“处理中”标记卡住。 这是建议的验证方式，不表示已经在汉得项目执行过这些检查。"},{"panel":"deep","category":"两个难点追问","id":"deep-4","title":"难点二 主从表关联导致分页与总数不准","text":"难点二 主从表关联导致分页与总数不准"},{"panel":"deep","category":"两个难点追问","id":"deep-5","title":"七十至九十秒口述稿","text":"七十至九十秒口述稿 第二个难点是列表查询的分页单位。页面要展示的是申请单，但一张申请单下面可能有多条物料明细。 如果为了支持按物料筛选，直接把主表和明细表关联后分页，同一张单据可能占多行。这样 SQL 返回十行，页面去重后可能只剩几张单据，总数也容易按明细行数统计，和用户看到的不一致。 我会先用一张有多条明细的申请单复现，对照原始 SQL 结果和页面结果，确认分页发生在关联展开之后。 解决时，先明确列表以单据为单位。如果只是判断单据里有没有某种物料，可以用存在性条件筛选主表，再对主表分页；列表查询和总数查询使用相同的业务筛选。如果还需要补充明细摘要，就针对本页单据统一查询并组装，避免每张单据再单独查一次。 最后检查一单多行、跨页、无结果和物料筛选这些情况，确认条数与总数符合“单据”的含义。 本段同样是候选故事。没有确认真实发生过，就用“这种场景我会这样处理”回答，而不是声称已修复公司故障。"},{"panel":"deep","category":"两个难点追问","id":"deep-6","title":"分页和去重的八道追问","text":"分页和去重的八道追问"},{"panel":"deep","category":"两个难点追问","id":"deep-q19","title":"1 为什么一关联明细 分页就不准了","text":"01 为什么一关联明细 分页就不准了 因为页面的一条数据是一张单据，但 SQL 关联之后的一行可能只是这张单据的一条明细。一张单据有三条明细，就可能变成三行。直接对这个结果分页，分页的单位就从“单据”变成了“关联后的行”。 关键不是 JOIN 本身有问题，而是查询结果的单位和页面需要的单位不一致。"},{"panel":"deep","category":"两个难点追问","id":"deep-q20","title":"2 返回前端后 按单据 ID 去重不就行了吗","text":"02 返回前端后 按单据 ID 去重不就行了吗 如果后端已经分页了，前端只能去掉这页里的重复项，补不回来其他单据。比如 A 单有三条明细，B 单有一条，后端先取三行，拿到的可能全是 A。前端去重后只剩一张单据，却拿不到本来应该展示的 B。A 还可能跨到下一页，总数也仍然是错的。 用四行数据就能讲清： 单据 ID 明细 ID A A1 A A2 A A3 B B1 如果每页需要两张单据，期望第一页是 A、B；对关联结果先取两行再去重，只能得到 A。"},{"panel":"deep","category":"两个难点追问","id":"deep-q21","title":"3 那我直接在 SQL 加 DISTINCT 呢","text":"03 那我直接在 SQL 加 DISTINCT 呢 可以考虑，但先看选了哪些字段。DISTINCT 去掉的是“所选字段都相同”的行，不是默认按单据 ID 去重。如果只选主表的 ID、单号等字段，它可能就能解决；如果还选了明细 ID、物料和数量，每条明细本来就不同，加了也不会合并成一张单据。 所以我不会说 DISTINCT 一定不能用，而是先确认返回结果里一行究竟代表什么。 例如 A, A1 和 A, A2 是不同的两行；只选择单据 ID 时，两行才都是 A 。同一层查询中，按正确主表字段 DISTINCT 后再 LIMIT 是可行方案，不能误说“DISTINCT 永远在分页之后，所以没用”。 MySQL DISTINCT 与 LIMIT 说明"},{"panel":"deep","category":"两个难点追问","id":"deep-q22","title":"4 列表加 DISTINCT 总数用 COUNT DISTINCT 就全部解决了吗","text":"04 列表加 DISTINCT 总数用 COUNT DISTINCT 就全部解决了吗 如果列表确实已经做到一张单据一行，总数也按同样筛选统计不同单据，这是一种可行方案。但只把总数改正确，列表还在按明细分页，仍然会出现一页条数不够的问题。另外，权限、物料和日期这些筛选，两边都要一致。 统计主表可直接按主表条件计数；保留会展开明细的关联查询时，可以按实际需要统计不同主表 ID，不能机械地把所有查询都改成 COUNT DISTINCT。"},{"panel":"deep","category":"两个难点追问","id":"deep-q23","title":"5 你最后会选什么查询方式 为什么提到 EXISTS","text":"05 你最后会选什么查询方式 为什么提到 EXISTS 如果页面只要求“查出包含某种物料的单据”，我会考虑在主表查询里加 EXISTS，判断有没有符合条件的明细，而不是把所有明细都展开。这样筛选完成后，一行还是一张单据，再分页就比较直接。 这是因为它符合业务含义，不是因为 EXISTS 一定比 JOIN 快。性能还要看 SQL、索引和执行计划。 还要明确多个明细条件是否必须落在同一条明细上。例如“物料 X 且数量大于十”，通常需要同一条明细同时满足，不能误写成两条不同明细分别满足。"},{"panel":"deep","category":"两个难点追问","id":"deep-q24","title":"6 能不能先对主表分页 再筛选明细","text":"06 能不能先对主表分页 再筛选明细 如果明细只用于展示，可以先分页，再补充明细。但如果用户按物料筛选，就要在确定这一页单据之前应用这个筛选。不能先取十张单据，再把不符合物料条件的删掉，否则符合条件的其他单据没机会进来，总数也对不上。 记住顺序：先按全部业务条件确定符合条件的单据，再对单据分页，最后补页面需要的展示数据。它是业务处理顺序，不是数据库执行计划的承诺。"},{"panel":"deep","category":"两个难点追问","id":"deep-q25","title":"7 这一页还要显示明细 怎么查比较合适","text":"07 这一页还要显示明细 怎么查比较合适 我会拿到这一页的单据 ID 后，批量查需要的明细，再按单据 ID 分组组装。不要循环十张单据再分别查十次，查询次数会跟着页大小增长。 另外要和前端确认，是展示整张单据的明细，还是只展示命中筛选的明细。比如按物料 X 查到一张单据，并不代表详情里只能显示 X，这两个含义不能混在一起。"},{"panel":"deep","category":"两个难点追问","id":"deep-q26","title":"8 怎么保证翻页稳定 怎么验证改好了","text":"08 怎么保证翻页稳定 怎么验证改好了 排序不能只依赖一个可能重复的时间字段，可以再加唯一 ID 形成明确顺序。验证时准备一张多明细单据和几张普通单据，检查每页单据数、跨页重复、总数，以及物料筛选后是否漏单。 不过排序稳定不等于多次请求之间数据完全不变。有人持续新增、删除时，偏移分页仍可能受影响；是否需要游标或快照，要看实际需求，不在这次问题里直接扩大改造。 参考： MySQL LIMIT 与排序说明 。"},{"panel":"questions","category":"岗位高频问答","id":"questions-1","title":"高频面试问答","text":"高频面试问答 每题先脱稿讲 40 至 90 秒，再对照答案。下面有经历题，也有设计题，注意它们的时态。"},{"panel":"questions","category":"岗位高频问答","id":"questions-2","title":"1 你在汉得具体干什么 为什么简历写全栈","text":"01 你在汉得具体干什么 为什么简历写全栈 我主要做企业 ERP 系统的 Java 后端接口，使用 Spring Boot、MyBatis 和 MySQL，涉及查询、状态更新、参数校验和问题排查。简历写全栈是因为我也参与过 Vue 页面和前后端联调，但这次应聘我会重点讲后端工作。 **追问：**选一个接口，讲清输入、业务规则、数据库操作和验证。"},{"panel":"questions","category":"岗位高频问答","id":"questions-3","title":"2 这个 ERP 是你一个人做的吗","text":"02 这个 ERP 是你一个人做的吗 我参与的是其中的功能迭代和接口开发，不是独立完成整个 ERP。我可以具体展开自己负责的接口、联调和修复范围。整体架构和其他模块，不会都算成自己的工作。 **追问：**需求谁提出、谁验收、是否有人评审？这些按实际团队流程回答，现有材料没有团队人数和组织分工。"},{"panel":"questions","category":"岗位高频问答","id":"questions-4","title":"3 为什么从汉得离开 为什么考虑我们","text":"03 为什么从汉得离开 为什么考虑我们 离开原因用真实情况填一句，例如实习结束、工作安排变化或个人发展选择，不能替自己预设原因。 岗位匹配可以这样说：我希望继续做 Java 企业应用开发。这个岗位包含 ERP 接口、数据库、联调和上线支持，与我已有的工作比较接近；制造业的具体流程，我希望结合团队实际模块进一步学习。"},{"panel":"questions","category":"岗位高频问答","id":"questions-5","title":"4 你有一年制造业经验吗 做过 MES 吗","text":"04 你有一年制造业经验吗 做过 MES 吗 目前能确认的是汉得 ERP 开发经历。是否属于制造业客户、是否包含实施，应按真实项目回答。没有直接做过 MES，可以说：我有企业 ERP 接口经验，MES 的直接开发经历还没有；我了解它更贴近车间执行、工序、报工和质量追踪，会先熟悉你们的数据流和业务规则。 ERP 与 MES 的集成边界因产品而异，不能仅凭名称推断自己做过设备接入。 SAP 对 MES 的说明 将其描述为连接 ERP 与车间控制的生产执行系统。"},{"panel":"questions","category":"岗位高频问答","id":"questions-6","title":"5 一次请求从页面到数据库经过什么","text":"05 一次请求从页面到数据库经过什么 请求进入后端，先经过相关认证与权限处理。Controller 接收请求并做基本参数校验；Service 处理业务规则和事务边界；Mapper 执行 SQL；结果再映射成接口响应。对修改操作，我还会看影响行数和最终数据是否符合预期。具体过滤器、权限组件按公司项目实际情况讲。 **追问：**参数合法但当前状态不允许操作，应该在哪里判断？通常属于业务规则，放在业务层，并用数据库条件保证修改时规则仍成立。"},{"panel":"questions","category":"岗位高频问答","id":"questions-7","title":"6 查询接口你一般会注意什么","text":"06 查询接口你一般会注意什么 先明确可用筛选项、分页和排序规则，再处理参数绑定与 SQL。查询结果和总数应该遵循相同的业务筛选，排序尽量稳定。联调时验证无结果、多页、日期边界和非法排序字段；如果响应慢，再看 SQL、执行计划及数据量，而不是先上缓存。 **追问：**为什么翻页出现重复记录？可能是排序字段不唯一、期间数据变化或分页逻辑问题，要根据实际查询确定。"},{"panel":"questions","category":"岗位高频问答","id":"questions-8","title":"7 MyBatis 的井号和美元参数有什么区别","text":"07 MyBatis 的井号和美元参数有什么区别 #{} 通常通过预编译参数绑定传值； ${} 做字符串替换。普通值参数用前者。动态列名、排序方向不能直接相信用户输入，要映射到服务端允许的选项。 MyBatis 官方说明 解释了参数绑定和字符串替换的区别。 **追问：**排序列能不能写成 ORDER BY #{column} ？这不会把绑定值当作列标识符使用，应当用白名单映射到已知列。"},{"panel":"questions","category":"岗位高频问答","id":"questions-9","title":"8 Spring 事务什么时候不生效","text":"08 Spring 事务什么时候不生效 先看调用是否经过 Spring 事务代理。同类内部直接调用带注解方法，在默认代理模式下不会因此新开启事务。再看异常是否抛出、回滚规则、事务管理器和线程边界。默认通常对运行时异常和 Error 回滚，受检异常需看配置。不能简单说“所有非 public 方法都不支持”，还要看代理方式与版本。 Spring 事务文档 **追问：**数据库事务能回滚已经发出的 HTTP 请求吗？不能，跨系统要单独处理失败、幂等和结果确认。"},{"panel":"questions","category":"岗位高频问答","id":"questions-10","title":"9 单据重复提交怎么办","text":"09 单据重复提交怎么办 先分清两种情况：重复提交同一张单据，可以用合法状态条件限制转换；重复创建业务单据，需要稳定的业务键或幂等键，并用数据库唯一约束保证持久化结果。前端禁用按钮能改善体验，后端仍要保护数据规则。 **追问：**为什么先查有没有再插入不够？两个并发请求可能都查到不存在，需要数据库约束或相应并发控制保证最终结果。"},{"panel":"questions","category":"岗位高频问答","id":"questions-11","title":"10 库存扣减怎么避免负数","text":"10 库存扣减怎么避免负数 这是场景方案：在适合的模型下，用带数量条件的原子更新扣减库存，再检查影响行数；关联出库单和流水放在同一数据库事务中，并控制同一业务重复扣减。若规则要求先读再改，可在事务内考虑锁定读取，但要明确索引、锁范围和竞争成本。 MySQL 锁定读取文档 **追问：**加了事务为什么仍可能重复扣减？事务本身不代表业务幂等，重复业务请求仍需要识别。"},{"panel":"questions","category":"岗位高频问答","id":"questions-12","title":"11 SQL 慢怎么排查","text":"11 SQL 慢怎么排查 先确认慢在哪里：接口总耗时、数据库执行、锁等待还是外部调用。拿到具体 SQL 和参数，用 EXPLAIN 看访问路径、索引和预估扫描量，再结合实际数据分布检查过滤、排序、分页和关联。根据查询模式调整，不能看到慢就给每列加索引。 **追问：**为什么联合索引不是越多列越好？索引有空间和写入维护成本，字段顺序也要服务实际过滤和排序方式。"},{"panel":"questions","category":"岗位高频问答","id":"questions-13","title":"12 Redis 在你的项目里怎么用","text":"12 Redis 在你的项目里怎么用 简历确认 PLNM 用 Redis 承载缓存和会话。面试前选一个实际读过代码的用途，讲清 key、value、有效期和失效方式。汉得的 Redis 用法目前未确认，不要从个人项目移过去。 如果被问“能否用 Redis 防重复”，可以说短期标记能减少重复请求，但过期、失败和数据库写入之间仍有边界，重要业务还要有持久化幂等规则。 SET 支持条件写入和过期选项，但命令成功不代表整个业务事务完成。 Redis SET 文档"},{"panel":"questions","category":"岗位高频问答","id":"questions-14","title":"13 线上页面报错你会怎么处理","text":"13 线上页面报错你会怎么处理 先收集时间、用户、操作、接口和可复现条件，判断影响范围。看请求状态和响应，再按现有日志标识定位后端，核对参数、异常栈、SQL 和依赖状态。根据证据修复或按发布流程回退，最后验证原操作。日志检索可用 tail 、 less 、 grep ；不要把“重启后好了”当作根因。 **追问：**没有请求 ID 怎么查？用准确时间、接口、允许记录的业务标识缩小范围，不凭空声称原系统已经有全链路追踪。"},{"panel":"questions","category":"岗位高频问答","id":"questions-15","title":"14 你能部署服务器吗","text":"14 你能部署服务器吗 先说明实际经历：我做过 Linux 日志排查，是否实际发布过应用需要按真实参与范围讲。 部署流程可以作为理解回答：确认配置和依赖、准备应用和数据库变更、按团队流程备份与发布、检查服务日志和关键接口、保留可执行的回退方案。Spring Boot 不一定需要外置 Tomcat，要看交付的是可执行 jar 还是 war；数据库变更能否回退也要单独确认。"},{"panel":"questions","category":"岗位高频问答","id":"questions-16","title":"15 ERP 和 MES 对接超时能直接重试吗","text":"15 ERP 和 MES 对接超时能直接重试吗 不能仅根据超时判断远端失败，远端可能已经处理成功。先用同一个业务流水号查询结果；接口有幂等契约时，按约定使用相同标识重试。如果无法确认，就保留待确认状态并对账。不能换新单号反复发送，造成重复入库或报工。 **追问：**如何处理重复回调？在确认业务唯一范围后，对事件标识做持久化去重，业务效果和处理记录需要保持一致。"},{"panel":"questions","category":"岗位高频问答","id":"questions-17","title":"16 客户说一个按钮做完所有操作怎么办","text":"16 客户说一个按钮做完所有操作怎么办 先让客户举一个完整业务例子，再确认按钮背后的状态变化、权限和失败处理。例如“提交”是否意味着进入审核，还是已经影响库存和财务？把正常流程、例外规则和验收条件写清楚，再拆成可交付的范围。不能把一句界面描述直接当成完整需求。"},{"panel":"questions","category":"岗位高频问答","id":"questions-18","title":"17 你怎么使用 AI 编码工具","text":"17 你怎么使用 AI 编码工具 只报实际用过的工具。可以按这个结构回答： 我会先把需求、现有接口和代码约束说明白，让 AI 帮我理解代码、生成初稿或分析报错。涉及权限、SQL、事务和状态变化时，我会自己检查它的处理逻辑，再用实际请求和数据验证。遇到 Bug，会提供最小复现和相关日志，检查它的修改是否对应根因，而不是只看生成速度。 准备一个真正用过 AI 的小例子，能解释修改前后和验证结果。公司代码和数据按团队允许的工具与使用范围处理。 **追问：**AI 给了看起来能运行的代码，你怎么判断？先检查输入和业务契约，再验证正常、边界和失败路径，尤其关注数据是否写错、权限是否遗漏。"},{"panel":"questions","category":"岗位高频问答","id":"questions-19","title":"18 你的多角色 AI 项目是不是 RAG","text":"18 你的多角色 AI 项目是不是 RAG PLNM 简历写的是意图与上下文路由、角色提示词和模型接口接入，这些信息本身不能证明做过完整 RAG。可以说：我做过 AI 应用集成，RAG 的思路是先检索相关资料，再把证据提供给模型生成回答；完整实现还涉及文档切分、检索、权限过滤和回答评估。企业知识库可考虑操作手册、制度和故障文档，但不能让用户检索到无权查看的内容。 Microsoft RAG 说明"},{"panel":"questions","category":"岗位高频问答","id":"questions-20","title":"19 Java 基础你最应该补哪几个点","text":"19 Java 基础你最应该补哪几个点 优先把这些问题讲明白： equals 与 hashCode 的关系；HashMap 为什么不适合并发写； BigDecimal 处理金额时的精度和舍入规则；异常如何影响业务事务；线程池的有界队列和拒绝策略。金额不能随便使用浮点数再靠格式化补救，计算规则要与业务一致。 **追问练习：**两个表示同金额但小数位不同的 BigDecimal，用 equals 与 compareTo 判断有什么差别？先自己查清并试一个小例子，再口述，避免只背名词。"},{"panel":"questions","category":"岗位高频问答","id":"questions-21","title":"20 如果让你写一个接口 你怎么证明做好了","text":"20 如果让你写一个接口 你怎么证明做好了 我会对照需求检查输入、权限、业务状态、数据库结果和响应。查询接口检查筛选与分页，修改接口检查允许和禁止的操作；涉及重复请求或多表修改时，补相应验证。联调再确认页面展示与接口约定一致，并记录复现条件和结果。检查范围由接口实际风险决定，不追求每个接口都套同样数量的用例。"},{"panel":"practice","category":"场景与模拟","id":"practice-1","title":"两个 ERP 场景练习","text":"两个 ERP 场景练习 以下表名、字段和状态完全是练习示例，与汉得真实数据库无关。重点练说明规则，不要求背 SQL。"},{"panel":"practice","category":"场景与模拟","id":"practice-2","title":"场景一 把草稿单据改为已提交","text":"场景一 把草稿单据改为已提交 前提：请求已通过操作权限和数据范围校验，示例单据允许从草稿进入已提交。 UPDATE business_document SET status = 'SUBMITTED', updated_at = CURRENT_TIMESTAMP WHERE id = :documentId AND status = 'DRAFT'; 面试口述：更新条件同时限制单据和原状态，检查影响行数，避免把任意状态直接覆盖。真实系统还要依据权限模型加入相应限制；同一事务中的业务记录也要一起成功。影响零行不能直接返回操作成功。 再问自己：单据撤回后是否可以重新提交？第二次提交是重复请求还是新的业务动作？这说明幂等键要按业务生命周期设计，不能机械地把单据 ID 永久当成唯一提交次数。"},{"panel":"practice","category":"场景与模拟","id":"practice-3","title":"场景二 同一出库业务不能重复扣库存","text":"场景二 同一出库业务不能重复扣库存 前提： quantity 为已校验的正数，库存行由主键定位，数量精度符合业务规则。 UPDATE inventory SET available_qty = available_qty - :quantity WHERE id = :inventoryId AND available_qty >= :quantity; 面试口述：条件更新保护单行可用库存不被扣成负数；影响一行才能继续确认扣减成功。它没有独自解决业务重复、跨行分配、预占库存和外部系统一致性。出库单、库存流水和幂等标识应按业务设计，并保证相应本地修改处于一致的事务边界。 不用主动声称写过这段代码。被问“如果让你做”时，它才是场景方案。"},{"panel":"practice","category":"场景与模拟","id":"practice-4","title":"一轮三十五分钟模拟面试","text":"一轮三十五分钟模拟面试 先看本表的问题列并录音，回答后再回头找相关参考，不边读答案边练。 时间 面试官提问 合格表现 0 至 2 分钟 请介绍一下自己 后端方向、汉得 ERP、与岗位连接 2 至 6 分钟 ERP 里你具体负责什么 选一个接口 本人范围清楚，输入到落库讲完整 6 至 11 分钟 哪个问题最难忘 你怎么定位 具体异常、根因、修改、验证，不堆术语 11 至 17 分钟 重复提交、事务、库存竞争怎么处理 能区分事务、状态约束和业务幂等 17 至 22 分钟 MyBatis 参数、慢 SQL、Redis 用途 原理能落到一个接口，不移植项目事实 22 至 27 分钟 客户需求不清楚 接口超时怎么办 先确认规则，认识结果未知和重复风险 27 至 31 分钟 AI 怎么帮你开发 能做什么部署工作 给具体例子，经历与方案分得清 31 至 35 分钟 为什么换工作 出差条件 你的反问 条件真实，反问能了解实际岗位 每个回答只检查三件事：是否回答了当前问题；是否有具体链路或例子；是否把未确认内容说成事实。练完修正最明显的三处就够了。"},{"panel":"practice","category":"场景与模拟","id":"practice-5","title":"可以复用的模拟面试提示词","text":"可以复用的模拟面试提示词 请按本文件模拟郑州 ERP Java 开发岗的线下技术面试。 我的汉得经历已确认是企业 ERP 系统的 Spring Boot 后端接口开发，简历包含 MyBatis、MySQL、查询、状态更新、参数校验、Vue 联调和 Linux 日志排查。 一次只问一道题，等待我回答，再根据回答追问一至两次，不提前给参考答案。 先问自我介绍和一个公司接口，再问问题排查、事务、SQL、Redis、ERP 场景、AI 编码和交付。 文件中的候选故事未确认，不预设为我的真实经历。对不明确的部分先问清楚，不自行补客户、人数、指标或技术栈。 如果我只说术语，追问一个具体输入、状态变化、失败条件或验证结果。 最后给三个最需要改进的点，以及每个点的一段更清楚的表达。"},{"panel":"practice","category":"场景与模拟","id":"practice-6","title":"反问与临场速记","text":"反问与临场速记"},{"panel":"practice","category":"场景与模拟","id":"practice-7","title":"最值得问的四个问题","text":"最值得问的四个问题 这个岗位入职后主要负责 ERP 哪个业务域，还是需要同时覆盖 MES、OA 和运维？第一个月一般接什么需求？ 目前项目是已有系统迭代、平台二次开发，还是从头开发？Java 版本、Spring Boot 和数据库版本是什么？ 阶段性出差通常去哪里、一次多久，主要做开发联调还是实施培训？ 团队如何安排需求验收、测试和发布？遇到现场问题由谁配合处理？ 时间少就问前面两三个。薪资、试用期、社保和差旅安排可以在招聘方沟通环节按需要确认。"},{"panel":"practice","category":"场景与模拟","id":"practice-8","title":"面试前两小时","text":"面试前两小时 用 20 分钟讲熟自我介绍和汉得职责；30 分钟把一条真实接口和两个项目故事讲完整；40 分钟练问答 5 至 15；20 分钟练 AI 使用、客户需求和反问；最后 10 分钟确认线下面试时间、地址、联系人和所带简历版本。"},{"panel":"practice","category":"场景与模拟","id":"practice-9","title":"最后只记这十句话","text":"最后只记这十句话 我主要做 Java 后端，全栈能力帮助我联调和排查。 汉得项目是企业 ERP，具体模块名称和客户行业还要核实。 我参与功能和接口开发，不把整个系统都算成自己的工作。 查询看筛选、分页和边界，修改看权限、状态和数据结果。 登录成功不代表可以操作任意业务数据。 事务保证相应数据库修改一起提交或回滚，业务幂等另行处理。 前端禁用按钮不能替代后端约束。 超时可能是结果未知，先确认，再按幂等契约重试。 AI 生成之后，我要能解释和验证代码。 项目故事讲具体异常、自己的动作和可确认的结果。"},{"panel":"notes","category":"补充与核实","id":"notes-1","title":"汉得到底做了什么","text":"汉得到底做了什么"},{"panel":"notes","category":"补充与核实","id":"notes-2","title":"可以直接使用的职责描述","text":"可以直接使用的职责描述 我在汉得主要参与企业 ERP 管理系统的后端开发，技术栈是 Spring Boot、MyBatis 和 MySQL。具体工作包括业务数据查询、状态更新接口、请求参数校验，以及配合前端完成联调。发现问题后，我会结合浏览器请求、数据库数据和 Linux 日志定位，修复后回归相关流程，同时整理接口说明和修改记录。我也接触过 Vue 页面，所以能从请求发出到后端处理、数据库变化这一整条链路看问题。 这段以简历和本次补充为依据。它已经能回答“做了什么”，下一步要补的是一个自己能解释清楚的接口。"},{"panel":"notes","category":"补充与核实","id":"notes-3","title":"把日常工作拆成五件具体事","text":"把日常工作拆成五件具体事 看懂需求。 明确页面要展示什么、接口接收什么、数据从哪里来、哪些条件下允许修改。 写查询接口。 处理筛选条件、分页、返回字段和 MyBatis SQL，保证页面结果与数据库一致。 写修改接口。 处理参数和业务规则校验，更新数据并返回明确结果。多表同时修改时需要考虑事务。 完成联调。 对齐字段名、类型、日期格式、状态值和错误提示，检查接口响应与页面展示。 排查与回归。 留下复现条件，查请求、SQL 和日志，修复后验证正常流程和原来的异常流程。 其中“分页”“多表事务”等是常见工作细化点，需与你实际做过的接口核对，不能仅因 ERP 常见就认定都做过。"},{"panel":"notes","category":"补充与核实","id":"notes-4","title":"面试官问具体负责哪个模块","text":"面试官问具体负责哪个模块 优先找回一个真实名称：可以回看自己合法保留的工作记录、接口文档或非敏感提交记录，不需要拿原公司的内部数据做面试展示。 暂时想不起来时，练习中先用“业务单据查询和状态更新”作为中性名称。这个名称只用于组织思路；它不是已经确认的采购、库存或审批模块。 可以坦诚说： 我主要负责其中的业务查询和状态更新接口，不是整个 ERP 的架构设计。具体页面名称我现在记得不够准确，但接口从参数、Service 逻辑、Mapper SQL 到联调验证这条链路，我可以展开讲。 不必用“保密”掩盖记忆空缺。也不要因为汉得做企业服务，就自动说自己做过 SAP、Oracle、某个自研平台或 MES。"},{"panel":"notes","category":"补充与核实","id":"notes-5","title":"选一个接口讲完整","text":"选一个接口讲完整 按这六项准备，选真实做过的一条： 项目 要能回答的问题 使用者 谁在什么页面、什么情况下调用？ 输入 哪些筛选或修改字段，哪些必填？ 规则 什么身份能操作，什么状态允许修改？ 实现 Controller、Service、Mapper 分别处理什么？ 数据 查或改了哪些数据，多表关系如何处理？ 验证 正常请求、非法参数、重复操作怎么验证？ 如果有三项以上说不清，先换一个更熟悉的接口，不要再往里面堆缓存、消息队列和分布式锁。"},{"panel":"notes","category":"补充与核实","id":"notes-6","title":"公司项目中难忘的点","text":"公司项目中难忘的点 下面三段都是 候选故事 。它们紧贴简历中的查询、状态更新和联调，但具体故障、方案和结果仍需你确认。可以用来唤起记忆；不符合真实经历的，改成“如果遇到，我会这样处理”的场景回答。"},{"panel":"notes","category":"补充与核实","id":"notes-7","title":"候选故事一 查询有结果却漏了最后一天的数据","text":"候选故事一 查询有结果却漏了最后一天的数据 **适用前提：**你确实接触过日期筛选或前后端日期格式问题。 练习口述： 有个让我印象比较深的点，是业务列表的日期筛选。页面能正常查询，接口也没有报错，但用户选择一个时间范围时，结束日期当天的数据没有完整展示。 我会先固定一条漏掉的记录，核对前端实际传的日期、后端接收到的参数和数据库里的时间，再看 SQL 边界。如果结束日期被处理成当天零点，就可能漏掉当天后面的记录。 对于按自然日查询的需求，可以在明确业务时区后，把条件处理成“大于等于开始日零点，小于结束日下一天零点”，再验证结束日白天和临近午夜的数据。 这个问题让我意识到，接口返回成功还不够，筛选条件必须和业务含义一致。 当前用“我会”表达方案；确实回忆起发生过，再把有依据的部分改成过去时。 **可能追问：**为什么不用当天 23:59:59？因为数据库时间可能含小数秒，半开区间更容易明确边界；还要确认业务日期、存储时区和转换规则。 **需要确认：**实际日期字段是什么，漏数是否真的发生，自己改的是前端参数还是后端 SQL，最后验证过哪些记录。"},{"panel":"notes","category":"补充与核实","id":"notes-8","title":"候选故事二 状态更新不能只靠页面按钮控制","text":"候选故事二 状态更新不能只靠页面按钮控制 **适用前提：**你确实接触过提交、撤回、审核或其他状态修改接口。 练习口述： 状态更新这类接口让我印象比较深。表面上只是改一个字段，但背后有“什么状态允许操作”的业务规则。即使前端已经把按钮禁用了，后端也不能直接相信请求。 如果处理单据提交，我会先核对操作权限和合法状态，再把原状态放进更新条件。比如只允许草稿提交，就用“单据 ID 加当前状态是草稿”作为条件，然后检查实际影响行数，避免两个请求都按照旧状态继续执行。 如果同时更新主表、明细或业务记录，还需要把应当一起成功的数据库修改放在同一个事务中，失败时保持数据一致。 这个点让我更关注接口对业务规则的保护，而不只是数据能不能写进去。 **可能追问：**更新零行是什么原因？可能是记录不存在、状态已变化，也可能是数据权限不匹配。返回什么错误要遵循系统的权限和信息披露规则，不能一律报成功。 **需要确认：**真实状态有哪些，是否写过条件更新，是否存在多表修改。未做过事务或幂等，不补成个人成果。"},{"panel":"notes","category":"补充与核实","id":"notes-9","title":"候选故事三 联调时从页面现象追到接口和 SQL","text":"候选故事三 联调时从页面现象追到接口和 SQL **适用前提：**你确实排查过字段、状态或接口返回与页面不一致的问题。 练习口述： 我印象比较深的是联调问题不能只看页面现象。比如页面显示的状态不符合预期，我会先在浏览器 Network 里看实际响应，确认后端返回的是编码、名称还是空值，再核对前端映射。 如果响应本身不对，就继续检查请求参数、Service 分支、SQL 和数据库数据。这样可以先把问题缩小到前端展示、接口映射还是数据处理，不用两边同时猜。 确定原因后，把字段含义、空值和状态值的约定补清楚，修改后重走同一条流程。 这段经历可以突出我虽然主要做后端，但能够沿着前后端链路定位问题。 **可能追问：**HTTP 200 就代表业务成功吗？不一定，要看约定的业务结果；还要核对实际影响行数和最终数据，不能把“请求到了”当成“操作成功”。 **需要确认：**当时具体是哪一个字段，根因在前端还是后端，自己负责了哪一步。结果没有记录时，不写“减少 80% 问题”等数字。"},{"panel":"notes","category":"补充与核实","id":"notes-10","title":"怎么选择两个最合适的故事","text":"怎么选择两个最合适的故事 优先选择能回忆起“页面或接口、具体异常、自己做的修改、验证方式”的两段。只记得一般联调工作，就先讲第三段的排查方法；不要为显得复杂硬讲生产事故。 结果可以是“日期边界符合预期”“重复请求没有再次改变状态”“字段约定明确后联调通过”。只有真实确认后才使用过去时。"},{"panel":"notes","category":"补充与核实","id":"notes-11","title":"面试前只核实这几项","text":"面试前只核实这几项 实际模块是否是采购申请；如果不是，把业务名换回真实模块，并重新核对操作和状态，不能只替换名词。 是否亲自做过新增修改、主从表事务和提交接口；只做过查询，就保留查询职责，把修改方案作为知识题准备。 两个难点是否真实发生过，自己的具体修改和验证是什么。能解释方案不等于有过这次故障经历。 正式回答优先讲清一条真实接口和一个真实问题；另一个没有确认的难点可以作为场景题练习，不必强行凑成两次过去业绩。"}]</script><script>(() => {
+</article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section><section class="search-panel" id="search-panel" aria-label="搜索结果" hidden><h1>在整本手册里查找</h1><p class="search-caption" id="search-caption" role="status" aria-live="polite"></p><div id="search-results"></div></section></main><aside class="outline" aria-label="本章目录"><p class="outline-title">本章内容</p><nav class="toc" id="toc" aria-label="章节目录"></nav><div class="outline-progress"><span id="reading-progress">当前章节 · 0%</span><br>也可以从顶部搜索。</div></aside></div></div></div><script id="search-index" type="application/json">[{"panel":"quick","category":"上场准备","id":"quick-1","title":"自我介绍","text":"自我介绍"},{"panel":"quick","category":"上场准备","id":"quick-2","title":"九十秒版本","text":"九十秒版本 面试官好，我叫袁涛，是阜阳师范大学信息工程学院软件工程专业的 2026 届本科毕业生，方向是 Java 后端，也能做 Vue 前后端联调。 我在学校学过用友 U8，通过它了解了 ERP 的模块和单据流转，也上网查过 ERP 行业。找实习时看到汉得业务里有泛 ERP 咨询实施和自研平台，就冲着这个方向投了汉得。 进去之后，ERP 相关我只参与了一小部分接口联调，更多是在面向企业的 Agent 平台产品线上做 Spring Boot 接口和 Vue 页面联调，比如字段对齐、参数校验、权限和异常处理。 个人项目方面，我做过基于 Spring Boot、MySQL、Redis 和 Vue 的学习生活管理平台，包含多角色 AI 和模型接口接入，这部分我能结合代码展开。 这个岗位既做 ERP 也做 AI 辅助开发。我的 ERP 业务深度还不够，但 U8 给了业务底子，汉得让我熟悉了企业软件的接口和联调，我希望从具体模块开始补起来。"},{"panel":"quick","category":"上场准备","id":"quick-3","title":"三十秒版本","text":"三十秒版本 面试官好，我叫袁涛，软件工程 2026 届，做 Java 后端和 Vue 联调。我在学校用过用友 U8，了解 ERP 的模块和单据流，后来冲着 ERP 业务进了汉得。入职后 ERP 只参与了一小部分接口联调，主要在企业 Agent 平台做 Spring Boot 和 Vue 的接口联调。个人项目 PLNM 实践过 Redis、权限和多角色 AI。ERP 业务深度我还在补，但接口和联调的基础是现成的。"},{"panel":"quick","category":"上场准备","id":"quick-4","title":"讲的时候注意","text":"讲的时候注意 先讲 U8，再讲为什么投汉得，最后讲实际做了什么。这个顺序能让“想做 ERP”和“没做成 ERP”都显得合理，而不是先暴露短板。 不要在开场报 U8 的菜单，也不要报 Agent 平台的产品名；面试官追问再展开。"},{"panel":"quick","category":"上场准备","id":"quick-5","title":"这份岗位最值得准备的内容","text":"这份岗位最值得准备的内容 截图公司为郑州奕翔物联科技有限公司，岗位面向 ERP 方向 Java 开发。职责包括制造业 ERP、MES、业财、OA 开发，Spring Boot、MySQL、Redis 接口，AI 辅助编码，客户需求对接、现场联调、上线培训和服务器运维。 岗位明确写了郑州金水区线下面试、一个技术面、阶段性出差；这些是截图中的招聘信息，实际安排以招聘方确认的信息为准。 岗位关注点 你可以用的材料 练习重点 Java 企业业务开发 U8 课程底子；汉得少量 ERP 接口联调 说清边界，再用一条真实接口证明手上的活 Spring Boot 与数据库 汉得企业 Agent 平台的 Spring Boot + Vue 接口联调；PLNM 接口契约、参数校验、权限与异常处理 Redis 简历中的 PLNM 缓存与会话 讲个人项目的实际用途，不默认汉得也用了 Redis ERP 与制造业 U8 模块与单据流认知；ERP 实操有限 讲概念可以，讲模块交付要收住 AI 编码 汉得 Agent 平台应用层联调；个人 AI 项目 一次具体需求怎样用 AI，怎样检查它写的代码 客户现场与运维 简历确认联调、Linux 日志排查 说清实际参与范围；独立上线、培训尚未确认 从 JD 判断，对方可能同时看重业务理解和交付能力。介绍顺序建议是： U8 与 ERP 认知 → 为什么投汉得 → 实际做的 Agent 平台联调 → 个人项目补充 。先讲清动机，再讲边界，最后用一条真实接口落地。"},{"panel":"project","category":"汉得经历线","id":"project-1","title":"一条能自圆其说的经历线","text":"一条能自圆其说的经历线 四句话讲完： 学校。 课程和实训里用用友 U8，知道了 ERP 有哪些模块、单据怎么流转、财务和业务怎么连起来。 选公司。 上网查 ERP 行业，看到汉得既做泛 ERP 咨询实施，也有自研平台，符合“懂一点业务、又能写代码”的方向，所以投了汉得。 入职后。 项目分配在面向企业的 Agent 平台产品线，做 Spring Boot 接口和 Vue 页面联调；ERP 只参与了一小部分接口对接。 现在。 冲着 ERP 去，实际做的是企业软件接口；两段经历都落在企业应用上，所以来应聘 ERP 开发。 这条线的好处是：动机是真的，分配是常见的，能力是接得上的。不用解释成“公司不重视 ERP”，也不用把 Agent 平台包装成 ERP 项目。"},{"panel":"project","category":"汉得经历线","id":"project-2","title":"九十秒口述","text":"九十秒口述 我在学校学过用友 U8，算是通过它真正知道 ERP 是什么：不是一张页面，而是采购、销售、库存、财务这些模块连在一起，单据从录入、审核到生成凭证有一条完整的流。 后来我上网查 ERP 行业，发现汉得除了 ERP 咨询实施，还有自己的平台产品，觉得这个方向既能接触业务又能做开发，就投了汉得。 进去之后，ERP 相关我只参与了一小部分接口联调。更多时间是在面向企业的 Agent 平台产品线上，做 Spring Boot 后端接口和 Vue 页面的联调，比如字段对齐、参数校验、权限和异常提示这些。 所以我的情况是：ERP 业务有 U8 打底，企业软件的接口和联调是在汉得练的，但完整的 ERP 模块我确实没独立做过。"},{"panel":"project","category":"汉得经历线","id":"project-3","title":"U8 到底给了我什么","text":"U8 到底给了我什么 不要说“我精通 U8”。课程里用过，就讲课程里真实做过的操作和理解。"},{"panel":"project","category":"汉得经历线","id":"project-4","title":"三个能讲清楚的概念","text":"三个能讲清楚的概念 概念 用 U8 怎么理解 面试时怎么说 模块地图 采购、销售、库存、存货核算、总账、报表各自管什么 ERP 是按业务域分模块的，模块之间靠单据和数据连起来 单据流 采购订单→到货→入库；销售订单→发货→出库 一张单据有状态，下游单据引用上游，不能随便跳步 财务业务一体化 业务单据审核后进入存货核算、生成凭证 业务数据最终要落到财务，所以数量和金额的口径必须一致"},{"panel":"project","category":"汉得经历线","id":"project-5","title":"可以提的 U8 操作","text":"可以提的 U8 操作 按你实际做过的删减，别全说： 账套、操作员和权限； 基础档案：客户、供应商、存货、仓库、部门； 采购订单、到货单、采购入库单； 销售订单、发货单、销售出库单； 单据审核、弃审； 库存查询、收发存报表； 凭证生成或凭证查询。"},{"panel":"project","category":"汉得经历线","id":"project-6","title":"边界","text":"边界 这是课程/实训操作，不是实施顾问经验。 没做过 U8 二次开发、没做过 U8 与外部系统的接口。 被问细节时，讲记得的操作；不记得就说“这块当时没做深”，不要现场编菜单路径。"},{"panel":"project","category":"汉得经历线","id":"project-7","title":"可能追问：U8 里最有收获的是什么","text":"可能追问：U8 里最有收获的是什么 不是记住哪个菜单，而是理解了“单据”这件事。一张采购入库单不只是入库数量，它后面连着库存、存货核算和应付。做开发时看到一张表，我会先想它在业务流里是哪一环、上游是谁、下游会受什么影响。"},{"panel":"project","category":"汉得经历线","id":"project-8","title":"为什么冲着 ERP 去 却做了 Agent","text":"为什么冲着 ERP 去 却做了 Agent 这是最容易被问、也最容易答崩的一题。原则：不抱怨分配，不贬低 Agent，不把两件事说成一件。"},{"panel":"project","category":"汉得经历线","id":"project-9","title":"九十秒版本","text":"九十秒版本 实习生进来是按项目需要分配的。我入职时 ERP 项目组没有合适的缺口，Agent 平台产品线正好缺做接口联调的人，我就过去了。 一开始确实觉得和自己想的不太一样。但做下来发现，Agent 平台也是企业软件：要接企业的组织权限、知识资料和业务系统，页面对接、接口契约、异常处理这些方法和 ERP 是一样的。 而且 U8 学的业务概念一直用得上。比如什么是主数据、单据为什么要状态、权限为什么要分数据范围，这些在 Agent 平台里同样存在。 所以我不觉得这段是白走。它让我把企业软件的接口和联调做熟了，ERP 的业务深度是我现在要补的部分。"},{"panel":"project","category":"汉得经历线","id":"project-10","title":"一句话版本","text":"一句话版本 我是冲着 ERP 去的，项目把我分到了企业 Agent 平台；做的是企业软件的接口联调，ERP 只碰了一小部分，但业务底子和工程方法都留下来了。"},{"panel":"project","category":"汉得经历线","id":"project-11","title":"不要这样说","text":"不要这样说 “公司不重视 ERP，所以把我调走了。” “Agent 平台比 ERP 高级，所以我后来转方向了。” “ERP 和 Agent 差不多，都是写接口。”——面试官会追着问差异。 “我在汉得主要做 ERP。”——一追问模块就露馅。"},{"panel":"project","category":"汉得经历线","id":"project-12","title":"汉得实际做什么：Spring Boot + Vue 接口联调","text":"汉得实际做什么：Spring Boot + Vue 接口联调"},{"panel":"project","category":"汉得经历线","id":"project-13","title":"定位","text":"定位 面向企业的 Agent 平台软件，产品形态是给企业客户配置和使用智能体、知识库、会话等能力。本人承担应用层的接口开发和前后端联调，不承担平台架构、模型训练和检索算法。"},{"panel":"project","category":"汉得经历线","id":"project-14","title":"工作拆成六件事","text":"工作拆成六件事 对契约。 页面需要哪些字段、后端返回什么结构、枚举和日期怎么表示、空值怎么处理。 补校验。 必填、长度、格式，以及业务上是否允许这个值。 管权限。 当前用户能看哪些应用、哪些知识库、哪些数据；越权时返回什么。 处理异常。 业务错误码、提示文案，前端怎么展示，用户能不能看懂。 联调排查。 浏览器 Network 看请求和响应，再查后端日志和数据，确定问题在哪一层。 回归。 改完把正常流程和原来的异常场景各走一遍。"},{"panel":"project","category":"汉得经历线","id":"project-15","title":"一个可以讲完整的接口","text":"一个可以讲完整的接口 按实际页面替换，下面以“应用配置保存”为例： 平台里有一个应用配置页面，前端用 Vue 填应用名称、模型、知识库范围这些信息，调用 Spring Boot 的保存接口。后端先做参数校验和权限判断，再保存配置并返回配置 ID；列表页按当前用户的数据范围查询。 联调时主要对齐三件事：字段名和类型是否一致、枚举值前后端是不是同一套、没有权限或校验失败时页面提示是否准确。 替换选项：知识库文档列表、会话记录查询、应用启停、模型配置。选一个你真的调过的。"},{"panel":"project","category":"汉得经历线","id":"project-16","title":"一个可以讲的问题（候选）","text":"一个可以讲的问题（候选） 联调时遇到过页面显示和接口返回对不上。我先在 Network 里看实际响应，确认后端返回的是编码还是名称、字段是不是空，再核对前端的映射。如果是后端的问题，再往下查参数、Service 分支和 SQL。 这样能先把问题缩小到前端展示、接口字段还是数据处理，不用两边一起猜。 这是候选故事。真实发生过再改成过去时；没有就用作“我会怎么排查”。"},{"panel":"project","category":"汉得经历线","id":"project-17","title":"Agent 平台最可能被追问的六件事","text":"Agent 平台最可能被追问的六件事"},{"panel":"project","category":"汉得经历线","id":"project-18","title":"你说的 Agent 平台是什么","text":"你说的 Agent 平台是什么 给企业客户用的智能体应用平台，可以在上面配置应用、接知识库、做会话问答，也可以编排一些业务流程。我主要负责其中页面和后端接口的联调，不是平台底层。 具体产品名按实际说；想不起来就说“企业 Agent 平台”，不要硬报“灵猿”。"},{"panel":"project","category":"汉得经历线","id":"project-19","title":"你负责哪部分 写代码还是只联调","text":"你负责哪部分 写代码还是只联调 两边都做。后端是 Spring Boot 的接口，前端是 Vue 页面，主要工作在接口实现和联调。不是只点页面，也不是负责整体架构。 如果实际只做联调，就照实说“以联调为主，接口有小改”，不要把自己抬成核心开发。"},{"panel":"project","category":"汉得经历线","id":"project-20","title":"讲一个你调过的接口","text":"讲一个你调过的接口 用第四节的模板。必须能说出：谁调用、传什么、返回什么、权限怎么判断、失败时怎么样。"},{"panel":"project","category":"汉得经历线","id":"project-21","title":"前端你到什么程度","text":"前端你到什么程度 能看懂 Vue 页面、改字段绑定和调用逻辑、定位前后端字段不一致的问题；复杂组件和前端架构不是我强项。"},{"panel":"project","category":"汉得经历线","id":"project-22","title":"你懂 RAG 吗","text":"你懂 RAG 吗 理解链路：先把资料切分入库，提问时检索相关片段，再把片段作为上下文交给模型回答，最后返回答案和来源。汉得这边我主要做应用层接口，检索参数和效果调优没有独立负责过。个人项目里做过模型接口接入和角色路由，但不是完整 RAG。 不要把“知道 RAG 流程”说成“做过 RAG 平台”。"},{"panel":"project","category":"汉得经历线","id":"project-23","title":"为什么从 Agent 又回来做 ERP","text":"为什么从 Agent 又回来做 ERP 我的主线一直是 Java 企业应用。Agent 平台让我把接口和联调做熟了，但它离业务本身比较远；ERP 能让我看到业务怎么真正跑起来。U8 的底子还在，我愿意从具体模块补。"},{"panel":"project","category":"汉得经历线","id":"project-24","title":"高频追问十题","text":"高频追问十题 1 你在汉得到底做了什么 主要在面向企业的 Agent 平台产品线上做 Spring Boot 接口和 Vue 页面联调；ERP 相关只参与了一小部分接口对接。具体工作是字段对齐、参数校验、权限、异常提示和联调排查。 2 为什么学 ERP 却去做了 Agent 用第三节的九十秒版本。核心是项目分配，不是转行。 3 U8 你学到什么程度 课程和实训里用过，能讲清模块、单据流和财务业务一体化，也做过采购入库、销售出库这类基础操作。没有做过 U8 二次开发，也不是实施顾问。 4 你做过完整 ERP 模块吗 没有。我只参与过少量 ERP 接口联调，完整模块没有独立负责过。这块我不冒充，但接口和业务规则我可以现学现做。 5 汉得这段最大的收获是什么 知道了企业软件是怎么交付的：需求要落到接口契约，权限和数据范围要在后端兜住，联调要把字段和异常对齐，改完要回归。这个方法和 ERP 是通用的。 6 你简历写全栈 前端能独立做吗 能改页面、能联调、能定位前后端问题；独立从零搭前端项目不是我的强项。我的主线还是后端接口。 7 你做过 RAG 或者知识库吗 在 Agent 平台的应用层接触过知识库相关页面和接口联调，但没有独立做过检索调优和向量库选型。链路我讲得清，深度我如实说。 8 为什么离开汉得 按真实原因答，实习结束、项目周期结束、想找长期做企业应用的岗位都可以。不要贬低前公司。 9 为什么来我们公司 这个岗位既做 ERP，也用 AI 辅助开发，和我的两段积累都能接上：U8 给我业务概念，汉得给我企业接口和联调的经验。ERP 深度是我要补的，我愿意从具体模块做起。 10 你觉得自己最大的短板 ERP 业务深度不够，完整模块没做过。我的补法是先把一个模块的单据、状态和权限搞清楚，再动手写接口，而不是只照着页面字段做。"},{"panel":"project","category":"汉得经历线","id":"project-25","title":"表达边界","text":"表达边界 ERP：只说“少量接口联调”，不说“负责采购/库存/生产模块”。 Agent：只说“应用层接口和联调”，不说“平台架构/模型训练/检索算法”。 U8：只说课程和实训操作，不说实施顾问、二次开发。 数字：客户名、数据量、性能提升、团队规模，没有确认就不说。 个人项目：PLNM 明确说是个人项目，不并进汉得经历。"},{"panel":"project","category":"汉得经历线","id":"project-26","title":"面试前要找回的三个细节","text":"面试前要找回的三个细节 Agent 平台上你实际调过的一个页面：它调了哪些接口。 那个页面里你改过的一个字段、校验或提示。 一次真实的联调问题：现象、你怎么定位、最后怎么确认好了。 这三项找回来，这段经历就站得住；找不回来，就用“如果让我做，我会怎么处理”的回答，别硬编项目名。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-1","title":"ERP 场景一 主从表保存和状态变更的一致性","text":"ERP 场景一 主从表保存和状态变更的一致性"},{"panel":"deep","category":"ERP 场景追问","id":"deep-2","title":"场景口述","text":"场景口述 第一个 ERP 设计场景是，申请单不是只写一张表。头信息和多条明细要一起保存，还要受单据状态限制。 这个问题可以用一个具体异常来说明：主表已经保存，但某条明细写入失败。如果处理不完整，就可能留下只有头信息、没有完整明细的单据。 如果让我处理这类接口，我会把主表和明细的数据库修改放进同一个 Service 事务里，在写入前完成必要的业务校验。执行中出现需要回滚的异常，就让异常按约定向外抛出，不把它捕获后直接返回成功。 对修改和提交，还要校验状态。比如只有草稿允许编辑，提交时把原状态放进更新条件，并检查影响行数。这样就不会仅凭页面按钮是否可点击来决定后端能不能操作。 验证时，我会分别检查正常保存、明细失败、提交后再编辑和重复提交。重点是确认数据库里没有半张单据，禁止的操作没有改变数据。 本段是设计练习，不作为汉得工作成果。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-3","title":"事务和重复提交的十二道追问","text":"事务和重复提交的十二道追问 以下回答按普通同步方法、MySQL InnoDB 和 Spring 常见代理式事务讨论；具体经历与项目配置仍以真实系统为准。通常先说引用段落，被追问后再补解释。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q7","title":"1 为什么把事务放在 Service 层","text":"01 为什么把事务放在 Service 层 因为“保存一张申请单”是一个完整业务动作，里面可能要写主表和多条明细。我希望它们一起成功、一起失败，所以在处理这件事的 Service 方法上定义事务。只给单条数据库操作加事务，不能保证整张单据完整。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q8","title":"2 什么异常会回滚 所有异常都会吗","text":"02 什么异常会回滚 所有异常都会吗 不是所有异常都会。没有自定义规则时，Spring 默认对 RuntimeException 和 Error 回滚，受检异常默认不回滚。如果这个业务遇到某类受检异常也必须撤销，就要配置相应的 rollbackFor，不能只看见注解就认为肯定回滚。 参考： Spring 6.1 Transactional 注解说明 。不同版本或项目全局配置可能改变默认规则，回答时说明“默认配置”。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q9","title":"3 我把异常 catch 住 然后返回失败 会不会回滚","text":"03 我把异常 catch 住 然后返回失败 会不会回滚 不能只看返回值写的是成功还是失败。比如我在事务方法里自己 catch 了异常，没有再抛出去，也没有其他回滚标记，事务通常还是会正常提交。接口虽然返回失败，前面已经写进去的主表却可能留下来。 我的处理方式通常是让需要回滚的异常按规则离开事务方法，再在外层统一转换成错误响应。 如果面试官继续追问，补一句： 但也不能说“只要 catch 就一定不回滚”。如果异常已经经过内层事务代理，把共同事务标成只能回滚，外层再 catch 也不能恢复提交，最后还可能遇到 UnexpectedRollbackException。 第一种情况是自己捕获后事务没有收到回滚信号；第二种情况是事务已经被标记回滚。 Spring 回滚说明 、 事务传播说明"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q10","title":"4 那全局异常处理器捕获异常 会不会影响回滚","text":"04 那全局异常处理器捕获异常 会不会影响回滚 一般不会。常见调用顺序是 Controller 调用事务 Service，异常先从 Service 出来，由事务代理处理回滚，然后再交给全局异常处理器组织响应。关键是捕获发生在哪一层，不能把“事务方法里自己吞掉”和“事务外统一处理”混为一谈。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q11","title":"5 加了 Transactional 还是没回滚 你先查什么","text":"05 加了 Transactional 还是没回滚 你先查什么 我先看这次调用有没有真的经过 Spring 的事务代理，比如是不是同一个类里直接调用了带注解的方法。再看异常有没有被自己捕获、是否符合回滚规则，以及主表和明细有没有参加同一个事务。最后核对有没有新线程、独立事务或提前提交的操作。 补充：同类自调用不会单凭被调用方法的注解新增事务；如果外层本来已经有事务，内部 SQL 仍可能参与外层事务，不能说自调用就使所有 SQL 都没有事务。 Spring 代理式事务说明"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q12","title":"6 写上 rollbackFor 等于解决全部回滚问题吗","text":"06 写上 rollbackFor 等于解决全部回滚问题吗 不等于。它只是告诉 Spring，哪些异常离开事务方法时应该触发回滚。调用没经过代理、异常被自己捕获、SQL 不在同一个事务里，这些问题都不是加一个 rollbackFor 就能解决的。 也不必把所有业务方法都机械配置为回滚所有异常，应遵循业务和团队约定。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q13","title":"7 有事务了 为什么还要防重复提交","text":"07 有事务了 为什么还要防重复提交 事务管的是“一次操作里的几步要不要一起成功”，重复提交管的是“同一件业务会不会被做两次”。两个请求各自都可以有事务，也都成功，所以有事务不代表自动防重。 可以举例：两次新增请求分别创建两张完整单据，每张主表和明细都没有问题，但业务上仍然重复了。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q14","title":"8 同一张草稿单据被点了两次提交 你怎么处理","text":"08 同一张草稿单据被点了两次提交 你怎么处理 前端禁用按钮可以减少误操作，后端还要有约束。我会把“当前状态必须是草稿”放进更新条件，而不是先在 Java 里查到草稿，再无条件修改。一次更新成功后，另一次就不能再按草稿提交。 然后检查影响行数。只有拿到这次状态转换的请求，才能继续做同一事务内的后续写入。第二次是返回状态冲突，还是返回前一次的结果，要看接口约定，关键是不能再做一遍业务动作。 这里保护的是这一次状态转换；如果单据允许撤回后重新提交，还需要识别是哪一轮操作。数据库之外的审批通知或 HTTP 调用，也不能单靠这条更新和本地事务保证一致。 继续追问“编辑和提交同时发生”时： 这两个接口需要遵循同一套并发规则，不能只保护提交。比如在事务内锁定单据头、检查状态后再修改明细，让提交与编辑按同一记录协调；或者使用版本校验，冲突时撤销整次修改。这样才能避免提交完成后，一个旧编辑请求又改了明细。 以上是备选方案，未核实实际实现前不说“项目已经这样做了”。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q15","title":"9 如果是重复新增 两次都还没有单据 ID 呢","text":"09 如果是重复新增 两次都还没有单据 ID 呢 这时就不能靠单据当前状态拦了。我会先确认什么算同一笔业务。如果有稳定的业务唯一键，就用它做唯一约束；没有的话，可以给这次新增操作分配一个幂等标识，重试时沿用它，再用数据库唯一约束挡住并发重复创建。 这个标识要和用户、业务范围对应起来。同一个标识带了不同内容，不能直接当成同一次成功。重复请求返回已有结果，还是提示冲突，也要先定义清楚。 “先查一下有没有再插入”仍有并发空隙；不能用每次都新生成的单号识别同一次业务重试。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q16","title":"10 为什么不直接用 Redis 锁","text":"10 为什么不直接用 Redis 锁 先看问题大小。如果只是同一张单据从草稿变提交，数据库条件更新可能就够了，没必要为了防重再加一套锁。Redis 可以帮助拦短时间的重复请求，但还要处理过期和中途失败，重要的业务结果仍要靠持久化规则保证。 Redis 锁不是不能用，而是不能把“拿到锁”当成“整笔业务已经正确完成”。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q17","title":"11 请求超时能不能直接再提交一次 事务会自动撤销吗","text":"11 请求超时能不能直接再提交一次 事务会自动撤销吗 超时只说明调用方没及时收到结果，不能证明服务端没保存。可能服务端已经提交成功，只是响应没有回来。我会先按单据号或幂等标识查结果，再按接口约定重试，而不是换个新标识再创建一张。 数据库事务也不能撤销已经成功的外部 HTTP 操作，所以调用外部系统时，还需要考虑结果确认和对账。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q18","title":"12 你怎么验证真的回滚了 真的防重了","text":"12 你怎么验证真的回滚了 真的防重了 回滚不能只看接口报了错。我会让主表写入后、明细写入过程中出现一个可控失败，再直接查数据库，确认本次主表和已经写入的明细都没有留下。修改场景还要确认旧数据保留完整。 防重则用同一个业务标识发重复请求，包括同时发两个请求，最后确认只有一笔业务结果，状态和相关记录都没有重复。再确认失败后重试能够按设计处理，而不是被一个永久的“处理中”标记卡住。 这是建议的验证方式，不表示已经在汉得项目执行过这些检查。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-4","title":"ERP 场景二 主从表关联导致分页与总数不准","text":"ERP 场景二 主从表关联导致分页与总数不准"},{"panel":"deep","category":"ERP 场景追问","id":"deep-5","title":"场景口述","text":"场景口述 第二个 ERP 查询场景是列表查询的分页单位。页面要展示的是申请单，但一张申请单下面可能有多条物料明细。 如果为了支持按物料筛选，直接把主表和明细表关联后分页，同一张单据可能占多行。这样 SQL 返回十行，页面去重后可能只剩几张单据，总数也容易按明细行数统计，和用户看到的不一致。 我会先用一张有多条明细的申请单复现，对照原始 SQL 结果和页面结果，确认分页发生在关联展开之后。 解决时，先明确列表以单据为单位。如果只是判断单据里有没有某种物料，可以用存在性条件筛选主表，再对主表分页；列表查询和总数查询使用相同的业务筛选。如果还需要补充明细摘要，就针对本页单据统一查询并组装，避免每张单据再单独查一次。 最后检查一单多行、跨页、无结果和物料筛选这些情况，确认条数与总数符合“单据”的含义。 本段仅用“如果遇到，我会这样处理”的场景表达。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-6","title":"分页和去重的八道追问","text":"分页和去重的八道追问"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q19","title":"1 为什么一关联明细 分页就不准了","text":"01 为什么一关联明细 分页就不准了 因为页面的一条数据是一张单据，但 SQL 关联之后的一行可能只是这张单据的一条明细。一张单据有三条明细，就可能变成三行。直接对这个结果分页，分页的单位就从“单据”变成了“关联后的行”。 关键不是 JOIN 本身有问题，而是查询结果的单位和页面需要的单位不一致。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q20","title":"2 返回前端后 按单据 ID 去重不就行了吗","text":"02 返回前端后 按单据 ID 去重不就行了吗 如果后端已经分页了，前端只能去掉这页里的重复项，补不回来其他单据。比如 A 单有三条明细，B 单有一条，后端先取三行，拿到的可能全是 A。前端去重后只剩一张单据，却拿不到本来应该展示的 B。A 还可能跨到下一页，总数也仍然是错的。 用四行数据就能讲清： 单据 ID 明细 ID A A1 A A2 A A3 B B1 如果每页需要两张单据，期望第一页是 A、B；对关联结果先取两行再去重，只能得到 A。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q21","title":"3 那我直接在 SQL 加 DISTINCT 呢","text":"03 那我直接在 SQL 加 DISTINCT 呢 可以考虑，但先看选了哪些字段。DISTINCT 去掉的是“所选字段都相同”的行，不是默认按单据 ID 去重。如果只选主表的 ID、单号等字段，它可能就能解决；如果还选了明细 ID、物料和数量，每条明细本来就不同，加了也不会合并成一张单据。 所以我不会说 DISTINCT 一定不能用，而是先确认返回结果里一行究竟代表什么。 例如 A, A1 和 A, A2 是不同的两行；只选择单据 ID 时，两行才都是 A 。同一层查询中，按正确主表字段 DISTINCT 后再 LIMIT 是可行方案，不能误说“DISTINCT 永远在分页之后，所以没用”。 MySQL DISTINCT 与 LIMIT 说明"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q22","title":"4 列表加 DISTINCT 总数用 COUNT DISTINCT 就全部解决了吗","text":"04 列表加 DISTINCT 总数用 COUNT DISTINCT 就全部解决了吗 如果列表确实已经做到一张单据一行，总数也按同样筛选统计不同单据，这是一种可行方案。但只把总数改正确，列表还在按明细分页，仍然会出现一页条数不够的问题。另外，权限、物料和日期这些筛选，两边都要一致。 统计主表可直接按主表条件计数；保留会展开明细的关联查询时，可以按实际需要统计不同主表 ID，不能机械地把所有查询都改成 COUNT DISTINCT。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q23","title":"5 你最后会选什么查询方式 为什么提到 EXISTS","text":"05 你最后会选什么查询方式 为什么提到 EXISTS 如果页面只要求“查出包含某种物料的单据”，我会考虑在主表查询里加 EXISTS，判断有没有符合条件的明细，而不是把所有明细都展开。这样筛选完成后，一行还是一张单据，再分页就比较直接。 这是因为它符合业务含义，不是因为 EXISTS 一定比 JOIN 快。性能还要看 SQL、索引和执行计划。 还要明确多个明细条件是否必须落在同一条明细上。例如“物料 X 且数量大于十”，通常需要同一条明细同时满足，不能误写成两条不同明细分别满足。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q24","title":"6 能不能先对主表分页 再筛选明细","text":"06 能不能先对主表分页 再筛选明细 如果明细只用于展示，可以先分页，再补充明细。但如果用户按物料筛选，就要在确定这一页单据之前应用这个筛选。不能先取十张单据，再把不符合物料条件的删掉，否则符合条件的其他单据没机会进来，总数也对不上。 记住顺序：先按全部业务条件确定符合条件的单据，再对单据分页，最后补页面需要的展示数据。它是业务处理顺序，不是数据库执行计划的承诺。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q25","title":"7 这一页还要显示明细 怎么查比较合适","text":"07 这一页还要显示明细 怎么查比较合适 我会拿到这一页的单据 ID 后，批量查需要的明细，再按单据 ID 分组组装。不要循环十张单据再分别查十次，查询次数会跟着页大小增长。 另外要和前端确认，是展示整张单据的明细，还是只展示命中筛选的明细。比如按物料 X 查到一张单据，并不代表详情里只能显示 X，这两个含义不能混在一起。"},{"panel":"deep","category":"ERP 场景追问","id":"deep-q26","title":"8 怎么保证翻页稳定 怎么验证改好了","text":"08 怎么保证翻页稳定 怎么验证改好了 排序不能只依赖一个可能重复的时间字段，可以再加唯一 ID 形成明确顺序。验证时准备一张多明细单据和几张普通单据，检查每页单据数、跨页重复、总数，以及物料筛选后是否漏单。 不过排序稳定不等于多次请求之间数据完全不变。有人持续新增、删除时，偏移分页仍可能受影响；是否需要游标或快照，要看实际需求，不在这次问题里直接扩大改造。 参考： MySQL LIMIT 与排序说明 。"},{"panel":"questions","category":"岗位高频问答","id":"questions-1","title":"高频面试问答","text":"高频面试问答 每题先脱稿讲 40 至 90 秒，再对照答案。下面有经历题，也有设计题，注意它们的时态。"},{"panel":"questions","category":"岗位高频问答","id":"questions-2","title":"1 你在汉得具体干什么 为什么简历写全栈","text":"01 你在汉得具体干什么 为什么简历写全栈 我主要在面向企业的 Agent 平台产品线上做接口联调：后端 Spring Boot，前端 Vue。工作包括对齐接口字段、补参数校验、处理权限和异常提示、联调排查和回归。ERP 相关只参与了一小部分接口对接。简历写全栈，是因为前后端都实际碰过，但深度在后端接口和联调，不是前端架构。 **追问：**选一个页面，讲清它调了哪些接口、你改了什么。"},{"panel":"questions","category":"岗位高频问答","id":"questions-3","title":"2 你的 ERP 参与到什么程度","text":"02 你的 ERP 参与到什么程度 不多。学校用 U8 学过 ERP 的模块和单据流，汉得这边只参与了一小部分 ERP 接口联调，没有独立负责过采购、库存或生产模块。完整业务规则我还在补，但自己碰过的那部分接口能讲清楚。 **追问：**U8 里做过什么？按课程实际操作答，不要背菜单路径。"},{"panel":"questions","category":"岗位高频问答","id":"questions-4","title":"3 为什么从汉得离开 为什么考虑我们","text":"03 为什么从汉得离开 为什么考虑我们 实习结束，我想找能长期做 Java 企业应用开发的岗位。这个岗位既做 ERP，也用 AI 辅助开发，和我的两段积累都能接上：U8 给我业务概念，汉得给我企业接口和联调的经验。ERP 深度是我要补的，我愿意从具体模块做起。"},{"panel":"questions","category":"岗位高频问答","id":"questions-5","title":"4 你有一年制造业经验吗 做过 MES 吗","text":"04 你有一年制造业经验吗 做过 MES 吗 没有一年制造业实施经验，MES 也没有直接开发过。我有的是企业软件接口联调的经历，加上 U8 的 ERP 业务底子。MES 更贴近车间执行、工序、报工和质量追踪，这块需要到项目里学。 ERP 接触、制造业实施和 MES 开发是不同经历，不能互相替代。 SAP 对 MES 的说明"},{"panel":"questions","category":"岗位高频问答","id":"questions-6","title":"5 一次请求从页面到数据库经过什么","text":"05 一次请求从页面到数据库经过什么 请求进入后端，先经过相关认证与权限处理。Controller 接收请求并做基本参数校验；Service 处理业务规则和事务边界；Mapper 执行 SQL；结果再映射成接口响应。对修改操作，我还会看影响行数和最终数据是否符合预期。具体过滤器、权限组件按公司项目实际情况讲。 **追问：**参数合法但当前状态不允许操作，应该在哪里判断？通常属于业务规则，放在业务层，并用数据库条件保证修改时规则仍成立。"},{"panel":"questions","category":"岗位高频问答","id":"questions-7","title":"6 查询接口你一般会注意什么","text":"06 查询接口你一般会注意什么 先明确可用筛选项、分页和排序规则，再处理参数绑定与 SQL。查询结果和总数应该遵循相同的业务筛选，排序尽量稳定。联调时验证无结果、多页、日期边界和非法排序字段；如果响应慢，再看 SQL、执行计划及数据量，而不是先上缓存。 **追问：**为什么翻页出现重复记录？可能是排序字段不唯一、期间数据变化或分页逻辑问题，要根据实际查询确定。"},{"panel":"questions","category":"岗位高频问答","id":"questions-8","title":"7 MyBatis 的井号和美元参数有什么区别","text":"07 MyBatis 的井号和美元参数有什么区别 #{} 通常通过预编译参数绑定传值； ${} 做字符串替换。普通值参数用前者。动态列名、排序方向不能直接相信用户输入，要映射到服务端允许的选项。 MyBatis 官方说明 解释了参数绑定和字符串替换的区别。 **追问：**排序列能不能写成 ORDER BY #{column} ？这不会把绑定值当作列标识符使用，应当用白名单映射到已知列。"},{"panel":"questions","category":"岗位高频问答","id":"questions-9","title":"8 Spring 事务什么时候不生效","text":"08 Spring 事务什么时候不生效 先看调用是否经过 Spring 事务代理。同类内部直接调用带注解方法，在默认代理模式下不会因此新开启事务。再看异常是否抛出、回滚规则、事务管理器和线程边界。默认通常对运行时异常和 Error 回滚，受检异常需看配置。不能简单说“所有非 public 方法都不支持”，还要看代理方式与版本。 Spring 事务文档 **追问：**数据库事务能回滚已经发出的 HTTP 请求吗？不能，跨系统要单独处理失败、幂等和结果确认。"},{"panel":"questions","category":"岗位高频问答","id":"questions-10","title":"9 单据重复提交怎么办","text":"09 单据重复提交怎么办 先分清两种情况：重复提交同一张单据，可以用合法状态条件限制转换；重复创建业务单据，需要稳定的业务键或幂等键，并用数据库唯一约束保证持久化结果。前端禁用按钮能改善体验，后端仍要保护数据规则。 **追问：**为什么先查有没有再插入不够？两个并发请求可能都查到不存在，需要数据库约束或相应并发控制保证最终结果。"},{"panel":"questions","category":"岗位高频问答","id":"questions-11","title":"10 库存扣减怎么避免负数","text":"10 库存扣减怎么避免负数 这是场景方案：在适合的模型下，用带数量条件的原子更新扣减库存，再检查影响行数；关联出库单和流水放在同一数据库事务中，并控制同一业务重复扣减。若规则要求先读再改，可在事务内考虑锁定读取，但要明确索引、锁范围和竞争成本。 MySQL 锁定读取文档 **追问：**加了事务为什么仍可能重复扣减？事务本身不代表业务幂等，重复业务请求仍需要识别。"},{"panel":"questions","category":"岗位高频问答","id":"questions-12","title":"11 SQL 慢怎么排查","text":"11 SQL 慢怎么排查 先确认慢在哪里：接口总耗时、数据库执行、锁等待还是外部调用。拿到具体 SQL 和参数，用 EXPLAIN 看访问路径、索引和预估扫描量，再结合实际数据分布检查过滤、排序、分页和关联。根据查询模式调整，不能看到慢就给每列加索引。 **追问：**为什么联合索引不是越多列越好？索引有空间和写入维护成本，字段顺序也要服务实际过滤和排序方式。"},{"panel":"questions","category":"岗位高频问答","id":"questions-13","title":"12 Redis 在你的项目里怎么用","text":"12 Redis 在你的项目里怎么用 简历确认 PLNM 用 Redis 承载缓存和会话。面试前选一个实际读过代码的用途，讲清 key、value、有效期和失效方式。汉得的 Redis 用法目前未确认，不要从个人项目移过去。 如果被问“能否用 Redis 防重复”，可以说短期标记能减少重复请求，但过期、失败和数据库写入之间仍有边界，重要业务还要有持久化幂等规则。 SET 支持条件写入和过期选项，但命令成功不代表整个业务事务完成。 Redis SET 文档"},{"panel":"questions","category":"岗位高频问答","id":"questions-14","title":"13 线上页面报错你会怎么处理","text":"13 线上页面报错你会怎么处理 先收集时间、用户、操作、接口和可复现条件，判断影响范围。看请求状态和响应，再按现有日志标识定位后端，核对参数、异常栈、SQL 和依赖状态。根据证据修复或按发布流程回退，最后验证原操作。日志检索可用 tail 、 less 、 grep ；不要把“重启后好了”当作根因。 **追问：**没有请求 ID 怎么查？用准确时间、接口、允许记录的业务标识缩小范围，不凭空声称原系统已经有全链路追踪。"},{"panel":"questions","category":"岗位高频问答","id":"questions-15","title":"14 你能部署服务器吗","text":"14 你能部署服务器吗 先说明实际经历：我做过 Linux 日志排查，是否实际发布过应用需要按真实参与范围讲。 部署流程可以作为理解回答：确认配置和依赖、准备应用和数据库变更、按团队流程备份与发布、检查服务日志和关键接口、保留可执行的回退方案。Spring Boot 不一定需要外置 Tomcat，要看交付的是可执行 jar 还是 war；数据库变更能否回退也要单独确认。"},{"panel":"questions","category":"岗位高频问答","id":"questions-16","title":"15 ERP 和 MES 对接超时能直接重试吗","text":"15 ERP 和 MES 对接超时能直接重试吗 不能仅根据超时判断远端失败，远端可能已经处理成功。先用同一个业务流水号查询结果；接口有幂等契约时，按约定使用相同标识重试。如果无法确认，就保留待确认状态并对账。不能换新单号反复发送，造成重复入库或报工。 **追问：**如何处理重复回调？在确认业务唯一范围后，对事件标识做持久化去重，业务效果和处理记录需要保持一致。"},{"panel":"questions","category":"岗位高频问答","id":"questions-17","title":"16 客户说一个按钮做完所有操作怎么办","text":"16 客户说一个按钮做完所有操作怎么办 先让客户举一个完整业务例子，再确认按钮背后的状态变化、权限和失败处理。例如“提交”是否意味着进入审核，还是已经影响库存和财务？把正常流程、例外规则和验收条件写清楚，再拆成可交付的范围。不能把一句界面描述直接当成完整需求。"},{"panel":"questions","category":"岗位高频问答","id":"questions-18","title":"17 你怎么使用 AI 编码工具","text":"17 你怎么使用 AI 编码工具 只报实际用过的工具。可以按这个结构回答： 我会先把需求、现有接口和代码约束说明白，让 AI 帮我理解代码、生成初稿或分析报错。涉及权限、SQL、事务和状态变化时，我会自己检查它的处理逻辑，再用实际请求和数据验证。遇到 Bug，会提供最小复现和相关日志，检查它的修改是否对应根因，而不是只看生成速度。 准备一个真正用过 AI 的小例子，能解释修改前后和验证结果。公司代码和数据按团队允许的工具与使用范围处理。 **追问：**AI 给了看起来能运行的代码，你怎么判断？先检查输入和业务契约，再验证正常、边界和失败路径，尤其关注数据是否写错、权限是否遗漏。"},{"panel":"questions","category":"岗位高频问答","id":"questions-19","title":"18 你的 Agent 平台经历和个人多角色项目有什么区别","text":"18 你的 Agent 平台经历和个人多角色项目有什么区别 汉得那段是企业 Agent 平台上的接口联调，重点在前后端契约、权限和异常，不是在调模型效果。PLNM 是我个人项目，做的是角色路由、提示词和模型接口接入。两个都不是完整的 RAG 平台，我不会把平台能力说成自己实现的。 **追问：**那 RAG 你了解吗？先答链路，再说明检索调优和向量库选型没有独立做过。"},{"panel":"questions","category":"岗位高频问答","id":"questions-20","title":"19 Java 基础你最应该补哪几个点","text":"19 Java 基础你最应该补哪几个点 优先把这些问题讲明白： equals 与 hashCode 的关系；HashMap 为什么不适合并发写； BigDecimal 处理金额时的精度和舍入规则；异常如何影响业务事务；线程池的有界队列和拒绝策略。金额不能随便使用浮点数再靠格式化补救，计算规则要与业务一致。 **追问练习：**两个表示同金额但小数位不同的 BigDecimal，用 equals 与 compareTo 判断有什么差别？先自己查清并试一个小例子，再口述，避免只背名词。"},{"panel":"questions","category":"岗位高频问答","id":"questions-21","title":"20 如果让你写一个接口 你怎么证明做好了","text":"20 如果让你写一个接口 你怎么证明做好了 我会对照需求检查输入、权限、业务状态、数据库结果和响应。查询接口检查筛选与分页，修改接口检查允许和禁止的操作；涉及重复请求或多表修改时，补相应验证。联调再确认页面展示与接口约定一致，并记录复现条件和结果。检查范围由接口实际风险决定，不追求每个接口都套同样数量的用例。"},{"panel":"practice","category":"场景与模拟","id":"practice-1","title":"两个 ERP 场景练习","text":"两个 ERP 场景练习 以下表名、字段和状态完全是练习示例，与汉得真实数据库无关。重点练说明规则，不要求背 SQL。"},{"panel":"practice","category":"场景与模拟","id":"practice-2","title":"场景一 把草稿单据改为已提交","text":"场景一 把草稿单据改为已提交 前提：请求已通过操作权限和数据范围校验，示例单据允许从草稿进入已提交。 UPDATE business_document SET status = 'SUBMITTED', updated_at = CURRENT_TIMESTAMP WHERE id = :documentId AND status = 'DRAFT'; 面试口述：更新条件同时限制单据和原状态，检查影响行数，避免把任意状态直接覆盖。真实系统还要依据权限模型加入相应限制；同一事务中的业务记录也要一起成功。影响零行不能直接返回操作成功。 再问自己：单据撤回后是否可以重新提交？第二次提交是重复请求还是新的业务动作？这说明幂等键要按业务生命周期设计，不能机械地把单据 ID 永久当成唯一提交次数。"},{"panel":"practice","category":"场景与模拟","id":"practice-3","title":"场景二 同一出库业务不能重复扣库存","text":"场景二 同一出库业务不能重复扣库存 前提： quantity 为已校验的正数，库存行由主键定位，数量精度符合业务规则。 UPDATE inventory SET available_qty = available_qty - :quantity WHERE id = :inventoryId AND available_qty >= :quantity; 面试口述：条件更新保护单行可用库存不被扣成负数；影响一行才能继续确认扣减成功。它没有独自解决业务重复、跨行分配、预占库存和外部系统一致性。出库单、库存流水和幂等标识应按业务设计，并保证相应本地修改处于一致的事务边界。 不用主动声称写过这段代码。被问“如果让你做”时，它才是场景方案。"},{"panel":"practice","category":"场景与模拟","id":"practice-4","title":"一轮三十五分钟模拟面试","text":"一轮三十五分钟模拟面试 先看本表的问题列并录音，回答后再回头找相关参考，不边读答案边练。 时间 面试官提问 合格表现 0 至 2 分钟 请介绍一下自己 U8 打底、冲着 ERP 投汉得、实际做 Agent 平台联调 2 至 6 分钟 为什么想做 ERP 后来怎么去了 Agent 动机真实、分配合理、不抱怨 6 至 11 分钟 哪个问题最难忘 你怎么定位 具体异常、根因、修改、验证，不堆术语 11 至 17 分钟 重复提交、事务、库存竞争怎么处理 作为 ERP 场景题讨论，不算作汉得实绩 17 至 22 分钟 MyBatis 参数、慢 SQL、Redis 用途 原理能落到一个接口，不移植项目事实 22 至 27 分钟 客户需求不清楚 接口超时怎么办 先确认规则，认识结果未知和重复风险 27 至 31 分钟 AI 怎么帮你开发 U8 和 RAG 了解多少 给具体例子，深度边界说得清 31 至 35 分钟 为什么换工作 出差条件 你的反问 条件真实，反问能了解实际岗位 每个回答只检查三件事：是否回答了当前问题；是否有具体链路或例子；是否把未确认内容说成事实。练完修正最明显的三处就够了。"},{"panel":"practice","category":"场景与模拟","id":"practice-5","title":"可以复用的模拟面试提示词","text":"可以复用的模拟面试提示词 请按本文件模拟郑州 ERP Java 开发岗的线下技术面试。 我的叙事：学校用过用友 U8，了解 ERP 模块与单据流；冲着 ERP 业务投了汉得；入职后分到企业 Agent 平台，主要做 Spring Boot + Vue 接口联调，ERP 只参与少量接口对接。 一次只问一道题，等待我回答，再根据回答追问一至两次，不提前给参考答案。 先问 U8、为什么投汉得、实际做了什么，再问 Agent 平台接口、个人项目、Java/SQL/事务和 ERP 场景。 不要预设我负责过完整 ERP 模块、Agent 平台架构或 RAG 检索调优；这些边界如果我自己说大了，请直接追问细节。 最后给三个最需要改进的点，以及每个点的一段更清楚的表达。"},{"panel":"practice","category":"场景与模拟","id":"practice-6","title":"反问与临场速记","text":"反问与临场速记"},{"panel":"practice","category":"场景与模拟","id":"practice-7","title":"最值得问的四个问题","text":"最值得问的四个问题 这个岗位入职后主要负责 ERP 哪个业务域，还是需要同时覆盖 MES、OA 和运维？第一个月一般接什么需求？ 目前项目是已有系统迭代、平台二次开发，还是从头开发？Java 版本、Spring Boot 和数据库版本是什么？ 阶段性出差通常去哪里、一次多久，主要做开发联调还是实施培训？ 团队如何安排需求验收、测试和发布？遇到现场问题由谁配合处理？ 时间少就问前面两三个。薪资、试用期、社保和差旅安排可以在招聘方沟通环节按需要确认。"},{"panel":"practice","category":"场景与模拟","id":"practice-8","title":"面试前两小时","text":"面试前两小时 用 20 分钟讲熟自我介绍和汉得职责；30 分钟把一条真实接口和两个项目故事讲完整；40 分钟练问答 5 至 15；20 分钟练 AI 使用、客户需求和反问；最后 10 分钟确认线下面试时间、地址、联系人和所带简历版本。"},{"panel":"practice","category":"场景与模拟","id":"practice-9","title":"最后只记这十句话","text":"最后只记这十句话 我主要做 Java 后端，Vue 能联调。 学校用 U8 学过 ERP 的模块和单据流。 我是冲着 ERP 业务投的汉得。 入职后项目分到企业 Agent 平台，ERP 只碰了少量接口。 企业软件的联调方法相通：契约、权限、异常、回归。 U8 让我懂业务结构，汉得让我会做企业接口。 完整 ERP 模块没做过，这个边界我如实说。 事务保证一起成功或回滚，业务幂等另说。 超时可能是结果未知，先确认再重试。 与其把 Agent 说成 ERP，不如用一条真实接口证明手上的活。"},{"panel":"notes","category":"补充与核实","id":"notes-1","title":"汉得到底做了什么","text":"汉得到底做了什么"},{"panel":"notes","category":"补充与核实","id":"notes-2","title":"一句话版本","text":"一句话版本 我是冲着 ERP 去的汉得，入职后项目分到了企业 Agent 平台，主要做 Spring Boot 和 Vue 的接口联调；ERP 只参与了一小部分接口对接。"},{"panel":"notes","category":"补充与核实","id":"notes-3","title":"九十秒版本","text":"九十秒版本 用“汉得经历线”栏目里的九十秒口述。核心四句：U8 打底、冲着 ERP 投汉得、分到 Agent 平台、ERP 只碰了少量接口。"},{"panel":"notes","category":"补充与核实","id":"notes-4","title":"面试官追问 那你到底算不算有 ERP 经验","text":"面试官追问 那你到底算不算有 ERP 经验 算接触过，不算做透。U8 让我懂 ERP 的业务结构，汉得让我参与过少量 ERP 接口联调；完整模块我没有独立负责过。这个边界我会说清楚，不会把 Agent 平台说成 ERP 项目。"},{"panel":"notes","category":"补充与核实","id":"notes-5","title":"实际工作拆成六件事","text":"实际工作拆成六件事 对接口契约：字段、类型、枚举、日期、空值。 补参数校验：必填、长度、格式、业务合法性。 管权限和数据范围：当前用户能看哪些应用、知识库和数据。 处理异常：错误码、提示文案、前端展示。 联调排查：Network 看请求响应，再查后端日志和数据。 回归：正常流程和原来的异常场景各走一遍。"},{"panel":"notes","category":"补充与核实","id":"notes-6","title":"一个可以讲完整的接口","text":"一个可以讲完整的接口 按实际页面替换。示例： 平台里有一个应用配置页面，前端 Vue 填应用名称、模型和知识库范围，调用 Spring Boot 的保存接口。后端做参数校验和权限判断，保存后返回配置 ID；列表页按当前用户的数据范围查询。 联调时主要对齐字段名和类型、枚举值是否同一套、无权限或校验失败时提示是否准确。 替换选项：知识库文档列表、会话记录查询、应用启停、模型配置。选一个真的调过的。"},{"panel":"notes","category":"补充与核实","id":"notes-7","title":"不要说过头","text":"不要说过头 不说“我负责 Agent 平台架构”。 不说“我做过 RAG 检索调优”。 不说“我主导 ERP 模块”。 不说客户名、数据量、性能提升。"},{"panel":"notes","category":"补充与核实","id":"notes-8","title":"ERP 场景练习","text":"ERP 场景练习 下面三段均作为 ERP 场景练习 保留，不作为汉得项目业绩。若没有实际经历，统一用“如果遇到，我会这样处理”回答。"},{"panel":"notes","category":"补充与核实","id":"notes-9","title":"候选故事一 查询有结果却漏了最后一天的数据","text":"候选故事一 查询有结果却漏了最后一天的数据 **适用前提：**你确实接触过日期筛选或前后端日期格式问题。 练习口述： 有个让我印象比较深的点，是业务列表的日期筛选。页面能正常查询，接口也没有报错，但用户选择一个时间范围时，结束日期当天的数据没有完整展示。 我会先固定一条漏掉的记录，核对前端实际传的日期、后端接收到的参数和数据库里的时间，再看 SQL 边界。如果结束日期被处理成当天零点，就可能漏掉当天后面的记录。 对于按自然日查询的需求，可以在明确业务时区后，把条件处理成“大于等于开始日零点，小于结束日下一天零点”，再验证结束日白天和临近午夜的数据。 这个问题让我意识到，接口返回成功还不够，筛选条件必须和业务含义一致。 当前用“我会”表达方案；确实回忆起发生过，再把有依据的部分改成过去时。 **可能追问：**为什么不用当天 23:59:59？因为数据库时间可能含小数秒，半开区间更容易明确边界；还要确认业务日期、存储时区和转换规则。 **需要确认：**实际日期字段是什么，漏数是否真的发生，自己改的是前端参数还是后端 SQL，最后验证过哪些记录。"},{"panel":"notes","category":"补充与核实","id":"notes-10","title":"候选故事二 状态更新不能只靠页面按钮控制","text":"候选故事二 状态更新不能只靠页面按钮控制 **适用前提：**你确实接触过提交、撤回、审核或其他状态修改接口。 练习口述： 状态更新这类接口让我印象比较深。表面上只是改一个字段，但背后有“什么状态允许操作”的业务规则。即使前端已经把按钮禁用了，后端也不能直接相信请求。 如果处理单据提交，我会先核对操作权限和合法状态，再把原状态放进更新条件。比如只允许草稿提交，就用“单据 ID 加当前状态是草稿”作为条件，然后检查实际影响行数，避免两个请求都按照旧状态继续执行。 如果同时更新主表、明细或业务记录，还需要把应当一起成功的数据库修改放在同一个事务中，失败时保持数据一致。 这个点让我更关注接口对业务规则的保护，而不只是数据能不能写进去。 **可能追问：**更新零行是什么原因？可能是记录不存在、状态已变化，也可能是数据权限不匹配。返回什么错误要遵循系统的权限和信息披露规则，不能一律报成功。 **需要确认：**真实状态有哪些，是否写过条件更新，是否存在多表修改。未做过事务或幂等，不补成个人成果。"},{"panel":"notes","category":"补充与核实","id":"notes-11","title":"候选故事三 联调时从页面现象追到接口和 SQL","text":"候选故事三 联调时从页面现象追到接口和 SQL **适用前提：**你确实排查过字段、状态或接口返回与页面不一致的问题。 练习口述： 我印象比较深的是联调问题不能只看页面现象。比如页面显示的状态不符合预期，我会先在浏览器 Network 里看实际响应，确认后端返回的是编码、名称还是空值，再核对前端映射。 如果响应本身不对，就继续检查请求参数、Service 分支、SQL 和数据库数据。这样可以先把问题缩小到前端展示、接口映射还是数据处理，不用两边同时猜。 确定原因后，把字段含义、空值和状态值的约定补清楚，修改后重走同一条流程。 这段经历可以突出我虽然主要做后端，但能够沿着前后端链路定位问题。 **可能追问：**HTTP 200 就代表业务成功吗？不一定，要看约定的业务结果；还要核对实际影响行数和最终数据，不能把“请求到了”当成“操作成功”。 **需要确认：**当时具体是哪一个字段，根因在前端还是后端，自己负责了哪一步。结果没有记录时，不写“减少 80% 问题”等数字。"},{"panel":"notes","category":"补充与核实","id":"notes-12","title":"怎么选择两个最合适的故事","text":"怎么选择两个最合适的故事 优先选择能回忆起“页面或接口、具体异常、自己做的修改、验证方式”的两段。只记得一般联调工作，就先讲第三段的排查方法；不要为显得复杂硬讲生产事故。 结果可以是“日期边界符合预期”“重复请求没有再次改变状态”“字段约定明确后联调通过”。只有真实确认后才使用过去时。"},{"panel":"notes","category":"补充与核实","id":"notes-13","title":"面试前核实实际分工","text":"面试前核实实际分工 ERP 只讲少量接口对接和联调，不把本例中的采购模块当作个人职责。 企业 Agent 平台需要找回一个真实页面：它调了哪些接口，自己改过哪个字段、校验或提示。 PLNM 等个人项目单独说明，未确认的模型、向量库、指标与部署规模不补写。"}]</script><script>(() => {
   'use strict';
   const panels = [...document.querySelectorAll('.panel')];
   const ids = new Set(panels.map(panel => panel.id));
