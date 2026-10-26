@@ -1,0 +1,73 @@
+async (page) => {
+  const check = (condition, message) => { if (!condition) throw new Error(message); };
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.evaluate(() => localStorage.removeItem('erp-interview-weak'));
+  await page.reload();
+  const panel = page.locator('#interview');
+  const title = panel.locator('#interview-question');
+  const answer = panel.locator('#interview-answer');
+  const pool = panel.getByRole('combobox', {name: '练习范围'});
+  const next = panel.getByRole('button', {name: '下一题', exact: true});
+  const reveal = panel.locator('#interview-reveal');
+  const mark = panel.locator('#interview-mark');
+  const originals = await page.locator('.qa .question-label').allTextContents();
+  check(originals.length === 40, 'The existing 40 questions must remain available.');
+  check(await panel.isVisible(), 'The direct interview URL must open the practice panel.');
+  check(!await answer.isVisible() && await answer.textContent() === '', 'Reference must start hidden and empty.');
+  const first = await title.innerText();
+  await reveal.click();
+  check(await answer.isVisible(), 'Reveal must show the reference.');
+  const expected = await page.evaluate(questionTitle => [...document.querySelectorAll('.qa')].find(item => item.querySelector('.question-label').textContent.trim() === questionTitle).querySelector('.qa-body').textContent, first);
+  check((await answer.textContent()) === expected, 'Reference must belong to the displayed question.');
+  await mark.click();
+  await next.click();
+  const second = await title.innerText();
+  check(second !== first, 'The next question must not repeat in the same round.');
+  check(!await answer.isVisible() && await answer.textContent() === '', 'Next must clear and hide the previous reference.');
+  await mark.click();
+  await page.reload();
+  check((await panel.locator('#interview-status').innerText()).includes('未掌握 2 题'), 'Marks must survive reload.');
+  await pool.selectOption('weak');
+  const weakFirst = await title.innerText();
+  await next.click();
+  const weakSecond = await title.innerText();
+  check(new Set([weakFirst, weakSecond]).size === 2 && [weakFirst, weakSecond].every(value => [first, second].includes(value)), 'Weak-only practice must draw only the two marked questions.');
+  await mark.click();
+  await next.click();
+  check((await title.innerText()) === weakFirst, 'A mastered question must leave the weak-only pool.');
+  await mark.click();
+  await next.click();
+  check(await panel.locator('#interview-empty').isVisible() && !await panel.locator('#interview-card').isVisible(), 'An empty weak pool must show guidance, not stale content.');
+  await page.reload();
+  await pool.selectOption('weak');
+  check(await panel.locator('#interview-empty').isVisible(), 'Removing marks must also survive reload.');
+  await pool.selectOption('all');
+  const round = [];
+  for (let i = 0; i < 40; i++) {
+    const question = await title.innerText();
+    check(originals.includes(question), 'Drawn question must come from the existing bank.');
+    check(!await answer.isVisible(), 'Each new question must hide the reference.');
+    round.push(question);
+    if (i < 39) await next.click();
+  }
+  check(new Set(round).size === 40, 'A complete round must contain 40 unique questions.');
+  await next.click();
+  check((await title.innerText()) !== round.at(-1), 'The next round must avoid immediately repeating the last question.');
+  for (const width of [390, 320, 1440]) {
+    await page.setViewportSize({width, height: 844});
+    check(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Practice layout overflows at ${width}px.`);
+  }
+  await page.setViewportSize({width: 390, height: 844});
+  await page.getByRole('button', {name: '目录', exact: true}).click();
+  await page.locator('.module-nav').getByRole('link', {name: /上场准备/}).click();
+  check(await page.locator('#quick').isVisible(), 'Existing navigation must still work.');
+  await page.getByRole('button', {name: '随机抽题', exact: true}).click();
+  check(await panel.isVisible(), 'The home practice shortcut must open interview mode.');
+  await page.evaluate(() => { Storage.prototype.setItem = () => { throw new Error('Storage disabled for this check'); }; });
+  await mark.click();
+  check(await panel.locator('#interview-storage').isVisible(), 'Failed persistence must produce a visible notice.');
+  await page.reload();
+  check(errors.length === 0, `Unexpected runtime errors: ${errors.join(', ')}`);
+  return {uniqueQuestions: 40, persistedMarks: true, weakPool: true, emptyState: true, hiddenAnswers: true, widths: [320, 390, 1440], storageNotice: true};
+}

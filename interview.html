@@ -1,0 +1,23 @@
+<div class="interview-controls">
+  <label for="interview-pool">练习范围</label>
+  <select id="interview-pool">
+    <option value="all">全部题目</option>
+    <option value="weak">只练未掌握</option>
+  </select>
+</div>
+<p class="interview-status" id="interview-status" role="status" aria-live="polite"></p>
+<p class="interview-storage" id="interview-storage" role="status" hidden></p>
+<p class="interview-empty" id="interview-empty" hidden>还没有标记未掌握的题目。先切到“全部题目”，练习后点“标记未掌握”，再回来复习。</p>
+<div class="interview-card" id="interview-card" hidden>
+  <p class="chapter-meta" id="interview-category"></p>
+  <h2 id="interview-question" tabindex="-1"></h2>
+  <p class="interview-hint">先脱稿回答，建议控制在 40 至 90 秒。</p>
+  <div class="interview-actions">
+    <button type="button" id="interview-reveal" aria-expanded="false" aria-controls="interview-answer">我答完了，查看参考</button>
+    <button type="button" id="interview-mark">标记未掌握</button>
+    <button type="button" id="interview-next">下一题</button>
+  </div>
+  <p class="interview-mark-status" id="interview-mark-status" role="status" aria-live="polite"></p>
+  <div class="interview-answer" id="interview-answer" hidden></div>
+</div>
+<p class="interview-footnote">每轮随机抽题，同一轮不重复；抽完后开始新一轮。未掌握标记保存在当前浏览器，刷新后保留，不跨设备同步。项目场景仍需与真实经历核对。</p>

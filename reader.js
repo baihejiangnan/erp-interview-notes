@@ -54,7 +54,7 @@
     panels.forEach(panel => { panel.hidden = panel.id !== id; });
     searchPanel.hidden = true;
     search.value = '';
-    document.querySelector('.outline').hidden = false;
+    document.querySelector('.outline').hidden = id === 'interview';
     nav.forEach(link => {
       const active = link.dataset.panel === id;
       link.classList.toggle('active', active);
@@ -120,7 +120,7 @@
     results.replaceChildren();
     const terms = query.toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const found = index.filter(record => terms.every(term => (record.title + ' ' + record.text).toLocaleLowerCase().includes(term)));
-    caption.textContent = `“${query}” · 找到 ${found.length} 个相关章节，覆盖全部六个栏目。`;
+    caption.textContent = `“${query}” · 找到 ${found.length} 个相关章节，覆盖全部阅读资料。`;
     for (const record of found) {
       const link = document.createElement('a'); link.href = '#' + record.id; link.className = 'search-result';
       const category = document.createElement('small'); category.textContent = record.category;
@@ -150,5 +150,98 @@
   }
   let scrollPending = false;
   window.addEventListener('scroll', () => { if (!scrollPending) { requestAnimationFrame(() => { updateProgress(); scrollPending = false; }); scrollPending = true; } }, { passive: true });
+  const interviewQuestions = [...document.querySelectorAll('.qa')].map(item => ({
+    title: item.querySelector('.question-label').textContent.trim(),
+    category: item.closest('.panel').dataset.title,
+    key: item.closest('.panel').id + ':' + item.querySelector('.question-label').textContent.trim(),
+    body: item.querySelector('.qa-body')
+  }));
+  const questionKeys = new Set(interviewQuestions.map(question => question.key));
+  const pool = document.getElementById('interview-pool');
+  const card = document.getElementById('interview-card');
+  const interviewStatus = document.getElementById('interview-status');
+  const storageNotice = document.getElementById('interview-storage');
+  const interviewTitle = document.getElementById('interview-question');
+  const answer = document.getElementById('interview-answer');
+  const reveal = document.getElementById('interview-reveal');
+  const mark = document.getElementById('interview-mark');
+  let weakQuestions = new Set();
+  let remaining = [];
+  let activeQuestion = null;
+  let drawn = 0;
+  try {
+    const saved = JSON.parse(localStorage.getItem('erp-interview-weak') || '[]');
+    if (!Array.isArray(saved) || saved.some(key => typeof key !== 'string')) throw new Error('Invalid interview marks.');
+    weakQuestions = new Set(saved.filter(key => questionKeys.has(key)));
+  } catch (error) {
+    storageNotice.hidden = false;
+    storageNotice.textContent = '无法读取本地标记。可以继续练习，本次标记暂存在页面中。';
+    console.warn('Interview marks could not be loaded.', error);
+  }
+  function updateInterviewStatus() {
+    interviewStatus.textContent = `本轮已抽 ${drawn} 题 · 剩余 ${remaining.filter(question => pool.value === 'all' || weakQuestions.has(question.key)).length} 题 · 未掌握 ${weakQuestions.size} 题`;
+    const isWeak = activeQuestion && weakQuestions.has(activeQuestion.key);
+    mark.classList.toggle('is-weak', Boolean(isWeak));
+    mark.textContent = isWeak ? '已掌握，移出复习' : '标记未掌握';
+    document.getElementById('interview-mark-status').textContent = isWeak ? '已标记：还没掌握' : '';
+  }
+  function drawQuestion(focus = true) {
+    remaining = remaining.filter(question => pool.value === 'all' || weakQuestions.has(question.key));
+    if (!remaining.length) {
+      remaining = interviewQuestions.filter(question => pool.value === 'all' || weakQuestions.has(question.key));
+      for (let i = remaining.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+      }
+      if (remaining.length > 1 && remaining.at(-1).key === activeQuestion?.key) {
+        [remaining[0], remaining[remaining.length - 1]] = [remaining.at(-1), remaining[0]];
+      }
+      drawn = 0;
+    }
+    activeQuestion = remaining.pop() || null;
+    card.hidden = !activeQuestion;
+    document.getElementById('interview-empty').hidden = Boolean(activeQuestion);
+    answer.hidden = true;
+    answer.replaceChildren();
+    reveal.setAttribute('aria-expanded', 'false');
+    reveal.disabled = false;
+    reveal.textContent = '我答完了，查看参考';
+    if (activeQuestion) {
+      drawn++;
+      interviewTitle.textContent = activeQuestion.title;
+      document.getElementById('interview-category').textContent = activeQuestion.category;
+      if (focus) {
+        interviewTitle.focus({preventScroll: true});
+        interviewTitle.scrollIntoView({block: 'start', behavior: 'instant'});
+      }
+    }
+    updateInterviewStatus();
+  }
+  reveal.addEventListener('click', () => {
+    answer.replaceChildren(...activeQuestion.body.cloneNode(true).childNodes);
+    answer.hidden = false;
+    reveal.setAttribute('aria-expanded', 'true');
+    reveal.textContent = '参考答案已展开';
+    reveal.disabled = true;
+  });
+  mark.addEventListener('click', () => {
+    if (weakQuestions.has(activeQuestion.key)) weakQuestions.delete(activeQuestion.key);
+    else weakQuestions.add(activeQuestion.key);
+    try {
+      localStorage.setItem('erp-interview-weak', JSON.stringify([...weakQuestions]));
+      storageNotice.hidden = true;
+    } catch (error) {
+      storageNotice.hidden = false;
+      storageNotice.textContent = '浏览器未能保存标记。本次仍可练习，关闭或刷新后标记可能丢失。';
+      console.warn('Interview marks could not be saved.', error);
+    }
+    updateInterviewStatus();
+  });
+  document.getElementById('interview-next').addEventListener('click', () => drawQuestion());
+  pool.addEventListener('change', () => {
+    remaining = [];
+    drawQuestion(false);
+  });
+  drawQuestion(false);
   applyFont(); labelTheme(); route();
 })();

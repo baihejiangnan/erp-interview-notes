@@ -7,10 +7,25 @@
 @media(max-width:1240px){.content-layout{grid-template-columns:minmax(0,1fr);padding:36px 38px}.outline{display:none}.topbar{padding:0 30px}.breadcrumb{display:none}.toolbar{width:100%}.search-box{flex:1}.reader{max-width:810px;margin:auto;width:100%}}
 @media(max-width:800px){.sidebar{transform:translateX(-100%);transition:transform .2s ease;width:280px}.sidebar.open{transform:translateX(0)}.mobile-overlay.open{display:block;position:fixed;inset:0;z-index:25;background:#15281d55;border:0;border-radius:0}.main-shell{margin-left:0}.topbar{height:65px;padding:0 17px;gap:9px}.menu-button{display:inline-block;font-size:12px;min-width:42px}.search-box{min-width:0;padding:8px 9px}.search-box kbd{display:none}.toolbar{gap:5px}.tool-button{min-width:31px;padding:5px}.print-button{display:none}.content-layout{padding:29px 21px 55px;display:block}.chapter-header h1{font-size:28px;letter-spacing:-.04em}.chapter-meta{font-size:10px}.chapter-description{font-size:13px}.prose{font-size:calc(var(--reading-size) - 1px);line-height:1.95}.reading-route{padding:18px}.reading-route>div{gap:9px}.reading-route button{font-size:12px}.qa summary{padding:16px 13px;gap:9px}.qa-body{padding:0 17px 12px;font-size:.94em}.qa .priority{padding:0 5px}.chapter-tools span{margin-left:0;flex-basis:100%}.request-map{gap:7px}.request-map b{margin:0}.prose pre{padding:16px}.prose table{min-width:440px}.answer-body{padding:0 16px 8px}.reading-status{display:none}}
 @media(max-width:800px){.tool-button{min-width:44px;min-height:44px}.search-box{min-height:44px}.search-box input{font-size:16px}.toolbar{flex:1}.reading-route button{min-height:44px;padding:8px 0}.qa summary{min-height:56px}}
+.interview-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:14px}
+.interview-controls select{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:10px 12px;min-height:46px}
+.interview-controls select:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.interview-status,.interview-storage,.interview-mark-status,.interview-footnote{font-size:13px;line-height:1.9;color:var(--muted)}
+.interview-card{border-top:1px solid var(--line);margin-top:25px;padding-top:25px}
+.prose .interview-card h2{margin:0 0 18px;font-size:1.35em;outline:none}
+.interview-hint{font-size:14px;color:var(--muted)}
+.interview-actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 12px}
+.interview-actions button{font:inherit;font-size:14px;min-height:48px;padding:10px 16px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:6px}
+.interview-actions #interview-reveal{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.interview-actions button.is-weak{background:var(--tint);border-color:var(--accent)}
+.interview-answer{border-top:1px solid var(--line);padding-top:24px;margin-top:20px}
+.interview-empty{margin:25px 0!important;padding:20px 0;border-block:1px solid var(--line)}
+.interview-footnote{margin-top:28px!important}
+@media(max-width:600px){.interview-actions{display:grid;grid-template-columns:1fr 1fr}.interview-actions #interview-reveal{grid-column:1/-1}.interview-controls select{flex:1;min-width:0}.interview-card .chapter-meta{font-size:12px}.prose .interview-card h2{font-size:1.3em}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 @media print{html{scroll-padding-top:0}body{background:white;color:black}.sidebar,.topbar,.outline,.mobile-overlay,.chapter-tools,.chapter-footer button,.reading-route{display:none!important}.main-shell{margin:0}.content-layout{display:block;padding:0;max-width:none}.reader{max-width:none}.panel{display:none!important}.panel.printing{display:block!important}.prose{font-size:11pt;line-height:1.7}.prose pre{white-space:pre-wrap}.table-scroll{overflow:visible}.prose table{min-width:0;font-size:9pt}.qa,.answer-bank{box-shadow:none;break-inside:avoid}.chapter-header h1{font-size:23pt}.chapter-header{padding-bottom:15px}.prose a{color:inherit}.qa-body{padding-left:20px}summary .disclosure{display:none}.search-panel{display:none!important}}
 </style></head>
-<body><a class="skip-link" href="#main-content">跳到正文</a><div class="shell"><aside class="sidebar" id="sidebar" aria-label="学习栏目"><a class="brand" href="#quick" data-panel="quick"><span class="brand-monogram" aria-hidden="true">E.</span><span class="brand-text"><strong>ERP 面试复习手册</strong><small>INTERVIEW FIELD NOTES</small></span></a><p class="sidebar-label">六个栏目，按需复习</p><nav class="module-nav" aria-label="主导航"><a class="module-link active" href="#quick" data-panel="quick" aria-current="page"><span class="module-no">01</span><span><strong>上场准备</strong><small>岗位匹配与自我介绍</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#project" data-panel="project" ><span class="module-no">02</span><span><strong>ERP 项目口述</strong><small>业务模块与六个接口</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#deep" data-panel="deep" ><span class="module-no">03</span><span><strong>两个难点追问</strong><small>事务、防重与分页</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#questions" data-panel="questions" ><span class="module-no">04</span><span><strong>岗位高频问答</strong><small>20 道题与连续追问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#practice" data-panel="practice" ><span class="module-no">05</span><span><strong>场景与模拟</strong><small>SQL 练习、模拟与反问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#notes" data-panel="notes" ><span class="module-no">06</span><span><strong>补充与核实</strong><small>经历回忆与候选故事</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a></nav><div class="sidebar-note"><strong>把一条业务链路讲完整。</strong><p>Java 后端 · ERP 业务<br>口述稿 + 接口 + 连续追问<br>每次练清楚一个问题。</p></div><div class="sidebar-bottom">个人学习资料 / 更新于 2026.10.26<br>纯静态页面，无统计脚本</div></aside><button class="mobile-overlay" id="mobile-overlay" aria-label="关闭栏目导航" tabindex="-1"></button><div class="main-shell"><header class="topbar"><button class="tool-button menu-button" id="menu-toggle" aria-controls="sidebar" aria-expanded="false">目录</button><div class="breadcrumb">学习手册 <span id="current-breadcrumb">上场准备</span></div><div class="toolbar"><label class="search-box"><span class="search-symbol" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索全部资料" aria-label="搜索全部六个栏目" autocomplete="off"><kbd>Ctrl K</kbd></label><button class="tool-button" id="font-down" aria-label="缩小正文字号" title="缩小字号">A−</button><button class="tool-button" id="font-up" aria-label="放大正文字号" title="放大字号">A＋</button><button class="tool-button" id="theme-toggle" aria-label="切换夜间阅读">夜间</button><button class="tool-button print-button" id="print-button">打印</button></div></header><div class="content-layout"><main class="reader" id="main-content"><noscript><p class="noscript-note">未启用 JavaScript，下方显示全部资料；搜索、目录切换和字号设置需要启用 JavaScript。</p><style>.panel[hidden]{display:block!important}.outline{display:none}</style></noscript><section id="quick" class="panel" data-title="上场准备" ><header class="chapter-header"><p class="chapter-meta">先练开场 · 30 秒与 90 秒版本</p><h1 tabindex="-1">上场准备</h1><p class="chapter-description">先把方向和经历讲清楚。以汉得 ERP 后端为主线，用个人项目补充技术实践。</p></header><div class="reading-route"><span class="route-label">从这里开始</span><div><button data-goto="project">讲项目</button><span aria-hidden="true">→</span><button data-goto="deep">练追问</button><span aria-hidden="true">→</span><button data-goto="practice">做模拟</button></div><p>碎片时间查一个问题，完整时间脱稿练一轮。</p></div><article class="prose"><h2 id="quick-1">自我介绍</h2>
+<body><a class="skip-link" href="#main-content">跳到正文</a><div class="shell"><aside class="sidebar" id="sidebar" aria-label="学习栏目"><a class="brand" href="#quick" data-panel="quick"><span class="brand-monogram" aria-hidden="true">E.</span><span class="brand-text"><strong>ERP 面试复习手册</strong><small>INTERVIEW FIELD NOTES</small></span></a><p class="sidebar-label">7 个栏目，按需练习</p><nav class="module-nav" aria-label="主导航"><a class="module-link active" href="#quick" data-panel="quick" aria-current="page"><span class="module-no">01</span><span><strong>上场准备</strong><small>岗位匹配与自我介绍</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#interview" data-panel="interview" ><span class="module-no">02</span><span><strong>模拟面试</strong><small>随机抽题 · 未掌握复习</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#project" data-panel="project" ><span class="module-no">03</span><span><strong>ERP 项目口述</strong><small>业务模块与六个接口</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#deep" data-panel="deep" ><span class="module-no">04</span><span><strong>两个难点追问</strong><small>事务、防重与分页</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#questions" data-panel="questions" ><span class="module-no">05</span><span><strong>岗位高频问答</strong><small>20 道题与连续追问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#practice" data-panel="practice" ><span class="module-no">06</span><span><strong>场景与模拟</strong><small>SQL 练习、模拟与反问</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a><a class="module-link " href="#notes" data-panel="notes" ><span class="module-no">07</span><span><strong>补充与核实</strong><small>经历回忆与候选故事</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a></nav><div class="sidebar-note"><strong>把一条业务链路讲完整。</strong><p>Java 后端 · ERP 业务<br>口述稿 + 接口 + 连续追问<br>每次练清楚一个问题。</p></div><div class="sidebar-bottom">个人学习资料 / 更新于 2026.10.26<br>纯静态页面，无统计脚本</div></aside><button class="mobile-overlay" id="mobile-overlay" aria-label="关闭栏目导航" tabindex="-1"></button><div class="main-shell"><header class="topbar"><button class="tool-button menu-button" id="menu-toggle" aria-controls="sidebar" aria-expanded="false">目录</button><div class="breadcrumb">学习手册 <span id="current-breadcrumb">上场准备</span></div><div class="toolbar"><label class="search-box"><span class="search-symbol" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索全部资料" aria-label="搜索全部资料" autocomplete="off"><kbd>Ctrl K</kbd></label><button class="tool-button" id="font-down" aria-label="缩小正文字号" title="缩小字号">A−</button><button class="tool-button" id="font-up" aria-label="放大正文字号" title="放大字号">A＋</button><button class="tool-button" id="theme-toggle" aria-label="切换夜间阅读">夜间</button><button class="tool-button print-button" id="print-button">打印</button></div></header><div class="content-layout"><main class="reader" id="main-content"><noscript><p class="noscript-note">未启用 JavaScript，下方显示全部资料；搜索、目录切换和字号设置需要启用 JavaScript。</p><style>.panel[hidden]{display:block!important}.outline{display:none}</style></noscript><section id="quick" class="panel" data-title="上场准备" ><header class="chapter-header"><p class="chapter-meta">先练开场 · 30 秒与 90 秒版本</p><h1 tabindex="-1">上场准备</h1><p class="chapter-description">先把方向和经历讲清楚。以汉得 ERP 后端为主线，用个人项目补充技术实践。</p></header><div class="reading-route"><span class="route-label">从这里开始</span><div><button data-goto="project">讲项目</button><span aria-hidden="true">→</span><button data-goto="deep">练追问</button><span aria-hidden="true">→</span><button data-goto="interview">随机抽题</button></div><p>碎片时间查一个问题，完整时间脱稿练一轮。</p></div><article class="prose"><h2 id="quick-1">自我介绍</h2>
 <h3 id="quick-2">六十至九十秒版本</h3>
 <p>面试官好，我叫袁涛，是阜阳师范大学信息工程学院软件工程专业的 2026 届本科毕业生。我的主要方向是 Java 后端，也具备 Vue 前后端联调能力。</p>
 <p>我在上海汉得信息的实习中，主要参与面向企业的 ERP 管理系统后端接口开发，使用 Spring Boot、MyBatis 和 MySQL，做过数据查询、状态更新、参数校验，以及前后端联调和问题排查。遇到问题时，我会结合请求参数、SQL 查询和 Linux 日志去定位，修改后再回归相关流程。</p>
@@ -64,6 +79,30 @@
 </tr>
 </tbody></table></div>
 <p>从 JD 判断，对方可能同时看重业务理解和交付能力。介绍顺序建议是：<strong>汉得 ERP → Java 和 SQL → 联调排障 → AI 工具 → PLNM 补充</strong>。先让面试官知道你能接企业接口需求，再展开其他技术。</p>
+</article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section>
+<section id="interview" class="panel" data-title="模拟面试" hidden><header class="chapter-header"><p class="chapter-meta">40 道题 · 先回答，再看参考</p><h1 tabindex="-1">模拟面试</h1><p class="chapter-description">把手机当作面试官：随机抽一道题，先口述回答，再查看参考，标记还需要复习的地方。</p></header><article class="prose"><div class="interview-controls">
+  <label for="interview-pool">练习范围</label>
+  <select id="interview-pool">
+    <option value="all">全部题目</option>
+    <option value="weak">只练未掌握</option>
+  </select>
+</div>
+<p class="interview-status" id="interview-status" role="status" aria-live="polite"></p>
+<p class="interview-storage" id="interview-storage" role="status" hidden></p>
+<p class="interview-empty" id="interview-empty" hidden>还没有标记未掌握的题目。先切到“全部题目”，练习后点“标记未掌握”，再回来复习。</p>
+<div class="interview-card" id="interview-card" hidden>
+  <p class="chapter-meta" id="interview-category"></p>
+  <h2 id="interview-question" tabindex="-1"></h2>
+  <p class="interview-hint">先脱稿回答，建议控制在 40 至 90 秒。</p>
+  <div class="interview-actions">
+    <button type="button" id="interview-reveal" aria-expanded="false" aria-controls="interview-answer">我答完了，查看参考</button>
+    <button type="button" id="interview-mark">标记未掌握</button>
+    <button type="button" id="interview-next">下一题</button>
+  </div>
+  <p class="interview-mark-status" id="interview-mark-status" role="status" aria-live="polite"></p>
+  <div class="interview-answer" id="interview-answer" hidden></div>
+</div>
+<p class="interview-footnote">每轮随机抽题，同一轮不重复；抽完后开始新一轮。未掌握标记保存在当前浏览器，刷新后保留，不跨设备同步。项目场景仍需与真实经历核对。</p>
 </article><footer class="chapter-footer"><p>具体模块与故障为待核实示例；场景方案不代表已经完成的工作。</p><button type="button" class="back-top">回到本章开头 ↑</button></footer></section>
 <section id="project" class="panel" data-title="ERP 项目口述" hidden><header class="chapter-header"><p class="chapter-meta">采购申请示例 · 模块与实现待核实</p><h1 tabindex="-1">ERP 项目口述</h1><p class="chapter-description">沿着查询、保存和提交讲一条完整业务链路，明确自己的负责范围。</p></header><article class="prose"><h2 id="project-1">项目整体介绍</h2>
 <h3 id="project-2">一分钟口述稿</h3>
@@ -646,7 +685,7 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
     panels.forEach(panel => { panel.hidden = panel.id !== id; });
     searchPanel.hidden = true;
     search.value = '';
-    document.querySelector('.outline').hidden = false;
+    document.querySelector('.outline').hidden = id === 'interview';
     nav.forEach(link => {
       const active = link.dataset.panel === id;
       link.classList.toggle('active', active);
@@ -712,7 +751,7 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
     results.replaceChildren();
     const terms = query.toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const found = index.filter(record => terms.every(term => (record.title + ' ' + record.text).toLocaleLowerCase().includes(term)));
-    caption.textContent = `“${query}” · 找到 ${found.length} 个相关章节，覆盖全部六个栏目。`;
+    caption.textContent = `“${query}” · 找到 ${found.length} 个相关章节，覆盖全部阅读资料。`;
     for (const record of found) {
       const link = document.createElement('a'); link.href = '#' + record.id; link.className = 'search-result';
       const category = document.createElement('small'); category.textContent = record.category;
@@ -742,6 +781,99 @@ WHERE id = :inventoryId AND available_qty &gt;= :quantity;
   }
   let scrollPending = false;
   window.addEventListener('scroll', () => { if (!scrollPending) { requestAnimationFrame(() => { updateProgress(); scrollPending = false; }); scrollPending = true; } }, { passive: true });
+  const interviewQuestions = [...document.querySelectorAll('.qa')].map(item => ({
+    title: item.querySelector('.question-label').textContent.trim(),
+    category: item.closest('.panel').dataset.title,
+    key: item.closest('.panel').id + ':' + item.querySelector('.question-label').textContent.trim(),
+    body: item.querySelector('.qa-body')
+  }));
+  const questionKeys = new Set(interviewQuestions.map(question => question.key));
+  const pool = document.getElementById('interview-pool');
+  const card = document.getElementById('interview-card');
+  const interviewStatus = document.getElementById('interview-status');
+  const storageNotice = document.getElementById('interview-storage');
+  const interviewTitle = document.getElementById('interview-question');
+  const answer = document.getElementById('interview-answer');
+  const reveal = document.getElementById('interview-reveal');
+  const mark = document.getElementById('interview-mark');
+  let weakQuestions = new Set();
+  let remaining = [];
+  let activeQuestion = null;
+  let drawn = 0;
+  try {
+    const saved = JSON.parse(localStorage.getItem('erp-interview-weak') || '[]');
+    if (!Array.isArray(saved) || saved.some(key => typeof key !== 'string')) throw new Error('Invalid interview marks.');
+    weakQuestions = new Set(saved.filter(key => questionKeys.has(key)));
+  } catch (error) {
+    storageNotice.hidden = false;
+    storageNotice.textContent = '无法读取本地标记。可以继续练习，本次标记暂存在页面中。';
+    console.warn('Interview marks could not be loaded.', error);
+  }
+  function updateInterviewStatus() {
+    interviewStatus.textContent = `本轮已抽 ${drawn} 题 · 剩余 ${remaining.filter(question => pool.value === 'all' || weakQuestions.has(question.key)).length} 题 · 未掌握 ${weakQuestions.size} 题`;
+    const isWeak = activeQuestion && weakQuestions.has(activeQuestion.key);
+    mark.classList.toggle('is-weak', Boolean(isWeak));
+    mark.textContent = isWeak ? '已掌握，移出复习' : '标记未掌握';
+    document.getElementById('interview-mark-status').textContent = isWeak ? '已标记：还没掌握' : '';
+  }
+  function drawQuestion(focus = true) {
+    remaining = remaining.filter(question => pool.value === 'all' || weakQuestions.has(question.key));
+    if (!remaining.length) {
+      remaining = interviewQuestions.filter(question => pool.value === 'all' || weakQuestions.has(question.key));
+      for (let i = remaining.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+      }
+      if (remaining.length > 1 && remaining.at(-1).key === activeQuestion?.key) {
+        [remaining[0], remaining[remaining.length - 1]] = [remaining.at(-1), remaining[0]];
+      }
+      drawn = 0;
+    }
+    activeQuestion = remaining.pop() || null;
+    card.hidden = !activeQuestion;
+    document.getElementById('interview-empty').hidden = Boolean(activeQuestion);
+    answer.hidden = true;
+    answer.replaceChildren();
+    reveal.setAttribute('aria-expanded', 'false');
+    reveal.disabled = false;
+    reveal.textContent = '我答完了，查看参考';
+    if (activeQuestion) {
+      drawn++;
+      interviewTitle.textContent = activeQuestion.title;
+      document.getElementById('interview-category').textContent = activeQuestion.category;
+      if (focus) {
+        interviewTitle.focus({preventScroll: true});
+        interviewTitle.scrollIntoView({block: 'start', behavior: 'instant'});
+      }
+    }
+    updateInterviewStatus();
+  }
+  reveal.addEventListener('click', () => {
+    answer.replaceChildren(...activeQuestion.body.cloneNode(true).childNodes);
+    answer.hidden = false;
+    reveal.setAttribute('aria-expanded', 'true');
+    reveal.textContent = '参考答案已展开';
+    reveal.disabled = true;
+  });
+  mark.addEventListener('click', () => {
+    if (weakQuestions.has(activeQuestion.key)) weakQuestions.delete(activeQuestion.key);
+    else weakQuestions.add(activeQuestion.key);
+    try {
+      localStorage.setItem('erp-interview-weak', JSON.stringify([...weakQuestions]));
+      storageNotice.hidden = true;
+    } catch (error) {
+      storageNotice.hidden = false;
+      storageNotice.textContent = '浏览器未能保存标记。本次仍可练习，关闭或刷新后标记可能丢失。';
+      console.warn('Interview marks could not be saved.', error);
+    }
+    updateInterviewStatus();
+  });
+  document.getElementById('interview-next').addEventListener('click', () => drawQuestion());
+  pool.addEventListener('change', () => {
+    remaining = [];
+    drawQuestion(false);
+  });
+  drawQuestion(false);
   applyFont(); labelTheme(); route();
 })();
 </script></body></html>
